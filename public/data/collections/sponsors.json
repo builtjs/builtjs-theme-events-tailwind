@@ -1,0 +1,97 @@
+{
+  "items": [
+    {
+      "attributes": {
+        "slug": "chamber-music-new-zealand",
+        "name": "Chamber Music New Zealand",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5eb938d56b766814c87840fc/w1200",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "url": "https://chambermusic.co.nz"
+      }
+    },{
+      "attributes": {
+        "slug": "three-lakes-cultural-trust",
+        "name": "Three Lakes Cultural Trust",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf4aa8240cdd5c6cd63ee8/w1200",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "url": ""
+      }
+    },
+    {
+      "attributes": {
+        "slug": "queenstown-lakes-district-council",
+        "name": "Queenstown Lakes District Council",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5eba4fec6b766814c8784106/w420",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "url": "https://www.qldc.govt.nz"
+      }
+    },
+    {
+      "attributes": {
+        "slug": "festival-of-colour",
+        "name": "Festival of Colour",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5eba52ae6b766814c878410c/w420",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "url": "https://www.festivalofcolour.co.nz"
+      }
+    },{
+      "attributes": {
+        "slug": "central-lakes-trust",
+        "name": "Central Lakes Trust",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/dev/e/5fc9df392ad4920500cd3cd1/a/5fd5cfd5e292f400135aa0f4/w150",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "url": "https://www.clt.net.nz"
+      }
+    }
+  ]
+}

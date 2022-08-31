@@ -1,0 +1,718 @@
+{
+  "sections": [
+    {
+      "slug": "header",
+      "category": "layout",
+      "displayName": "Header",
+      "description": "The header contains the company logo, main site navigation and often a call-to-action button.",
+      "templates": ["header-1", "header-2"],
+      "defaultTemplate": {
+        "slug": "header-1"
+      },
+      "position": "start",
+      "attributes": {
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "logo",
+              "path": "/images",
+              "ext": "svg",
+              "url": "/images/logo.svg",
+              "width": 48,
+              "height": 48
+            }
+          }
+        },
+        "buttonLinks": [
+          {
+            "url": "/contact",
+            "label": "Button",
+            "type": "secondary"
+          }
+        ]
+      },
+      "collections": {
+        "primary-menu-items": {},
+        "secondary-menu-items": {}
+      },
+      "order": 1
+    },
+    {
+      "slug": "footer",
+      "category": "layout",
+      "displayName": "Footer",
+      "description": "The footer contains secondary site navigation.",
+      "templates": ["footer-1", "footer-2"],
+      "defaultTemplate": {
+        "slug": "footer-1"
+      },
+      "position": "end",
+      "collections": {
+        "primary-menu-items": {},
+        "secondary-menu-items": {}
+      },
+      "order": 10
+    },
+    {
+      "slug": "home-seo",
+      "displayName": "Home SEO",
+      "templates": ["seo"],
+      "defaultTemplate": {
+        "slug": "seo"
+      },
+      "category": "head",
+      "type": "head",
+      "attributes": {
+        "title": "Home | Corporate Tailwind Built.JS Theme",
+        "description": "Home page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "shareImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image.png",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      },
+      "order": 0
+    },
+    {
+      "slug": "events-hero",
+      "displayName": "Events Hero",
+      "description": "The featured event, displayed with a hero image.",
+      "templates": ["hero-cover", "cover-2", "cover-3", "cover-4", "cover-5"],
+      "defaultTemplate": {
+        "slug": "hero-cover"
+      },
+      "attributes": {
+        "preheading": {
+          "text": "Preheading",
+          "type": "plain"
+        },
+        "title": "Lorem ipsum dolor sit amet dev",
+        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image-square",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image-square.png",
+              "width": 768,
+              "height": 768
+            }
+          }
+        },
+        "buttonLinks": [
+          {
+            "url": "/services",
+            "label": "Button",
+            "type": "primary"
+          },
+          {
+            "url": "/contact",
+            "label": "Button",
+            "type": "secondary"
+          }
+        ]
+      },
+      "order": 2
+    },
+    {
+      "slug": "contact-teaser",
+      "displayName": "Contact Teaser",
+      "description": "A contact call-to-action to encourage users to make contact.",
+      "templates": ["banner-1", "banner-2", "banner-3", "banner-4", "banner-5"],
+      "defaultTemplate": {
+        "slug": "banner-1"
+      },
+      "attributes": {
+        "preheading": {
+          "text": "Preheading",
+          "type": "line"
+        },
+        "title": "Lorem ipsum dolor sit amet",
+        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "buttonLinks": [
+          {
+            "url": "/contact",
+            "label": "Button",
+            "type": "primary"
+          }
+        ]
+      },
+      "variants": {
+        "backgroundColor": "darkest"
+      },
+      "order": 4
+    },
+    {
+      "slug": "about-seo",
+      "displayName": "About SEO",
+      "templates": ["seo"],
+      "defaultTemplate": {
+        "slug": "seo"
+      },
+      "category": "head",
+      "type": "head",
+      "attributes": {
+        "title": "About | Corporate Tailwind Built.JS Theme",
+        "description": "About page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "shareImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image.png",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      },
+      "order": 0
+    },
+    {
+      "slug": "about-landing",
+      "displayName": "About Landing",
+      "description": "The about page landing area, conveying convey trust and relatability.",
+      "templates": ["block-1"],
+      "defaultTemplate": {
+        "slug": "block-1"
+      },
+      "attributes": {
+        "preheading": "About",
+        "heading": "Wanaka Concert Society",
+        "leadingSentence": "For more than 40 years, the Wanaka Concert Society has proudly played an important role in the culture of our region.",
+        "body": "Wanaka Concert Society is an Incorporated Society and Registered Charity.<br><br>Although many of its concerts are sourced through Chamber Music New Zealand and Arts on Tour, an increasing number of performers contact us directly, many of whom are top international musicians. We have hosted violinist Natalia Lomeiko twice and she is always keen to return. Natalia is the inaugural winner of the Sir Michael Hill International Violin Competition and is currently a Professor at the Royal College of Music, London.<br><br>Jazz is very popular in Wanaka and in 2019 top American trumpet player, Allen Vizzutti and his wife, pianist Laura Vizzutti amazed the spell-bound audience with their unique techniques, sense of humour and sheer delight of performance.<br><br>One of the aims of the Wanaka Concert Society is to support young people - admission is free to our concerts for students at school. We also host the current young recipients of the annual Royal Over-Seas League Pettman/ROSL Scholarship for Chamber Ensembles. Master classes are facilitated for music students by some of our visiting performers.<br><br>The Wanaka Concert Society is administered by an annually elected group of music lovers. The inspiration and work carried out by the founding committee over 40 years ago is very much appreciated. One of the wonderful projects undertaken was fundraising for and purchase of our Steinway Grand Piano, of which we are immensely proud. It is praised not only by local pianists but also acclaimed international pianists.<br><br>The Wanaka Concert Society appreciates the support of its donors, subscribers, sponsors and volunteers which enables us to present the very best of music available."
+      },
+      "order": 2
+    },
+    {
+      "slug": "blog-article",
+      "displayName": "Blog Article",
+      "description": "The blog post detail page.",
+      "templates": ["article-1"],
+      "defaultTemplate": {
+        "slug": "article-1"
+      },
+      "item": {
+        "slug": "blog-item",
+        "populate": ["author"]
+      },
+      "order": 2
+    },
+    {
+      "slug": "contact-seo",
+      "displayName": "Contact SEO",
+      "templates": ["seo"],
+      "defaultTemplate": {
+        "slug": "seo"
+      },
+      "category": "head",
+      "type": "head",
+      "attributes": {
+        "title": "Contact | Corporate Tailwind Built.JS Theme",
+        "description": "Contact page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "shareImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image.png",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      },
+      "order": 0
+    },
+    {
+      "slug": "contact-landing",
+      "displayName": "Contact Landing",
+      "description": "The contact page landing area, providing relevant contact details.",
+      "templates": ["contact-form", "form-2"],
+      "defaultTemplate": {
+        "slug": "contact-form"
+      },
+      "attributes": {
+        "preheading": "Contact",
+        "heading": "Get in touch",
+        "blurb": "We are happy to answer any questions regarding concerts, performers, repertoire, becoming a subscriber, donor or sponsor, and generally the Wanaka Concert Society. Of course we would love to answer your questions about any help you can give us with accommodating billets when necessary, or generally spreading the word about upcoming concerts. Also, don't forget people who live by themselves who might like to go with you to concerts."
+      },
+      "order": 2
+    },
+    {
+      "slug": "newsletter",
+      "displayName": "Newsletter",
+      "description": "A section including a form for signing up to a newsletter.",
+      "templates": ["newsletter-banner-1"],
+      "defaultTemplate": {
+        "slug": "newsletter-banner-1"
+      },
+      "order": 5
+    },
+    {
+      "slug": "newsletter-lrg",
+      "displayName": "Newsletter Large",
+      "description": "A section including a form for signing up to a newsletter and description for why to sign up.",
+      "templates": ["newsletter-form-1"],
+      "defaultTemplate": {
+        "slug": "newsletter-form-1"
+      },
+      "attributes": {
+        "preheading": "Newsletter",
+        "heading": "Sign up for our newsletter",
+        "blurb": "Stay in touch with all the latest Wanaka Concert Society events happening in Wanaka and other related news. You can cancel your newsletter at any time."
+      },
+      "order": 5
+    },
+    {
+      "slug": "about-blockquote",
+      "displayName": "About Blockquote",
+      "description": "A section including a blockquote.",
+      "templates": ["blockquote-1"],
+      "defaultTemplate": {
+        "slug": "blockquote-1"
+      },
+      "order": 5
+    },
+    {
+      "slug": "about-events-teaser",
+      "displayName": "About Events Teaser",
+      "description": "A call-to-action to encourage users to view events.",
+      "templates": ["block-2"],
+      "defaultTemplate": {
+        "slug": "block-2"
+      },
+      "order": 5
+    },
+    {
+      "slug": "page-headline",
+      "displayName": "Page Headline",
+      "description": "A headline for the page.",
+      "templates": ["banner-1"],
+      "defaultTemplate": {
+        "slug": "banner-1"
+      },
+      "attributes": {
+        "preheading": {
+          "text": "Preheading",
+          "type": "line"
+        },
+        "title": "Lorem ipsum dolor sit amet",
+        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "buttonLinks": [
+          {
+            "url": "/contact",
+            "label": "Button",
+            "type": "primary"
+          }
+        ]
+      },
+      "variants": {
+        "backgroundColor": "darkest"
+      },
+      "order": 4
+    },
+    {
+      "slug": "events-landing",
+      "displayName": "Events Landing",
+      "description": "The Events page landing area.",
+      "templates": ["cards-1"],
+      "defaultTemplate": {
+        "slug": "cards-1"
+      },
+      "attributes": {
+        "preheading": "Events",
+        "heading": "The latest WCS events in Wanaka",
+        "headlineAlignment": "center"
+      },
+      "collections": {
+        "events": {}
+      },
+      "order": 2
+    },
+    {
+      "slug": "events-list",
+      "displayName": "Events List",
+      "description": "The Events List section.",
+      "templates": ["cards-1"],
+      "defaultTemplate": {
+        "slug": "cards-1"
+      },
+      "attributes": {
+        "preheading": "Events",
+        "title": "Upcoming Events",
+        "headlineAlignment": "left"
+      },
+      "collections": {
+        "events": {}
+      },
+      "order": 2
+    },
+    {
+      "slug": "events-seo",
+      "displayName": "Events SEO",
+      "templates": ["seo"],
+      "defaultTemplate": {
+        "slug": "seo"
+      },
+      "category": "head",
+      "type": "head",
+      "attributes": {
+        "title": "Events | Events Tailwind Built.JS Theme",
+        "description": "Events page for a site built with the Events Tailwind Built.JS Theme.",
+        "shareImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image.png",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      },
+      "order": 0
+    },
+    {
+      "slug": "subscribe-landing",
+      "displayName": "Subscribe Landing",
+      "description": "The Subscribe page landing area.",
+      "templates": ["subscribe-form"],
+      "defaultTemplate": {
+        "slug": "subscribe-form"
+      },
+      "attributes": {
+        "preheading": "Become a Subscriber",
+        "heading": "Continuous support allows us to do what we do.",
+        "body": "By becoming a WCS subscriber, you help us present memorable concerts. WCS is a not-for-profit charity which needs the support of passionate music lovers to ensure we continue to offer top quality concerts to our community. Each year a concert or other event is held exclusively for Subscribers and Donors as a thank you for their support."
+      },
+      "order": 2
+    },
+    {
+      "slug": "subscribe-seo",
+      "displayName": "Subscribe SEO",
+      "templates": ["seo"],
+      "defaultTemplate": {
+        "slug": "seo"
+      },
+      "category": "head",
+      "type": "head",
+      "attributes": {
+        "title": "Subscribe | Subscribe Tailwind Built.JS Theme",
+        "description": "Subscribe page for a site built with the Events Tailwind Built.JS Theme.",
+        "shareImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image.png",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      },
+      "order": 0
+    },
+    {
+      "slug": "donate-teaser",
+      "displayName": "Donate Teaser",
+      "description": "Call-to-action for donation.",
+      "templates": ["cta-card"],
+      "defaultTemplate": {
+        "slug": "cta-card"
+      },
+      "attributes": {
+        "preheading": {
+          "text": "Preheading",
+          "type": "line"
+        },
+        "title": "Lorem ipsum dolor sit amet",
+        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image-square",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image-square.png",
+              "width": 1000,
+              "height": 1000
+            }
+          }
+        },
+        "buttonLinks": [
+          {
+            "url": "/about",
+            "label": "Button",
+            "type": "primary"
+          },
+          {
+            "url": "/services",
+            "label": "Button",
+            "type": "secondary"
+          }
+        ]
+      },
+      "order": 2
+    },
+    {
+      "slug": "subscribe-teaser",
+      "displayName": "Subscribe Teaser",
+      "description": "Call-to-action for subscribing.",
+      "templates": ["cta-card"],
+      "defaultTemplate": {
+        "slug": "cta-card"
+      },
+      "attributes": {
+        "preheading": {
+          "text": "Preheading",
+          "type": "line"
+        },
+        "title": "Lorem ipsum dolor sit amet",
+        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image-square",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image-square.png",
+              "width": 1000,
+              "height": 1000
+            }
+          }
+        },
+        "buttonLinks": [
+          {
+            "url": "/about",
+            "label": "Button",
+            "type": "primary"
+          },
+          {
+            "url": "/services",
+            "label": "Button",
+            "type": "secondary"
+          }
+        ]
+      },
+      "order": 2
+    },
+    {
+      "slug": "donate-landing",
+      "displayName": "Donate Landing",
+      "description": "The Donate page landing area.",
+      "templates": ["donate-form"],
+      "defaultTemplate": {
+        "slug": "donate-form"
+      },
+      "attributes": {
+        "preheading": "Donate",
+        "heading": "Your donation will make all the difference.",
+        "blurb": "We depend on the generosity of donors which enables us to present more expensive, often international, concerts in Wanaka, while keeping admission prices affordable. For donations of $5 or more you can claim a tax credit of one-third of the amount (up to the amount of your taxable income). The Wanaka Concert Society appreciates your donations. Thank you for being generous."
+      },
+      "order": 2
+    },
+    {
+      "slug": "donate-seo",
+      "displayName": "Donate SEO",
+      "templates": ["seo"],
+      "defaultTemplate": {
+        "slug": "seo"
+      },
+      "category": "head",
+      "type": "head",
+      "attributes": {
+        "title": "Donate | Donate Tailwind Built.JS Theme",
+        "description": "Donate page for a site built with the Events Tailwind Built.JS Theme.",
+        "shareImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image.png",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      },
+      "order": 0
+    },
+    {
+      "slug": "donate-teaser",
+      "displayName": "Donate Teaser",
+      "description": "Call-to-action for donation.",
+      "templates": ["cta-card"],
+      "defaultTemplate": {
+        "slug": "cta-card"
+      },
+      "attributes": {
+        "preheading": {
+          "text": "Preheading",
+          "type": "line"
+        },
+        "title": "Lorem ipsum dolor sit amet",
+        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image-square",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/image-square.png",
+              "width": 1000,
+              "height": 1000
+            }
+          }
+        },
+        "buttonLinks": [
+          {
+            "url": "/about",
+            "label": "Button",
+            "type": "primary"
+          },
+          {
+            "url": "/services",
+            "label": "Button",
+            "type": "secondary"
+          }
+        ]
+      },
+      "order": 2
+    },
+    {
+      "slug": "sponsors",
+      "displayName": "Sponsors",
+      "description": "List of sponsors with description and call to action.",
+      "templates": ["block-4"],
+      "defaultTemplate": {
+        "slug": "block-4"
+      },
+      "attributes": {
+        "preheading": "Sponsors",
+        "heading": "Our Sponsors",
+        "body": "We are delighted to acknowledge the assistance of our sponsors who assist in making a significant difference to the work of Wanaka Concert Society. Our sponsors help ensure that our activities are able to flourish, and that the highest quality music is available to us here in our town. If you would like to join our list of official sponsors and support live music in Wanaka, please get in touch."
+      },
+      "collections": {
+        "sponsors": {}
+      },
+      "order": 2
+    },
+    {
+      "slug": "volunteer-teaser",
+      "displayName": "Volunteer Teaser",
+      "description": "A volunteer call-to-action to encourage users to become a volunteer.",
+      "templates": ["block-5"],
+      "defaultTemplate": {
+        "slug": "block-5"
+      },
+      "attributes": {
+        "preheading": "Volunteer",
+        "heading": "Get involved with WCS",
+        "body": "Encourage people to come and enjoy our concerts by telling your friends, neighbours, people you see socially, and new arrivals to Wanaka about our concerts. Don't forget those who live on their own.",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image-square",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/dev/e/5fc9df392ad4920500cd3cd1/a/5fd5ca1be292f400135aa0ba/w1200",
+              "width": 1200,
+              "height": 600
+            }
+          }
+        },
+        "ctaText": "Contact Us",
+        "ctaUrl": "/contact"
+      },
+      "collections": {
+        "sponsors": {}
+      },
+      "order": 2
+    },
+    {
+      "slug": "about-teaser",
+      "displayName": "About Teaser",
+      "description": "An About call-to-action.",
+      "templates": ["block-6"],
+      "defaultTemplate": {
+        "slug": "block-6"
+      },
+      "attributes": {
+        "preheading": "About Us",
+        "heading": "Wanaka Concert Society",
+        "blurb":"Music has a wonderful ability to inspire people. It forms a common connection and brings us together to enjoy performances by wonderful musicians.",
+        "body": "Bringing top musicians to Wanaka, WCS is committed to creating opportunities for Wanaka locals and visitors to experience the very best of the world's musicians.",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "image-square",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/dev/e/5fc9df392ad4920500cd3cd1/a/5fd5c268e292f400135aa0b3/w800",
+              "width": 1200,
+              "height": 600
+            }
+          }
+        },
+        "ctaText": "Contact Us",
+        "ctaUrl": "/contact"
+      },
+      "collections": {
+        "sponsors": {}
+      },
+      "order": 2
+    },
+    {
+      "slug": "support-teaser",
+      "displayName": "Support Teaser",
+      "description": "A support call-to-action.",
+      "templates": ["block-7"],
+      "defaultTemplate": {
+        "slug": "block-7"
+      },
+      "attributes": {
+        "preheading": "Support",
+        "heading": "How to Support Us",
+        "blurb":"Music has a wonderful ability to inspire people. It forms a common connection and brings us together to enjoy performances by wonderful musicians.",
+        "body": "Bringing top musicians to Wanaka, WCS is committed to creating opportunities for Wanaka locals and visitors to experience the very best of the world's musicians.",
+        "subheading1": "Subscription",
+        "blurb1": "Become a subscriber and enjoy a special concert organised annually for just subscribers and donors. For only $10 (subscription fee) per person, you get that nice warm feeling of supporting WCS!",
+        "cta1": "Subscribe",
+        "url1": "/subscribe",
+        "subheading2": "Donation",
+        "blurb2": "Make a donation to help us bring the best performers to Wanaka. The generosity of donors enables us to present more expensive, often international concerts in Wanaka, while keeping admission prices affordable. For donations of $5 or more you can claim a tax credit.",
+        "cta2": "Donate",
+        "url2": "/donate"
+      },
+      "order": 2
+    }
+  ]
+}

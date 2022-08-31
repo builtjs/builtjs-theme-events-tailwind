@@ -1,0 +1,325 @@
+{
+  "sections": {
+    "header": {
+      "slug": "header",
+      "category": "layout",
+      "settings": {
+        "collectionName": "components_layout_header",
+        "info": {
+          "displayName": "Header",
+          "icon": "heading"
+        },
+        "attributes": {}
+      }
+    },
+    "footer": {
+      "slug": "footer",
+      "category": "layout",
+      "settings": {
+        "collectionName": "components_layout_footer",
+        "info": {
+          "displayName": "Footer",
+          "icon": "heading"
+        },
+        "attributes": {}
+      }
+    },
+    "home-seo": {
+      "slug": "home-seo",
+      "category": "seo",
+      "settings": {
+        "collectionName": "components_seo_home_seo",
+        "info": {
+          "displayName": "Home Page SEO",
+          "icon": "robot"
+        },
+        "attributes": {
+          "heading": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "shareImage": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "twitterCardType": {
+            "type": "string"
+          },
+          "twitterUsername": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contact-seo": {
+      "slug": "contact-seo",
+      "category": "seo",
+      "settings": {
+        "collectionName": "components_seo_contact_seo",
+        "info": {
+          "displayName": "Contact Page SEO",
+          "icon": "robot"
+        },
+        "attributes": {
+          "heading": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "shareImage": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "twitterCardType": {
+            "type": "string"
+          },
+          "twitterUsername": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "subscribe-seo": {
+      "slug": "subscribe-seo",
+      "category": "seo",
+      "settings": {
+        "collectionName": "components_seo_subscribe_seo",
+        "info": {
+          "displayName": "Subscribe Page SEO",
+          "icon": "robot"
+        },
+        "attributes": {
+          "heading": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "shareImage": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "twitterCardType": {
+            "type": "string"
+          },
+          "twitterUsername": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "volunteer-seo": {
+      "slug": "volunteer-seo",
+      "category": "seo",
+      "settings": {
+        "collectionName": "components_seo_volunteer_seo",
+        "info": {
+          "displayName": "Volunteer Page SEO",
+          "icon": "robot"
+        },
+        "attributes": {
+          "heading": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "shareImage": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "twitterCardType": {
+            "type": "string"
+          },
+          "twitterUsername": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "about-seo": {
+      "slug": "about-seo",
+      "category": "seo",
+      "settings": {
+        "collectionName": "components_seo_about_seo",
+        "info": {
+          "displayName": "About Page SEO",
+          "icon": "robot"
+        },
+        "attributes": {
+          "heading": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "shareImage": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "twitterCardType": {
+            "type": "string"
+          },
+          "twitterUsername": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "donate-seo": {
+      "slug": "donate-seo",
+      "category": "seo",
+      "settings": {
+        "collectionName": "components_seo_donate_seo",
+        "info": {
+          "displayName": "Donate Page SEO",
+          "icon": "robot"
+        },
+        "attributes": {
+          "heading": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "shareImage": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "twitterCardType": {
+            "type": "string"
+          },
+          "twitterUsername": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "donate-landing": {
+      "slug": "donate-landing",
+      "category": "forms",
+      "settings": {
+        "collectionName": "components_sections_donate_landing",
+        "info": { "displayName": "Donate landing", "icon": "heading" },
+        "attributes": {
+          "preheading": { "type": "string" },
+          "heading": { "type": "string" },
+          "blurb": { "type": "text" }
+        }
+      }
+    },
+    "events-hero": {
+      "slug": "events-hero",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_main_landing",
+        "info": { "displayName": "Main landing", "icon": "heading" },
+        "attributes": {
+          "preheading": { "type": "string" },
+          "heading": { "type": "string" },
+          "blurb": { "type": "text" },
+          "image": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          }
+        }
+      }
+    },
+    "contact-landing": {
+      "slug": "contact-landing",
+      "category": "forms",
+      "settings": {
+        "collectionName": "components_sections_contact_landing",
+        "info": { "displayName": "Contact landing", "icon": "heading" },
+        "attributes": {
+          "preheading": { "type": "string" },
+          "heading": { "type": "string" },
+          "blurb": { "type": "text" }
+        }
+      }
+    },
+    "contact-teaser": {
+      "slug": "contact-teaser",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_contact_teaser",
+        "info": { "displayName": "Contact Teaser", "icon": "heading" },
+        "attributes": {
+          "preheading": { "type": "string" },
+          "heading": { "type": "string" }
+        }
+      }
+    },
+    "about-teaser": {
+      "slug": "about-teaser",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_home_about_teaser",
+        "info": { "displayName": "About Teaser", "icon": "heading" },
+        "attributes": {
+          "preheading": { "type": "string" },
+          "heading": { "type": "string" },
+          "blurb1": { "type": "text" },
+          "blurb2": { "type": "text" }
+        }
+      }
+    },
+    "about-landing": {
+      "slug": "about-landing",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_about_landing",
+        "info": {
+          "displayName": "About Landing",
+          "icon": "robot"
+        },
+        "attributes": {
+          "preheading": { "type": "string" },
+          "heading": { "type": "string" },
+          "blurb": {
+            "type": "text"
+          },
+          "image": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          }
+        }
+      }
+    }
+  }
+}

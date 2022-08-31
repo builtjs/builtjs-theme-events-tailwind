@@ -1,0 +1,477 @@
+{
+  "_id": { "$oid": "5ecf0a19240cdd5c6cd63ecf" },
+  "status": "published",
+  "parents": [],
+  "title": "Violinist Lara Hall & Pianist Rachael Griffiths",
+  "createdAt": { "$date": { "$numberLong": "1590626841498" } },
+  "updatedAt": { "$date": { "$numberLong": "1592446169220" } },
+  "contentType": { "$oid": "5eb093e593c5d71002a3bf06" },
+  "environment": { "$oid": "5eafcebd834092647ff71ff3" },
+  "author": { "$oid": "5eca5a7757715235b92d10ad" },
+  "lastAuthor": { "$oid": "5eca5a7757715235b92d10ad" },
+  "_acl": { "user:5eca5a7757715235b92d10ad": ["owner"] },
+  "category": "post",
+  "permissionsScope": "space",
+  "imageBaseUrl": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1",
+  "locales": {
+    "en_US": {
+      "noOfPendingVersions": { "$numberInt": "0" },
+      "versions": [
+        {
+          "id": "c6RckCL6n",
+          "slug": "version-c6RckCL6n",
+          "author": "5eca5a7757715235b92d10ad",
+          "authorDisplayName": "Kate Lovell",
+          "authorProfileImageUrl": null,
+          "fields": {
+            "title": {
+              "name": "title",
+              "value": "Violinist Lara Hall & Pianist Rachael Griffiths",
+              "displayName": "Title",
+              "description": null,
+              "metadata": {
+                "required": true,
+                "helpText": null,
+                "appearance": { "name": "textbox" },
+                "isTitle": true
+              },
+              "type": "Text"
+            },
+            "body": {
+              "name": "body",
+              "value": "<p>Waikato University-based duo Lara Hall and Rachael Griffiths-Hughes present a programme of Georgian violin music, full of elegance, drama and the spontaneous flair that their performances are known for.&nbsp;</p><p>At the heart of the programme are a set of 18<sup>th</sup>-century English sonatas by Joseph Gibbs. These have recently come to be considered of musicological importance but are as yet relatively unknown to listeners. The sonatas, which encompass a great variety of styles, take the listener on a journey with many entirely unexpected twists and turns. Radical (for their elegant era) and surprising musical key changes can be heard in some of the adagios and exciting technical challenges abound: triple stops are on show almost as soon as the first sonata even begins; fugal movements require the violinist to play three voices; and there are movements where the two players need to deal with very fast imitation between the parts.</p><p>Gibbs’ sonatas are accompanied by pieces by Playford and Handel, extending the programme to encompass a wide spectrum of English music and social strata. The works by Playford have a connection to the British Isles fiddle tradition and English country dance music; while the Gibbs sonatas are from the town of Ipswich, Suffolk, where Gibbs associated with the painter Gainsborough. The music of Handel brings in the fashionable world of London musical circles.<strong style=\"color: rgb(85, 85, 85);\">&nbsp;</strong></p>",
+              "displayName": "Body",
+              "description": null,
+              "metadata": { "required": true, "helpText": null },
+              "type": "RichText"
+            },
+            "cTABlurb": {
+              "name": "cTABlurb",
+              "value": "… Lara has gone on to become recognised nationally and internationally as a vibrant and virtuosic performer ",
+              "displayName": "CTA Blurb",
+              "description": null,
+              "metadata": {
+                "required": null,
+                "helpText": "Optional sentence that encourages the reader to join the event (in emphasised text)",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text"
+            },
+            "featuredImage": {
+              "name": "featuredImage",
+              "type": "Image",
+              "value": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w2400",
+              "metadata": {
+                "isFeaturedImage": true,
+                "baseUrl": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1",
+                "sizes": {
+                  "w150": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w150",
+                  "w420": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w420",
+                  "w800": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w800",
+                  "w1200": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w1200",
+                  "w2400": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w2400"
+                }
+              },
+              "displayName": "Featured Image",
+              "description": null
+            },
+            "date": {
+              "name": "date",
+              "value": "2020-09-02T12:00:00.000Z",
+              "displayName": "Date",
+              "description": null,
+              "metadata": { "required": true, "helpText": null },
+              "type": "Date"
+            },
+            "startTime": {
+              "name": "startTime",
+              "value": "7.30pm",
+              "displayName": "startTime",
+              "description": null,
+              "metadata": {
+                "required": true,
+                "helpText": "For example, \"7pm\"",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text"
+            },
+            "venue": {
+              "name": "venue",
+              "value": "Lake Wanaka Centre",
+              "displayName": "Venue",
+              "description": null,
+              "metadata": {
+                "required": true,
+                "helpText": "For example, \"Lake Wanaka Centre\"",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text"
+            },
+            "townCity": {
+              "name": "townCity",
+              "value": "Wanaka",
+              "displayName": "Town/City",
+              "description": null,
+              "metadata": {
+                "required": true,
+                "helpText": "For example, \"Wanaka\"",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text"
+            },
+            "duration": {
+              "name": "duration",
+              "value": "100 minutes",
+              "displayName": "Duration",
+              "description": null,
+              "metadata": {
+                "required": null,
+                "helpText": "For example, \"100 minutes including an interval\"",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text"
+            },
+            "genre": {
+              "name": "genre",
+              "value": "Classical",
+              "displayName": "Genre",
+              "description": null,
+              "metadata": {
+                "required": true,
+                "helpText": "For example, \"Baroque, Classical, Romantic, 20th Century, Arrangements\"",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text"
+            },
+            "restrictions": {
+              "name": "restrictions",
+              "displayName": "Restrictions",
+              "description": null,
+              "metadata": {
+                "required": null,
+                "helpText": "For example, \"R18\"",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text"
+            },
+            "infoWebsite": {
+              "name": "infoWebsite",
+              "displayName": "Info Website",
+              "description": null,
+              "metadata": {
+                "required": null,
+                "helpText": "Website address for more information",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text",
+              "value": "https://www.nzchambersoloists.nz/lara-hall.html"
+            },
+            "quote": {
+              "name": "quote",
+              "displayName": "quote",
+              "description": null,
+              "metadata": {
+                "required": null,
+                "helpText": "Snippet of text from a concert review"
+              },
+              "type": "LongText",
+              "value": "… Georgian violin music, full of elegance, drama and spontaneous flair ..."
+            },
+            "quoteSource": {
+              "name": "quoteSource",
+              "displayName": "Quote Source",
+              "description": null,
+              "metadata": {
+                "required": null,
+                "helpText": "For example, \"Otago Daily Times\"",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text",
+              "value": ""
+            },
+            "bookingInfo": {
+              "name": "bookingInfo",
+              "value": "<p>Booking information to be advised closer to the date.</p>",
+              "displayName": "Booking Info",
+              "description": null,
+              "metadata": { "required": true, "helpText": "" },
+              "type": "RichText"
+            },
+            "ticketUrl": {
+              "name": "ticketUrl",
+              "value": "",
+              "displayName": "Ticket Url",
+              "description": null,
+              "metadata": {
+                "required": null,
+                "helpText": "",
+                "appearance": { "name": "textbox" },
+                "isTitle": null
+              },
+              "type": "Text"
+            },
+            "status": {
+              "name": "status",
+              "value": " Rescheduled",
+              "displayName": "Status",
+              "description": null,
+              "metadata": {
+                "required": null,
+                "helpText": null,
+                "appearance": { "name": "radioButtons" },
+                "isTitle": null
+              },
+              "type": "Text",
+              "options": [
+                "Running as scheduled",
+                " Rescheduled",
+                " Postponed",
+                " Cancelled"
+              ]
+            }
+          },
+          "status": "published",
+          "createdAt": "2020-05-28T00:47:22.789Z",
+          "updatedAt": "2020-05-28T00:47:22.789Z"
+        }
+      ],
+      "currentVersion": {
+        "id": "c6RckCL6n",
+        "slug": "version-c6RckCL6n",
+        "author": "5eca5a7757715235b92d10ad",
+        "authorDisplayName": "Kate Lovell",
+        "fields": {
+          "title": {
+            "name": "title",
+            "value": "Violinist Lara Hall & Pianist Rachael Griffiths",
+            "displayName": "Title",
+            "description": null,
+            "metadata": {
+              "required": true,
+              "helpText": null,
+              "appearance": { "name": "textbox" },
+              "isTitle": true
+            },
+            "type": "Text"
+          },
+          "body": {
+            "name": "body",
+            "value": "<p>Waikato University-based duo Lara Hall and Rachael Griffiths-Hughes present a programme of Georgian violin music, full of elegance, drama and the spontaneous flair that their performances are known for.&nbsp;</p><p>At the heart of the programme are a set of 18<sup>th</sup>-century English sonatas by Joseph Gibbs. These have recently come to be considered of musicological importance but are as yet relatively unknown to listeners. The sonatas, which encompass a great variety of styles, take the listener on a journey with many entirely unexpected twists and turns. Radical (for their elegant era) and surprising musical key changes can be heard in some of the adagios and exciting technical challenges abound: triple stops are on show almost as soon as the first sonata even begins; fugal movements require the violinist to play three voices; and there are movements where the two players need to deal with very fast imitation between the parts.</p><p>Gibbs’ sonatas are accompanied by pieces by Playford and Handel, extending the programme to encompass a wide spectrum of English music and social strata. The works by Playford have a connection to the British Isles fiddle tradition and English country dance music; while the Gibbs sonatas are from the town of Ipswich, Suffolk, where Gibbs associated with the painter Gainsborough. The music of Handel brings in the fashionable world of London musical circles.<strong style=\"color: rgb(85, 85, 85);\">&nbsp;</strong></p>",
+            "displayName": "Body",
+            "description": null,
+            "metadata": { "required": true, "helpText": null },
+            "type": "RichText"
+          },
+          "cTABlurb": {
+            "name": "cTABlurb",
+            "value": "… Lara has gone on to become recognised nationally and internationally as a vibrant and virtuosic performer ",
+            "displayName": "CTA Blurb",
+            "description": null,
+            "metadata": {
+              "required": null,
+              "helpText": "Optional sentence that encourages the reader to join the event (in emphasised text)",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text"
+          },
+          "featuredImage": {
+            "name": "featuredImage",
+            "type": "Image",
+            "value": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w2400",
+            "metadata": {
+              "isFeaturedImage": true,
+              "baseUrl": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1",
+              "sizes": {
+                "w150": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w150",
+                "w420": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w420",
+                "w800": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w800",
+                "w1200": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w1200",
+                "w2400": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf56ad240cdd5c6cd63ef1/w2400"
+              }
+            },
+            "displayName": "Featured Image",
+            "description": null
+          },
+          "date": {
+            "name": "date",
+            "value": "2020-09-02T12:00:00.000Z",
+            "displayName": "Date",
+            "description": null,
+            "metadata": { "required": true, "helpText": null },
+            "type": "Date"
+          },
+          "startTime": {
+            "name": "startTime",
+            "value": "7.30pm",
+            "displayName": "startTime",
+            "description": null,
+            "metadata": {
+              "required": true,
+              "helpText": "For example, \"7pm\"",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text"
+          },
+          "venue": {
+            "name": "venue",
+            "value": "Lake Wanaka Centre",
+            "displayName": "Venue",
+            "description": null,
+            "metadata": {
+              "required": true,
+              "helpText": "For example, \"Lake Wanaka Centre\"",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text"
+          },
+          "townCity": {
+            "name": "townCity",
+            "value": "Wanaka",
+            "displayName": "Town/City",
+            "description": null,
+            "metadata": {
+              "required": true,
+              "helpText": "For example, \"Wanaka\"",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text"
+          },
+          "duration": {
+            "name": "duration",
+            "value": "100 minutes",
+            "displayName": "Duration",
+            "description": null,
+            "metadata": {
+              "required": null,
+              "helpText": "For example, \"100 minutes including an interval\"",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text"
+          },
+          "genre": {
+            "name": "genre",
+            "value": "Classical",
+            "displayName": "Genre",
+            "description": null,
+            "metadata": {
+              "required": true,
+              "helpText": "For example, \"Baroque, Classical, Romantic, 20th Century, Arrangements\"",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text"
+          },
+          "restrictions": {
+            "name": "restrictions",
+            "displayName": "Restrictions",
+            "description": null,
+            "metadata": {
+              "required": null,
+              "helpText": "For example, \"R18\"",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text"
+          },
+          "infoWebsite": {
+            "name": "infoWebsite",
+            "displayName": "Info Website",
+            "description": null,
+            "metadata": {
+              "required": null,
+              "helpText": "Website address for more information",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text",
+            "value": "https://www.nzchambersoloists.nz/lara-hall.html"
+          },
+          "quote": {
+            "name": "quote",
+            "displayName": "quote",
+            "description": null,
+            "metadata": {
+              "required": null,
+              "helpText": "Snippet of text from a concert review"
+            },
+            "type": "LongText",
+            "value": "… Georgian violin music, full of elegance, drama and spontaneous flair ..."
+          },
+          "quoteSource": {
+            "name": "quoteSource",
+            "displayName": "Quote Source",
+            "description": null,
+            "metadata": {
+              "required": null,
+              "helpText": "For example, \"Otago Daily Times\"",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text",
+            "value": ""
+          },
+          "bookingInfo": {
+            "name": "bookingInfo",
+            "value": "<p>Booking information to be advised closer to the date.</p>",
+            "displayName": "Booking Info",
+            "description": null,
+            "metadata": { "required": true, "helpText": "" },
+            "type": "RichText"
+          },
+          "ticketUrl": {
+            "name": "ticketUrl",
+            "value": "",
+            "displayName": "Ticket Url",
+            "description": null,
+            "metadata": {
+              "required": null,
+              "helpText": "",
+              "appearance": { "name": "textbox" },
+              "isTitle": null
+            },
+            "type": "Text"
+          },
+          "status": {
+            "name": "status",
+            "value": " Rescheduled",
+            "displayName": "Status",
+            "description": null,
+            "metadata": {
+              "required": null,
+              "helpText": null,
+              "appearance": { "name": "radioButtons" },
+              "isTitle": null
+            },
+            "type": "Text",
+            "options": [
+              "Running as scheduled",
+              " Rescheduled",
+              " Postponed",
+              " Cancelled"
+            ]
+          }
+        },
+        "status": "published",
+        "createdAt": "2020-05-28T00:47:22.789Z",
+        "updatedAt": "2020-05-28T00:47:22.789Z",
+        "authorProfileImageUrl": null
+      }
+    }
+  },
+  "slug": "lara-hall-and-racheal-griffiths",
+  "__v": { "$numberInt": "0" }
+}

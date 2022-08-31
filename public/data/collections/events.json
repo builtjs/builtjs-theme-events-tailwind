@@ -1,0 +1,70 @@
+{
+  "items": [
+    {
+      "attributes": {
+        "slug": "event-1",
+        "title": "Violinist Lara Hall & Pianist Rachael Griffiths",
+        "cTABlurb": "Lara has gone on to become recognised nationally and internationally as a vibrant and virtuosic performer",
+        "body": "<p>Waikato University-based duo Lara Hall and Rachael Griffiths-Hughes present a programme of Georgian violin music, full of elegance, drama and the spontaneous flair that their performances are known for.&nbsp;</p><p>At the heart of the programme are a set of 18<sup>th</sup>-century English sonatas by Joseph Gibbs. These have recently come to be considered of musicological importance but are as yet relatively unknown to listeners. The sonatas, which encompass a great variety of styles, take the listener on a journey with many entirely unexpected twists and turns. Radical (for their elegant era) and surprising musical key changes can be heard in some of the adagios and exciting technical challenges abound: triple stops are on show almost as soon as the first sonata even begins; fugal movements require the violinist to play three voices; and there are movements where the two players need to deal with very fast imitation between the parts.</p><p>Gibbs’ sonatas are accompanied by pieces by Playford and Handel, extending the programme to encompass a wide spectrum of English music and social strata. The works by Playford have a connection to the British Isles fiddle tradition and English country dance music; while the Gibbs sonatas are from the town of Ipswich, Suffolk, where Gibbs associated with the painter Gainsborough. The music of Handel brings in the fashionable world of London musical circles.<strong style=\"color: rgb(85, 85, 85);\">&nbsp;</strong></p>",
+        "featuredImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/e/5fc9df392ad4920500cd3cd1/a/61b52729e59bac0018976082/w800",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "date": "2020-09-02T12:00:00.000Z",
+        "startTime": "7:30pm",
+        "venue": "Lake Wanaka Centre",
+        "townCity": "Wanaka",
+        "duration": "100 minutes",
+        "genre": "classical",
+        "restrictions": "",
+        "infoWebsite": "https://www.nzchambersoloists.nz/lara-hall.html",
+        "quote": "Georgian violin music, full of elegance, drama and spontaneous flair ...",
+        "quoteSource": "",
+        "bookingInfo": "<p>Booking information to be advised closer to the date.</p>",
+        "ticketUrl": "",
+        "status": "Rescheduled"
+      }
+    },
+    {
+      "attributes": {
+        "slug": "event-1",
+        "title": "Violinist Lara Hall & Pianist Rachael Griffiths",
+        "cTABlurb": "Lara has gone on to become recognised nationally and internationally as a vibrant and virtuosic performer",
+        "body": "<p>Waikato University-based duo Lara Hall and Rachael Griffiths-Hughes present a programme of Georgian violin music, full of elegance, drama and the spontaneous flair that their performances are known for.&nbsp;</p><p>At the heart of the programme are a set of 18<sup>th</sup>-century English sonatas by Joseph Gibbs. These have recently come to be considered of musicological importance but are as yet relatively unknown to listeners. The sonatas, which encompass a great variety of styles, take the listener on a journey with many entirely unexpected twists and turns. Radical (for their elegant era) and surprising musical key changes can be heard in some of the adagios and exciting technical challenges abound: triple stops are on show almost as soon as the first sonata even begins; fugal movements require the violinist to play three voices; and there are movements where the two players need to deal with very fast imitation between the parts.</p><p>Gibbs’ sonatas are accompanied by pieces by Playford and Handel, extending the programme to encompass a wide spectrum of English music and social strata. The works by Playford have a connection to the British Isles fiddle tradition and English country dance music; while the Gibbs sonatas are from the town of Ipswich, Suffolk, where Gibbs associated with the painter Gainsborough. The music of Handel brings in the fashionable world of London musical circles.<strong style=\"color: rgb(85, 85, 85);\">&nbsp;</strong></p>",
+        "featuredImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images",
+              "ext": "png",
+              "url": "https://appyay.s3.amazonaws.com/e/5fc9df392ad4920500cd3cd1/a/61b52729e59bac0018976082/w800",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "date": "2020-09-02T12:00:00.000Z",
+        "startTime": "7:30pm",
+        "venue": "Lake Wanaka Centre",
+        "townCity": "Wanaka",
+        "duration": "100 minutes",
+        "genre": "classical",
+        "restrictions": "",
+        "infoWebsite": "https://www.nzchambersoloists.nz/lara-hall.html",
+        "quote": "Georgian violin music, full of elegance, drama and spontaneous flair ...",
+        "quoteSource": "",
+        "bookingInfo": "<p>Booking information to be advised closer to the date.</p>",
+        "ticketUrl": "",
+        "status": "Rescheduled"
+      }
+    }
+  ]
+}

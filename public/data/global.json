@@ -1,0 +1,20 @@
+{
+  "global": {
+    "name": "Wanaka Concert Society",
+    "description": "Wanaka Concert Society is an Incorporated Society and Registered Charity.",
+    "email": "info@wanakaconcertsociety.org.nz",
+    "tel": "021481358",
+    "logo": {
+      "data": {
+        "attributes": {
+          "name": "wcs-logo",
+          "path": "/images",
+          "ext": "svg",
+          "url": "/images/wcs-logo.svg",
+          "width": 45,
+          "height": 45
+        }
+      }
+    }
+  }
+}
