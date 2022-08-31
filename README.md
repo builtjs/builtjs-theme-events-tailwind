@@ -1,11 +1,11 @@
-# Built.JS Theme: Corporate Tailwind
+# Built.JS Theme: Events Tailwind
 
-[![Built.JS Corporate Tailwind Theme](https://raw.githubusercontent.com/builtjs/builtjs-theme-corporate-tailwind/main/public/images/theme.png)](https://builtjs-theme-corporate-tailwind.vercel.app/)
+[![Built.JS Events Tailwind Theme](https://raw.githubusercontent.com/builtjs/builtjs-theme-events-tailwind/main/public/images/theme.png)](https://builtjs-theme-corporate-tailwind.vercel.app/)
 
-A [Built.JS](https://builtjs.com) theme for small business websites, with basic Tailwind styling.
+A [Built.JS](https://builtjs.com) theme for event websites, with basic Tailwind styling.
 
 ## Demo
-The demo for the site can be found here: [https://builtjs-theme-corporate-tailwind.vercel.app/](https://builtjs-theme-corporate-tailwind.vercel.app/)
+The demo for the site can be found here: ---Still to come---
 
 ## Installation
 ```
@@ -18,42 +18,47 @@ npm run dev
 
 ### Pages
 - Home
+- Events
+- Subscribe
+- Donate
 - About
-- Blog
+- Volunteer
 - Contact
-- Services
 
 ---
 
 ### Content Types
-#### Blog Item
+#### Event
 Attributes:
 - title: Text
-- content: RichText
-- image: File
-- tags: Array<Tag>
-- createdAt: Date
-- author: Author
+- cTABlurb: RichText
+- featuredImage": File,
+- date: Date,
+- startTime: Text
+- venue: Text
+- townCity: Text
+- duration: Text
+- genre: Text
+- restrictions: Text
+- infoWebsite: Text
+- quote: Text
+- quoteSource: Text
+- bookingInfo: RichText
+- ticketUrl: Text
+- status: Text
 
-#### Feature
+#### Sponsor
 Attributes:
-- title: Text
-- blurb: LongText
+- name: Text
 - image: File
-
-#### Service
-Attributes:
-- title: Text
-- blurb: LongText
-- image: File
-
-#### Benefit
-Attributes:
-- title: Text
-- blurb: LongText
-- image: File
+- url: Text
 
 #### Primary Menu Item
+Attributes:
+- label: Text
+- url: Text
+
+#### Secondary Menu Item
 Attributes:
 - label: Text
 - url: Text
