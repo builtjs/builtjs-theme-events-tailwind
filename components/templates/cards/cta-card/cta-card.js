@@ -1,4 +1,5 @@
 import { ButtonLink, Preheading } from "@/elements";
+import { isJsxAttributes } from "typescript";
 
 export default function CTACard({ content }) {
   if (!content) return <></>;
@@ -9,9 +10,9 @@ export default function CTACard({ content }) {
         <div class="container">
           <div class="box">
             <h3 className="mb-6">
-              <span>Want to make a donation?</span>
+              <span>{attributes.heading}</span>
             </h3>
-            <p className="text-primary-50 leading-7 mb-8">We depend on the generosity of individual donors who make it possible for us to present world-class concerts in Wanaka.</p>
+            <p className="text-primary-50 leading-7 mb-8">{attibutes.blurb}</p>
             <div class="inline-flex items-center group flex">
                     <a class="text-secondary tracking-widest uppercase leading-none text-sm pr-4" href="/donate/">Learn more</a>
                     <a href="/contact/">

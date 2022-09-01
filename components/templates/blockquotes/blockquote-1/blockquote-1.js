@@ -6,10 +6,7 @@ export default function Blockquote1({ content }) {
       <div className="max-w-5xl mx-auto">
         <blockquote class="border-t border-b border-secondary py-8 sm:px-10 relative">
           <p class="text-2xl text-primary-80 font-display mb-6">
-            The Wanaka Concert Society was formed to present concerts and other
-            entertainment for our local community. Our aim is to support our
-            arts culture by promoting the enjoyment and encouragement of the
-            performing arts.
+            {attributes.source}
           </p>
           {attributes?.source && (
             <p class="text-primary-50 text-sm">—{attributes.source}</p>

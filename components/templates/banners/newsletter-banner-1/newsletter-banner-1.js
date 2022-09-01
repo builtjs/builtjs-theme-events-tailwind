@@ -12,11 +12,10 @@ export default function NewsletterBanner1({ content }) {
         <div className="flex flex-col md:flex-row md:items-center justify-between">
           <div className="w-full lg:w-1/2 mb-10 md:mb-0 mr-5">
             <h3 className="text-white mb-2 leading-tight">
-              Sign up for our newsletter
+             {attributes.heading}
             </h3>
             <p className="text-primary-20 leading-7">
-              Stay in touch with all the latest Wanaka Concert Society concerts
-              happening in Wanaka and other related news.
+              {attributes.blurb}
             </p>
           </div>
           <div className="w-full lg:w-1/2 lg:ml-12">
