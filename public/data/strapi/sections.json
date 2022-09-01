@@ -511,6 +511,32 @@
         }
       }
     },
+    "volunteer-landing": {
+      "slug": "volunteer-landing",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_volunteer_landing",
+        "info": {
+          "displayName": "Volunteer Landing",
+          "icon": "robot"
+        },
+        "attributes": {
+          "preheading": { "type": "string" },
+          "heading": { "type": "string" },
+          "blurb": {
+            "type": "text"
+          },
+          "image": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          }
+        }
+      }
+    },
     "about-events-teaser": {
       "slug": "about-events-teaser",
       "category": "sections",

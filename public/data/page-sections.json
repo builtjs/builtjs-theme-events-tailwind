@@ -74,9 +74,6 @@
           "slug": "about-blockquote"
         },
         {
-          "slug": "about-events"
-        },
-        {
           "slug": "newsletter-banner"
         }
       ]
@@ -104,7 +101,7 @@
       },
       "sections": [
         {
-          "slug": "about-events"
+          "slug": "about-events-teaser"
         }
       ]
     },
@@ -156,6 +153,9 @@
       "sections": [
         {
           "slug": "support-teaser"
+        },
+        {
+          "slug": "sponsors"
         }
       ]
     },

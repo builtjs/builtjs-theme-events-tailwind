@@ -77,7 +77,7 @@
     {
       "slug": "support",
       "displayName": "Support",
-      "description": "Encourages to donate and subscribe",
+      "description": "Encourages to donate, subscribe and sponsor",
       "pageSections": [
         {
           "slug": "donate-base"
@@ -106,16 +106,6 @@
         },
         {
           "slug": "home-volunteer"
-        }
-      ]
-    },
-    {
-      "slug": "sponsors",
-      "displayName": "Sponsors",
-      "description": "Boosts awareness of sponsors",
-      "pageSections": [
-        {
-          "slug": "home-sponsor-list"
         }
       ]
     }

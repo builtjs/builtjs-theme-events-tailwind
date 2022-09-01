@@ -607,6 +607,21 @@
       "order": 2
     },
     {
+      "slug": "volunteer-landing",
+      "displayName": "Volunteer Landing",
+      "description": "Landing section for Volunteer page.",
+      "templates": ["block-1"],
+      "defaultTemplate": {
+        "slug": "block-1"
+      },
+      "attributes": {
+        "preheading": "Volunteer",
+        "heading": "Join the team",
+        "body": "An alternative way to support the WCS is by assisting us with promotion of concerts, especially by spreading news of upcoming concerts. It is well-known that this is one of the best ways of ensuring that people know about them.<br><br>People who live on their own, or new people to Wanaka, might appreciate being asked whether they would like you to take them to a concert.<br><br>One of the aims of the Wanaka Concert Society is to encourage young people to attend concerts. If you are involved with young people – either as a parent, grandparent, or teacher, or a friend of the family –perhaps you could offer to accompany them to concerts (admission is free to those of school age).<br><br>Occasionally performers need billeting. This usually involves one night's accommodation with a light evening meal and breakfast – an opportunity to get to know our talented performers!"
+      },
+      "order": 2
+    },
+    {
       "slug": "volunteer-teaser",
       "displayName": "Volunteer Teaser",
       "description": "A volunteer call-to-action to encourage users to become a volunteer.",
@@ -649,7 +664,7 @@
       "attributes": {
         "preheading": "About Us",
         "heading": "Wanaka Concert Society",
-        "blurb":"Music has a wonderful ability to inspire people. It forms a common connection and brings us together to enjoy performances by wonderful musicians.",
+        "blurb": "Music has a wonderful ability to inspire people. It forms a common connection and brings us together to enjoy performances by wonderful musicians.",
         "body": "Bringing top musicians to Wanaka, WCS is committed to creating opportunities for Wanaka locals and visitors to experience the very best of the world's musicians.",
         "image": {
           "data": {
@@ -682,7 +697,7 @@
       "attributes": {
         "preheading": "Support",
         "heading": "How to Support Us",
-        "blurb":"Music has a wonderful ability to inspire people. It forms a common connection and brings us together to enjoy performances by wonderful musicians.",
+        "blurb": "Music has a wonderful ability to inspire people. It forms a common connection and brings us together to enjoy performances by wonderful musicians.",
         "body": "Bringing top musicians to Wanaka, WCS is committed to creating opportunities for Wanaka locals and visitors to experience the very best of the world's musicians.",
         "subheading1": "Subscription",
         "blurb1": "Become a subscriber and enjoy a special concert organised annually for just subscribers and donors. For only $10 (subscription fee) per person, you get that nice warm feeling of supporting WCS!",
