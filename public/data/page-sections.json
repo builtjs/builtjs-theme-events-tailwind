@@ -16,6 +16,21 @@
       ]
     },
     {
+      "slug": "subscribe-base",
+      "description": "Subscribe page base sections",
+      "page": {
+        "slug": "subscribe"
+      },
+      "sections": [
+        {
+          "slug": "subscribe-seo"
+        },
+        {
+          "slug": "subscribe-landing"
+        }
+      ]
+    },
+    {
       "slug": "contact-base",
       "description": "Contact page base sections",
       "page": {
