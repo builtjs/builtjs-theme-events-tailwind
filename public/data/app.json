@@ -4,10 +4,10 @@
     "apiVersion": 1.2,
     "displayName": "Events Tailwind",
     "description": "Theme for events websites with basic Tailwind styling.",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/theme.png",
-    "repoName": "builtjs/builtjs-theme-corporate-tailwind",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/theme.png",
+    "repoName": "builtjs/builtjs-theme-events-tailwind",
     "gitProvider": "github",
-    "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind",
+    "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind",
     "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app",
     "modules": [
       {
