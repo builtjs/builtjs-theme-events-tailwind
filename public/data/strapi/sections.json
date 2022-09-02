@@ -333,7 +333,7 @@
       "slug": "events-hero",
       "category": "sections",
       "settings": {
-        "collectionName": "components_sections_main_landing",
+        "collectionName": "components_sections_events_hero",
         "info": { "displayName": "Main landing", "icon": "heading" },
         "attributes": {
           "preheading": { "type": "string" },
