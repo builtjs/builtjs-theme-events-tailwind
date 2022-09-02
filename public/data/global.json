@@ -10,7 +10,7 @@
           "name": "wcs-logo",
           "path": "/images",
           "ext": "svg",
-          "url": "/images/wcs-logo.svg",
+          "url": "/images/theme/wcs-logo.svg",
           "width": 45,
           "height": 45
         }

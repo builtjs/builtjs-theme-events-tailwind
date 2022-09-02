@@ -5,7 +5,7 @@
       "category": "layout",
       "displayName": "Header",
       "description": "The header contains the company logo, main site navigation and often a call-to-action button.",
-      "templates": ["header-1", "header-2"],
+      "templates": ["header-1"],
       "defaultTemplate": {
         "slug": "header-1"
       },
@@ -14,22 +14,15 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "logo",
-              "path": "/images",
+              "name": "wcs-logo",
+              "path": "/images/theme",
               "ext": "svg",
-              "url": "/images/logo.svg",
+              "url": "/images/theme/wcs-logo.svg",
               "width": 48,
               "height": 48
             }
           }
-        },
-        "buttonLinks": [
-          {
-            "url": "/contact",
-            "label": "Button",
-            "type": "secondary"
-          }
-        ]
+        }
       },
       "collections": {
         "primary-menu-items": {},
