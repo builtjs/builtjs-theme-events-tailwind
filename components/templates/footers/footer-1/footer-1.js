@@ -5,8 +5,7 @@ export default function Footer1({ content }) {
   let { collections, global } = { ...content };
   const collectionNames = {
     PRIMARY_MENU_ITEMS: "primary-menu-items",
-    SECONDARY_MENU_ITEMS: "secondary-menu-items",
-    SOCIAL_LINKS: "social-links",
+    SECONDARY_MENU_ITEMS: "secondary-menu-items"
   };
   let primaryMenuItems = [];
   let secondaryMenuItems = [];
@@ -18,9 +17,6 @@ export default function Footer1({ content }) {
     if (collections[collectionNames.SECONDARY_MENU_ITEMS]) {
       secondaryMenuItems =
         collections[collectionNames.SECONDARY_MENU_ITEMS].items;
-    }
-    if (collections[collectionNames.SOCIAL_LINKS]) {
-      socialLinks = collections[collectionNames.SOCIAL_LINKS].items;
     }
   }
 

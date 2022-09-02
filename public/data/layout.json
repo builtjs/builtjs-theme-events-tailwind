@@ -10,6 +10,9 @@
         "collections": {
           "primary-menu-items": {
             "slug": "primary-menu-items"
+          },
+          "secondary-menu-items": {
+            "slug": "secondary-menu-items"
           }
         }
       },
@@ -22,8 +25,8 @@
           "primary-menu-items": {
             "slug": "primary-menu-items"
           },
-          "social-link": {
-            "slug": "social-links"
+          "secondary-menu-items": {
+            "slug": "secondary-menu-items"
           }
         }
       }
