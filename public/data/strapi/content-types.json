@@ -1,17 +1,17 @@
 {
   "contentTypes": [
     {
-      "singularDisplayName": "Event",
-      "pluralDisplayName": "Events",
-      "slug": "event",
+      "singularDisplayName": "Event Item",
+      "pluralDisplayName": "Event Items",
+      "slug": "event-item",
       "modelSettings": {
         "kind": "collectionType",
-        "collectionName": "events",
+        "collectionName": "event_items",
         "info": {
-          "displayName": "Events",
-          "singularName": "event",
-          "pluralName": "events",
-          "description": ""
+          "displayName": "Event Items",
+          "singularName": "event-item",
+          "pluralName": "event-items",
+          "description": "Collection type for events"
         },
         "options": {
           "increments": true,
@@ -72,17 +72,17 @@
       }
     },
     {
-      "singularDisplayName": "Sponsor",
-      "pluralDisplayName": "Sponsors",
-      "slug": "sponsor",
+      "singularDisplayName": "Sponsor Item",
+      "pluralDisplayName": "Sponsor Items",
+      "slug": "sponsor-item",
       "modelSettings": {
         "kind": "collectionType",
-        "collectionName": "sponsors",
+        "collectionName": "sponsor_items",
         "info": {
-          "displayName": "Sponsors",
-          "singularName": "sponsor",
-          "pluralName": "sponsors",
-          "description": ""
+          "displayName": "Sponsor Items",
+          "singularName": "sponsor-item",
+          "pluralName": "sponsor-items",
+          "description": "Collection type for sponsors"
         },
         "options": {
           "increments": true,

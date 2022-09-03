@@ -24,7 +24,7 @@ export default function NewsletterForm1({ content }) {
                 method="post"
                 name="mc-embedded-subscribe-form"
                 target="_blank"
-                novalidate="novalidate"
+                noValidate="novalidate"
               >
                 <div className="form-group w-full">
                   <input
@@ -44,7 +44,7 @@ export default function NewsletterForm1({ content }) {
                   <input
                     type="text"
                     name="b_b4fb38b38c92a79eb8753fde2_ef75133ad0"
-                    tabindex="-1"
+                    tabIndex="-1"
                   />
                 </div>
                 <button
@@ -61,7 +61,7 @@ export default function NewsletterForm1({ content }) {
             </div>
             <div className="newsletter-success-msg hidden text-center mb-10">
               <svg
-                viewbox="0 0 123.32 114.07"
+                viewBox="0 0 123.32 114.07"
                 width="120px"
                 className="mx-auto mb-10"
               >

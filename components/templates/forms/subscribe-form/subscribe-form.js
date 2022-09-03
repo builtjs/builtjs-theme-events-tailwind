@@ -12,55 +12,55 @@ export default function SubscribeForm({ content }) {
   // }
 
   return (
-    <section id="subscribe-form" class="relative template">
-      <section class="max-w-screen-xl px-4 mx-auto">
+    <section id="subscribe-form" className="relative template">
+      <section className="max-w-screen-xl px-4 mx-auto">
         <CenterAlignedHeadline attributes={attributes} />
-        {/* <p class="text-secondary tracking-widest leading-none uppercase text-xs pl-4 py-1 mb-2 text-center">{attributes.preheading}</p>
-            <h1 class="h2 max-w-2xl mx-auto mb-8 md:mb-10 leading-tight text-center">{attributes.heading}</h1> */}
-        <p class="max-w-xl mx-auto text-primary-50 text-center leading-7 mb-20">
+        {/* <p className="text-secondary tracking-widest leading-none uppercase text-xs pl-4 py-1 mb-2 text-center">{attributes.preheading}</p>
+            <h1 className="h2 max-w-2xl mx-auto mb-8 md:mb-10 leading-tight text-center">{attributes.heading}</h1> */}
+        <p className="max-w-xl mx-auto text-primary-50 text-center leading-7 mb-20">
           {attributes.body}
         </p>
         <div
-          class="type-buttons flex items-center justify-center mb-20"
+          className="type-buttons flex items-center justify-center mb-20"
           role="group"
           aria-label="Subscription type"
         >
           <button
             id="singleBtn"
             type="button"
-            class="rounded-l-full bg-secondary text-secondary-opposite px-6 py-2 border border-secondary"
+            className="rounded-l-full bg-secondary text-secondary-opposite px-6 py-2 border border-secondary"
           >
             Single
           </button>
           <button
             id="doubleBtn"
             type="button"
-            class="rounded-r-full px-6 py-2 border text-secondary border-secondary"
+            className="rounded-r-full px-6 py-2 border text-secondary border-secondary"
           >
             Double
           </button>
         </div>
         <div
-          class="max-w-2xl mx-auto border shadow-lg rounded-lg bg-white"
+          className="max-w-2xl mx-auto border shadow-lg rounded-lg bg-white"
           data-aos="fade-up"
           data-aos-duration="650"
         >
-          <div class="p-5 md:p-10">
-            <div class="flex items-center flex-col-reverse sm:flex-row justify-start sm:justify-between mb-10">
+          <div className="p-5 md:p-10">
+            <div className="flex items-center flex-col-reverse sm:flex-row justify-start sm:justify-between mb-10">
               <h3 id="subTypeText"></h3>
               {/* <!-- TODO: Remove dollar sign from CMS and add it here as it is supposed to have the same styling as the /yr --> */}
-              <h3 class="mb-4 sm:mb-0">
-                <span id="feeText" class="text-secondary h2"></span>
-                <span class="text-base font-sans -ml-1">/yr</span>
+              <h3 className="mb-4 sm:mb-0">
+                <span id="feeText" className="text-secondary h2"></span>
+                <span className="text-base font-sans -ml-1">/yr</span>
               </h3>
             </div>
             <form id="subscribeForm">
-              <div class="form-group flex flex-col mb-5">
-                <label class="text-primary-60 mb-2" for="firstName">
+              <div className="form-group flex flex-col mb-5">
+                <label className="text-primary-60 mb-2" for="firstName">
                   First name
                 </label>
                 <input
-                  class="form-control px-4 py-3 border rounded"
+                  className="form-control px-4 py-3 border rounded"
                   type="text"
                   id="firstName"
                   name="firstName"
@@ -69,12 +69,12 @@ export default function SubscribeForm({ content }) {
                   required="required"
                 />
               </div>
-              <div class="form-group flex flex-col mb-5">
-                <label class="text-primary-60 mb-2" for="lastName">
+              <div className="form-group flex flex-col mb-5">
+                <label className="text-primary-60 mb-2" for="lastName">
                   Last name
                 </label>
                 <input
-                  class="form-control px-4 py-3 border rounded"
+                  className="form-control px-4 py-3 border rounded"
                   type="text"
                   id="lastName"
                   name="lastName"
@@ -83,12 +83,12 @@ export default function SubscribeForm({ content }) {
                   required="required"
                 />
               </div>
-              <div class="form-group flex flex-col mb-5">
-                <label class="text-primary-60 mb-2" for="email">
+              <div className="form-group flex flex-col mb-5">
+                <label className="text-primary-60 mb-2" for="email">
                   Email
                 </label>
                 <input
-                  class="form-control px-4 py-3 border mb-2 rounded"
+                  className="form-control px-4 py-3 border mb-2 rounded"
                   type="email"
                   id="email"
                   name="email"
@@ -96,16 +96,16 @@ export default function SubscribeForm({ content }) {
                   placeholder="Your email"
                   required="required"
                 />
-                <small id="emailHelp" class="form-text text-xs text-primary-50">
+                <small id="emailHelp" className="form-text text-xs text-primary-50">
                   We'll never share your email with anyone else.
                 </small>
               </div>
-              <div class="form-group flex flex-col mb-5">
-                <label class="text-primary-60 mb-2" for="phone">
+              <div className="form-group flex flex-col mb-5">
+                <label className="text-primary-60 mb-2" for="phone">
                   Phone
                 </label>
                 <input
-                  class="form-control px-4 py-3 border rounded"
+                  className="form-control px-4 py-3 border rounded"
                   type="text"
                   id="phone"
                   name="phone"
@@ -113,56 +113,56 @@ export default function SubscribeForm({ content }) {
                   placeholder="Phone number"
                 />
               </div>
-              <div class="form-group flex flex-col mb-5">
-                <label class="text-primary-60 mb-2" for="donationAmount">
+              <div className="form-group flex flex-col mb-5">
+                <label className="text-primary-60 mb-2" for="donationAmount">
                   Donation
                 </label>
-                <label class="inline-flex items-center">
+                <label className="inline-flex items-center">
                   <input
                     type="radio"
-                    class="form-radio text-secondary"
+                    className="form-radio text-secondary"
                     name="donationAmount"
                     value="10"
                   />
-                  <span class="ml-2">Key ($10)</span>
+                  <span className="ml-2">Key ($10)</span>
                 </label>
-                <label class="inline-flex items-center">
+                <label className="inline-flex items-center">
                   <input
                     type="radio"
-                    class="form-radio text-secondary"
+                    className="form-radio text-secondary"
                     name="donationAmount"
                     value="50"
                   />
-                  <span class="ml-2">Octave ($50)</span>
+                  <span className="ml-2">Octave ($50)</span>
                 </label>
-                <label class="inline-flex items-center">
+                <label className="inline-flex items-center">
                   <input
                     type="radio"
-                    class="form-radio text-secondary"
+                    className="form-radio text-secondary"
                     name="donationAmount"
                     value="100"
                   />
-                  <span class="ml-2">Piano ($100)</span>
+                  <span className="ml-2">Piano ($100)</span>
                 </label>
-                <label class="inline-flex items-center">
+                <label className="inline-flex items-center">
                   <input
                     type="radio"
-                    class="form-radio text-secondary"
+                    className="form-radio text-secondary"
                     name="donationAmount"
                     value="0"
                     checked="checked"
                   />
-                  <span class="ml-2">Not now, thanks</span>
+                  <span className="ml-2">Not now, thanks</span>
                 </label>
               </div>
-              <div class="partner-details mb-10 hidden">
-                <h4 class="mb-5">Partner details</h4>
-                <div class="form-group flex flex-col mb-5">
-                  <label class="text-primary-60 mb-2" for="partnerName">
+              <div className="partner-details mb-10 hidden">
+                <h4 className="mb-5">Partner details</h4>
+                <div className="form-group flex flex-col mb-5">
+                  <label className="text-primary-60 mb-2" for="partnerName">
                     Full name
                   </label>
                   <input
-                    class="form-control px-4 py-3 border rounded"
+                    className="form-control px-4 py-3 border rounded"
                     type="text"
                     id="partnerName"
                     name="partnerName"
@@ -170,12 +170,12 @@ export default function SubscribeForm({ content }) {
                     placeholder="Full name of partner"
                   />
                 </div>
-                <div class="form-group flex flex-col mb-5">
-                  <label class="text-primary-60 mb-2" for="partnerEmail">
+                <div className="form-group flex flex-col mb-5">
+                  <label className="text-primary-60 mb-2" for="partnerEmail">
                     Email
                   </label>
                   <input
-                    class="form-control px-4 py-3 border rounded"
+                    className="form-control px-4 py-3 border rounded"
                     type="email"
                     id="partnerEmail"
                     name="partnerEmail"
@@ -183,12 +183,12 @@ export default function SubscribeForm({ content }) {
                     placeholder="Email of partner"
                   />
                 </div>
-                <div class="form-group flex flex-col mb-5">
-                  <label class="text-primary-60 mb-2" for="partnerPhone">
+                <div className="form-group flex flex-col mb-5">
+                  <label className="text-primary-60 mb-2" for="partnerPhone">
                     Cellphone number
                   </label>
                   <input
-                    class="form-control px-4 py-3 border rounded"
+                    className="form-control px-4 py-3 border rounded"
                     type="text"
                     id="partnerPhone"
                     name="partnerPhone"
@@ -198,9 +198,9 @@ export default function SubscribeForm({ content }) {
                 </div>
               </div>
               {/* <!-- H o n e y p o t --> */}
-              <label class="ohno" for="ohno"></label>
+              <label className="ohno" for="ohno"></label>
               <input
-                class="ohno"
+                className="ohno"
                 autocomplete="off"
                 type="text"
                 id="ohno"
@@ -210,17 +210,17 @@ export default function SubscribeForm({ content }) {
 
               <button
                 type="submit"
-                class="submit-btn w-full py-4 text-white text-sm tracking-widest hover:text-white bg-secondary hover:bg-secondary-dark uppercase focus:outline-none focus:text-white focus:bg-secondary transition duration-200 ease-in-out"
+                className="submit-btn w-full py-4 text-white text-sm tracking-widest hover:text-white bg-secondary hover:bg-secondary-dark uppercase focus:outline-none focus:text-white focus:bg-secondary transition duration-200 ease-in-out"
               >
-                <div class="spinner pb-4 hidden"></div>
-                <span class="label">Send</span>
+                <div className="spinner pb-4 hidden"></div>
+                <span className="label">Send</span>
               </button>
             </form>
-            <div class="subscribe-instructions hidden text-center mb-10">
+            <div className="subscribe-instructions hidden text-center mb-10">
               <svg
-                viewbox="0 0 123.32 114.07"
+                viewBox="0 0 123.32 114.07"
                 width="120px"
-                class="mx-auto mb-10"
+                className="mx-auto mb-10"
               >
                 <g transform="translate(-872.42 -913.15)">
                   <path
@@ -259,42 +259,42 @@ export default function SubscribeForm({ content }) {
                   />
                 </g>
               </svg>
-              <h4 class="mb-16">Thank you for your support</h4>
-              <div class="text-left">
-                <table class="mb-10">
+              <h4 className="mb-16">Thank you for your support</h4>
+              <div className="text-left">
+                <table className="mb-10">
                   <tr>
-                    <td class="pr-5">
+                    <td className="pr-5">
                       <strong>Subscription fee:</strong>
                     </td>
                     <td>
-                      $<span class="subscription-fee"></span>
+                      $<span className="subscription-fee"></span>
                     </td>
                   </tr>
                   <tr>
-                    <td class="pr-5">
+                    <td className="pr-5">
                       <strong>Donation:</strong>
                     </td>
                     <td>
-                      $<span class="donation-amount"></span>
+                      $<span className="donation-amount"></span>
                     </td>
                   </tr>
-                  <tr class="pt-5">
-                    <td class="pr-5 pt-2">
+                  <tr className="pt-5">
+                    <td className="pr-5 pt-2">
                       <strong>Total:</strong>
                     </td>
-                    <td class="pt-2">
+                    <td className="pt-2">
                       <strong>
-                        $<span class="total"></span>
+                        $<span className="total"></span>
                       </strong>
                     </td>
                   </tr>
                 </table>
-                <p class="mb-5">
+                <p className="mb-5">
                   To complete your subscription, please use one of the following
                   payment methods:
                 </p>
-                <ol class="text-primary-60">
-                  <li class="mb-3">
+                <ol className="text-primary-60">
+                  <li className="mb-3">
                     <strong>Internet banking:</strong>
                     Wanaka Concert Society a/c 03 1739 000 5648 01 with your
                     name in the particulars box.
@@ -306,10 +306,10 @@ export default function SubscribeForm({ content }) {
                 </ol>
               </div>
             </div>
-            <div class="subscribe-error-msg hidden">
-              <h3 class="mb-2">Error</h3>
-              <p class="mb-5">There was a problem submitting your details.</p>
-              <p class="text-primary-60">
+            <div className="subscribe-error-msg hidden">
+              <h3 className="mb-2">Error</h3>
+              <p className="mb-5">There was a problem submitting your details.</p>
+              <p className="text-primary-60">
                 Please try again or
                 <a href="/contact/">contact the administrator</a>.
               </p>
@@ -317,8 +317,8 @@ export default function SubscribeForm({ content }) {
           </div>
         </div>
       </section>
-      <div class="bg-squares-horizontal"></div>
-      <div class="absolute w-full h-64 bg-primary-custom-light bottom-0 z-index--1"></div>
+      <div className="bg-squares-horizontal"></div>
+      <div className="absolute w-full h-64 bg-primary-custom-light bottom-0 z-index--1"></div>
     </section>
   );
 }

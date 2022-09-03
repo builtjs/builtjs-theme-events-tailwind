@@ -26,7 +26,7 @@ export default function NewsletterBanner1({ content }) {
               method="post"
               name="mc-embedded-subscribe-form"
               target="_blank"
-              novalidate="novalidate"
+              noValidate="novalidate"
             >
               <div className="form-group w-full">
                 <input

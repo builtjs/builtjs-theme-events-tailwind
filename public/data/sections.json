@@ -275,7 +275,7 @@
         "headlineAlignment": "center"
       },
       "collections": {
-        "events": {}
+        "event-items": {}
       },
       "order": 2
     },
@@ -293,7 +293,7 @@
         "headlineAlignment": "left"
       },
       "collections": {
-        "events": {}
+        "event-items": {}
       },
       "order": 2
     },
@@ -473,7 +473,7 @@
         "body": "We are delighted to acknowledge the assistance of our sponsors who assist in making a significant difference to the work of Wanaka Concert Society. Our sponsors help ensure that our activities are able to flourish, and that the highest quality music is available to us here in our town. If you would like to join our list of official sponsors and support live music in Wanaka, please get in touch."
       },
       "collections": {
-        "sponsors": {}
+        "sponsor-items": {}
       },
       "order": 2
     },
@@ -534,7 +534,7 @@
         "ctaUrl": "/contact"
       },
       "collections": {
-        "sponsors": {}
+        "sponsor-items": {}
       },
       "order": 2
     },
@@ -568,7 +568,7 @@
         "ctaUrl": "/contact"
       },
       "collections": {
-        "sponsors": {}
+        "sponsor-items": {}
       },
       "order": 2
     },

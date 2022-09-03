@@ -31,7 +31,7 @@ export default function Footer1({ content }) {
             <p className="text-primary-70 font-bold tracking-wide text-xs my-5 lg:mr-5">
               {global.name}
             </p>
-            <p class="text-primary-70 tracking-wide text-xs my-5 lg:mr-5">{global.description}</p>
+            <p className="text-primary-70 tracking-wide text-xs my-5 lg:mr-5">{global.description}</p>
           </div>
           <div className="flex flex-wrap lg:w-4/5">
             <div className="w-1/2 md:w-1/4 lg:w-1/5 lg:flex-grow lg:ml-5">
