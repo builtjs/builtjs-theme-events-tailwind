@@ -1,9 +1,6 @@
-import { ButtonLink, Preheading } from "@/elements";
-import { isJsxAttributes } from "typescript";
-
 export default function CTACard({ content }) {
   if (!content) return <></>;
-
+  let { attributes } = content;
   return (
     <section id="cta-card" className="p-10 bg-primary-custom-light template">
       <div className="bg-white p-10 max-w-2xl mx-auto ">
@@ -12,7 +9,7 @@ export default function CTACard({ content }) {
             <h3 className="mb-6">
               <span>{attributes.heading}</span>
             </h3>
-            <p className="text-primary-50 leading-7 mb-8">{attibutes.blurb}</p>
+            <p className="text-primary-50 leading-7 mb-8">{attributes.blurb}</p>
             <div class="inline-flex items-center group flex">
                     <a class="text-secondary tracking-widest uppercase leading-none text-sm pr-4" href="/donate/">Learn more</a>
                     <a href="/contact/">

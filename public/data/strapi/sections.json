@@ -389,18 +389,6 @@
         }
       }
     },
-    "contact-teaser": {
-      "slug": "contact-teaser",
-      "category": "sections",
-      "settings": {
-        "collectionName": "components_sections_contact_teaser",
-        "info": { "displayName": "Contact Teaser", "icon": "heading" },
-        "attributes": {
-          "preheading": { "type": "string" },
-          "heading": { "type": "string" }
-        }
-      }
-    },
     "newsletter": {
       "slug": "newsletter",
       "category": "forms",

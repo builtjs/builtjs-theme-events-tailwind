@@ -155,36 +155,7 @@
       "displayName": "Banners",
       "type": "templates",
       "demoSections": [
-        {
-          "slug": "contact-teaser",
-          "template": {
-            "slug": "banner-1"
-          }
-        },
-        {
-          "slug": "contact-teaser",
-          "template": {
-            "slug": "banner-2"
-          }
-        },
-        {
-          "slug": "contact-teaser",
-          "template": {
-            "slug": "banner-3"
-          }
-        },
-        {
-          "slug": "contact-teaser",
-          "template": {
-            "slug": "banner-4"
-          }
-        },
-        {
-          "slug": "contact-teaser",
-          "template": {
-            "slug": "banner-5"
-          }
-        }
+        
       ]
     },
     {
