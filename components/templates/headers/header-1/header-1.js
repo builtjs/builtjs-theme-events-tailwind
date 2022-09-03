@@ -1,13 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import getConfig from "next/config";
 import { useRouter } from "next/router";
+
 
 export default function Header1({ content }) {
   const router = useRouter();
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
-
+  const { publicRuntimeConfig } = getConfig();
   if (!content) return <></>;
   let { collections, global } = { ...content };
   const collectionNames = {
@@ -32,7 +34,9 @@ export default function Header1({ content }) {
         <img
           id="logo-anchor"
           className="hidden lg:block lg:absolute top-0 left-0 z-50 xl:ml-20 w-32 xl:w-40"
-          src={global.logo.data.attributes.url}
+          src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+            global.logo.data.attributes.url
+          }`}
           alt="Logo"
         />
       </a>
