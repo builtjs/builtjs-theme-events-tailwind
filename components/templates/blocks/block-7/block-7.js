@@ -1,5 +1,5 @@
 export default function Block7({ content }) {
-  // if (!content) return <></>;
+  if (!content) return <></>;
   let { attributes } = content;
   return (
     <section id="block-6" className="cta-multi mb-16 lg:mb-64 template">

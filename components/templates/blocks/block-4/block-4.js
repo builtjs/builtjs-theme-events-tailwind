@@ -1,5 +1,8 @@
+import getConfig from "next/config";
+
 export default function Block4({ content }) {
   if (!content) return <></>;
+  const { publicRuntimeConfig } = getConfig();
   let { attributes, collections } = content;
   let collectionName = Object.keys(collections)[0];
   let collection = collections[collectionName];
@@ -30,7 +33,9 @@ export default function Block4({ content }) {
                       <a href={sponsor.attributes.url} target="_blank">
                         <img
                           className="filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full px-2 sm:px-10 pb-8"
-                          src={sponsor.attributes.image.data.attributes.url}
+                          src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                            sponsor.attributes.image.data.attributes.url
+                          }`}
                           alt={sponsor.attributes.heading}
                           data-aos="fade-up"
                           data-aos-once="true"

@@ -1,13 +1,17 @@
+import getConfig from "next/config";
 import { CTAButton } from "@/elements";
 
 export default function Block5({ content }) {
   if (!content) return <></>;
+  const { publicRuntimeConfig } = getConfig();
   let { attributes } = content;
   return (
     <section id="block-5" className="cta-generic relative template">
       <img
         className="filter-grayscale-1 w-full home-volunteer-image object-cover"
-        src={attributes.image.data.attributes.url}
+        src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+          attributes.image.data.attributes.url
+        }`}
         alt={attributes.preheading}
       />
       <div className="lg:absolute top-0 left-0 w-full lg:-mt-24">

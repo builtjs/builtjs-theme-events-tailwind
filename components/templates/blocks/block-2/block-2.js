@@ -1,8 +1,10 @@
 import Image from "next/image";
+import getConfig from "next/config";
 import { CTAButton } from "@/elements";
 
 export default function Block2({ content }) {
   if (!content) return <></>;
+  const { publicRuntimeConfig } = getConfig();
   let { attributes } = content;
   return (
     <section id="block-2" className="pt-5 pb-16 template">
@@ -10,7 +12,9 @@ export default function Block2({ content }) {
         <div className="lg:w-1/2 relative">
           <Image
             className="shadow-xl mx-auto grayscale-img transition-all duration-500 blur-out"
-            src={attributes.image.data.attributes.url}
+            src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+              attributes.image.data.attributes.url
+            }`}
             width={attributes.image.data.attributes.width}
             height={attributes.image.data.attributes.height}
             alt={attributes.image.data.attributes.alternativeText}

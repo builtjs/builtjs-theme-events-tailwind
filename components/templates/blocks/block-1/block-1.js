@@ -1,8 +1,10 @@
 import Image from "next/image";
+import getConfig from "next/config";
 import {LeftAlignedHeadline} from "@/elements";
 
 export default function Block1({ content }) {
   if (!content) return <></>;
+  const { publicRuntimeConfig } = getConfig();
   let { attributes } = content;
   const getHTML = (content) => {
     return {
@@ -36,7 +38,9 @@ export default function Block1({ content }) {
           >
             <Image
               className="mx-auto filter-grayscale-1 hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
-              src={attributes.image.data.attributes.url}
+              src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                attributes.image.data.attributes.url
+              }`}
               width={attributes.image.data.attributes.width}
               height={attributes.image.data.attributes.height}
               alt={attributes.image.data.attributes.alternativeText}
