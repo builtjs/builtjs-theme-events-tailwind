@@ -199,7 +199,7 @@ export default function Footer1({ content }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-40" src="/images/eventfinda-logo.png" alt="" />
+            <img className="w-40" src="/images/theme/eventfinda-logo.png" alt="" />
           </a>
           <a
             className="self-center my-6 sm:my-0 sm:mr-6"
@@ -209,13 +209,13 @@ export default function Footer1({ content }) {
           >
             <img
               className="w-48"
-              src="/images/chamber-music-nz-logo.png"
+              src="/images/theme/chamber-music-nz-logo.png"
               alt=""
             />
           </a>
           <img
             className="w-16 md:mr-20 xl:mr-32"
-            src="/images/best-awards-badge.svg"
+            src="/images/theme/best-awards-badge.svg"
             alt=""
           />
         </div>

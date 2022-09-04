@@ -113,7 +113,7 @@ export default function Header1({ content }) {
                     >
                       <img
                         className="h-4 mr-2"
-                        src={`images/${menuItem.attributes.slug}-icon.svg`}
+                        src={`/images/${menuItem.attributes.slug}-icon.svg`}
                         alt={menuItem.attributes.label}
                       />
                       {menuItem.attributes.label}

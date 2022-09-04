@@ -1,7 +1,10 @@
+import getConfig from "next/config";
+import { format } from 'date-fns';
 import { LeftAlignedHeadline, CenterAlignedHeadline } from "@/elements";
 
 export default function Cards1({ content }) {
   if (!content) return <></>;
+  const { publicRuntimeConfig } = getConfig();
   let { attributes, collections } = content;
 
   if (!collections) {
@@ -27,21 +30,22 @@ export default function Cards1({ content }) {
               <div className="relative z-10">
                 <div className="md:px-5 lg:px-10 pt-2 lg:pt-1 pb-6 lg:pb-8">
                   <p
-                    data-date="{{ blox.db[args.contentTypeSlug].items[i].fields.date }}"
                     className="pre-headline-white leading-4 mb-0"
                   >
-                    {item.attributes.date}
+                    {format(new Date(item.attributes.date), "dd LLLL yyyy")}
                   </p>
                 </div>
-                <a href={`/${item.attributes.slug}/${item.attributes.slug}`}>
+                <a href={`event-items/${item.attributes.slug}`}>
                   <img
                     className="w-full blurry-load filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full h-48 md:h-56 lg:h-64 xl:h-72 object-cover mb-8 shadow-2xl"
-                    src={item.attributes.featuredImage?.data?.attributes?.url}
-                    alt={item.title}
+                    src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                      item.attributes.featuredImage?.data?.attributes?.url
+                    }`}
+                    alt={item.attributes.title}
                   />
                 </a>
                 <div className="px-5 lg:px-10 mb-6">
-                  <a href={`/${item.attributes.slug}`}>
+                  <a href={`event-items/${item.attributes.slug}`} >
                     <h3 className="text-white mb-5">{item.attributes.title}</h3>
                   </a>
                   <div className="text-white mb-6 md:mb-12 lg:leading-8">
@@ -51,13 +55,13 @@ export default function Cards1({ content }) {
                   <div className="flex items-center flex-col lg:flex-row">
                     <a
                       className="flex flex-grow justify-center w-full mb-4 lg:mb-0 mr-0 lg:mr-2 py-3 lg:py-3 text-white text-center uppercase tracking-widest text-sm border border-white hover:bg-white hover:text-primary transition-colors duration-200"
-                      href={`/${item.attributes.slug}`}
+                      href={`event-items/${item.attributes.slug}`}
                     >
                       More Info
                     </a>
                     <a
                       className="flex flex-grow justify-center w-full ml-0 lg:ml-2 py-3 lg:py-3 text-secondary text-center uppercase tracking-widest text-sm border border-secondary hover:bg-secondary hover:text-white hover:border-secondary transition-colors duration-200"
-                      href={`/${item.slug}#booking`}
+                      href={`event-items/${item.attributes.slug}#booking`}
                     >
                       Buy Tickets
                     </a>

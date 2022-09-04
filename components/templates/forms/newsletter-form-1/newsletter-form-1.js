@@ -55,7 +55,7 @@ export default function NewsletterForm1({ content }) {
                   name="subscribe"
                 >
                   <div className="spinner pb-4  px-5 hidden"></div>
-                  <span className="label">Sign up</span>
+                  <span className="label whitespace-nowrap">Sign up</span>
                 </button>
               </form>
             </div>

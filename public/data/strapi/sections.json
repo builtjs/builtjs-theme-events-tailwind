@@ -376,6 +376,18 @@
         }
       }
     },
+    "event-article": {
+      "slug": "event-article",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_event_article",
+        "info": {
+          "displayName": "Event Article",
+          "icon": "robot"
+        },
+        "attributes": {}
+      }
+    },
     "contact-landing": {
       "slug": "contact-landing",
       "category": "forms",
@@ -485,8 +497,11 @@
         "attributes": {
           "preheading": { "type": "string" },
           "heading": { "type": "string" },
-          "blurb": {
+          "leadingSentence": {
             "type": "text"
+          },
+          "body": {
+            "type": "richtext"
           },
           "image": {
             "allowedTypes": [
@@ -511,8 +526,8 @@
         "attributes": {
           "preheading": { "type": "string" },
           "heading": { "type": "string" },
-          "blurb": {
-            "type": "text"
+          "body": {
+            "type": "richtext"
           },
           "image": {
             "allowedTypes": [

@@ -1,11 +1,22 @@
-import Image from "next/image";
 import getConfig from "next/config";
+import { format } from 'date-fns';
 
 export default function HeroCover({ content }) {
-  // if (!content) return <></>;
-  let { attributes } = content;
+  if (!content) return <></>;
+  let { collections } = content;
   const { publicRuntimeConfig } = getConfig();
-
+  if (!collections) {
+    throw new Error(
+      `No collections attribute provided in sections.json for template`
+    );
+  }
+  let collectionName = Object.keys(collections)[0];
+  let collection = collections[collectionName];
+  let item;
+  if (collection && collection.items.length) {
+    item = collection.items[0];
+  }
+  if (!item) return <></>;
   return (
     <section
       id="hero-cover"
@@ -14,15 +25,16 @@ export default function HeroCover({ content }) {
       <div className="media-item-hero-container">
         <div
           className="filter-grayscale-1 hover:filter-grayscale-0 backdrop-darken transition-filter duration-500 media-item-hero h-screen bg-cover bg-center xl:bg-fixed flex items-center justify-center relative xl:-mt-16"
-          style={{ backgroundImage: 'url(https://appyay.s3.amazonaws.com/e/5fc9df392ad4920500cd3cd1/a/61b52729e59bac0018976082/w1200)' }}
-        >
+          style={{ backgroundImage: `url(${publicRuntimeConfig.BACKEND_URL || ""}${
+            item.attributes.featuredImage?.data?.attributes?.url
+          })` }}>
           <div className="flex flex-col justify-center py-64 md:py-0 md:-mt-48 lg:-mt-56 xl:-mt-8 z-10">
             <p className="text-center text-white tracking-widest uppercase text-xs lg:text-sm md:mb-4">
               Featured Event
             </p>
-            <a href="{{args.contentTypeSlug}}/{{blox.db[args.contentTypeSlug].items[0].slug}}">
+            <a href={`event-items/${item.attributes.slug}`}>
               <h1 className="text-center text-white text-shadow-lg max-w-3xl lg:max-w-4xl px-8 lg:px-16">
-              The Rebirth of the Cool with Ralph Miller Nonet
+              {item.attributes.title}
               </h1>
             </a>
           </div>
@@ -44,7 +56,7 @@ export default function HeroCover({ content }) {
                   data-date="{{ args.info1 }}"
                   className="text-primary-10 text-center md:text-left tracking-wider text-lg text-shadow-sm mb-2 lg:mb-0"
                 >
-                  Sunday, September 4, 2022
+                  {format(new Date(item.attributes.date), "dd LLLL yyyy")}
                 </p>
               </div>
 
@@ -54,13 +66,13 @@ export default function HeroCover({ content }) {
                 </h4>
                 <div className="flex flex-wrap justify-center md:justify-start">
                   <p className="text-primary-10 tracking-wider text-lg text-shadow-sm mb-2 lg:mb-0">
-                  Lake Wanaka Centre
+                  {item.attributes.venue}
                   </p>
                   <span className="text-primary-50 lg:text-primary-30 px-2 lg:px-3 mb-2 lg:mb-0">
                     |
                   </span>
                   <p className="text-primary-10 tracking-wider text-lg text-shadow-sm mb-2 lg:mb-0">
-                    Wanaka
+                  {item.attributes.townCity}
                   </p>
                 </div>
               </div>
@@ -70,7 +82,7 @@ export default function HeroCover({ content }) {
               <div className="w-full xl:w-auto xl:mr-2 md:mb-6 xl:mb-0 relative z-10">
                 <a
                   className="flex flex-grow justify-center py-5 lg:py-3 lg:px-8 text-white text-center uppercase tracking-widest text-sm bg-primary-90 hover:bg-primary border border-primary-90 hover:border-primary  transition-colors duration-200"
-                  href="{{args.contentTypeSlug}}/{{blox.db[args.contentTypeSlug].items[0].slug}}"
+                  href={`event-items/${item.attributes.slug}`}
                 >
                   More Info
                 </a>
@@ -78,7 +90,7 @@ export default function HeroCover({ content }) {
               <div className="w-full xl:w-auto xl:ml-2 relative z-10">
                 <a
                   className="flex flex-grow justify-center py-5 lg:py-3 lg:px-8 text-white lg:text-primary lg:hover:text-white text-center uppercase tracking-widest text-sm bg-secondary lg:bg-white hover:bg-secondary-dark border border-secondary lg:border-white hover:border-secondary-dark transition-colors duration-200"
-                  href="/{{args.contentTypeSlug}}/{{blox.db[args.contentTypeSlug].items[0].slug}}#booking"
+                  href={`event-items/${item.attributes.slug}#booking`}
                 >
                   Buy Tickets
                 </a>

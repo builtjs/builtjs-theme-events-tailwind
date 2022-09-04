@@ -58,7 +58,7 @@ export default function NewsletterBanner1({ content }) {
                 name="subscribe"
               >
                 <div className="spinner pb-4  px-5 hidden"></div>
-                <span className="label">Sign up</span>
+                <span className="label whitespace-nowrap">Sign up</span>
               </button>
             </form>
             <div className="newsletter-success-msg hidden text-center mb-10">

@@ -293,6 +293,21 @@
           "slug": "subscribe-teaser"
         }
       ]
+    },
+    {
+      "slug": "event-article",
+      "description": "Event detail page sections",
+      "page": {
+        "slug": "event-article"
+      },
+      "sections": [
+        {
+          "slug": "event-article"
+        },
+        {
+          "slug": "newsletter"
+        }
+      ]
     }
   ]
 }

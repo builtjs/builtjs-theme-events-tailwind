@@ -7,12 +7,12 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "image",
-              "path": "/images",
-              "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5eb938d56b766814c87840fc/w1200",
-              "width": 1280,
-              "height": 768
+              "name": "chamber-music",
+              "path": "/images/theme/sponsor-items",
+              "ext": "jpeg",
+              "url": "/images/theme/sponsor-items/chamber-music.jpeg",
+              "width": 1200,
+              "height": 900
             }
           }
         },
@@ -25,12 +25,12 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "image",
-              "path": "/images",
-              "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5ecf4aa8240cdd5c6cd63ee8/w1200",
-              "width": 1280,
-              "height": 768
+              "name": "three-lakes",
+              "path": "/images/theme/sponsor-items",
+              "ext": "jpeg",
+              "url": "/images/theme/sponsor-items/three-lakes.jpeg",
+              "width": 1200,
+              "height": 632
             }
           }
         },
@@ -44,12 +44,12 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "image",
-              "path": "/images",
+              "name": "qldc",
+              "path": "/images/theme/sponsor-items",
               "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5eba4fec6b766814c8784106/w420",
-              "width": 1280,
-              "height": 768
+              "url": "/images/theme/sponsor-items/qldc.png",
+              "width": 1200,
+              "height": 632
             }
           }
         },
@@ -63,12 +63,12 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "image",
-              "path": "/images",
+              "name": "festival-of-colour",
+              "path": "/images/theme/sponsor-items",
               "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/e/5eafcebd834092647ff71ff3/a/5eba52ae6b766814c878410c/w420",
-              "width": 1280,
-              "height": 768
+              "url": "/images/theme/sponsor-items/festival-of-colour.png",
+              "width": 420,
+              "height": 205
             }
           }
         },
@@ -81,12 +81,12 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "image",
-              "path": "/images",
+              "name": "qldc",
+              "path": "/images/theme/sponsor-items",
               "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/dev/e/5fc9df392ad4920500cd3cd1/a/5fd5cfd5e292f400135aa0f4/w150",
-              "width": 1280,
-              "height": 768
+              "url": "/images/theme/sponsor-items/qldc.png",
+              "width": 1200,
+              "height": 900
             }
           }
         },

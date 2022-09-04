@@ -1,9 +1,6 @@
 export const pages = {
   HOME: "home",
-  SERVICES: "services",
-  BLOG: "blog",
-  BLOG_ARTICLE: "blog-article",
-  AUTHOR_ARTICLE: "author-article",
+  EVENT_ARTICLE: "event-article",
   CONTACT: "contact",
   EVENTS: "events",
   DONATE: "donate",

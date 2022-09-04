@@ -1,8 +1,7 @@
-import { format } from 'date-fns';
+import { format } from "date-fns";
 import Image from "next/image";
 import getConfig from "next/config";
 import Link from "next/link";
-import { Tag } from "@/elements";
 
 const getHTML = (content) => {
   return {
@@ -13,77 +12,134 @@ const getHTML = (content) => {
 export default function Article1({ content }) {
   if (!content) return <></>;
   let { item } = { ...content };
+  console.log({ item });
   const { publicRuntimeConfig } = getConfig();
-  let author = null;
-  if(item.attributes.author){
-    author = item.attributes.author.data.attributes
-  }
   return (
     <article id="article-1" className="template">
+      <div className="pt-64 max-w-screen-xl px-4 mx-auto">
+
+     
       {item && (
-        <div className="max-w-screen-xl mx-auto">
-          <header className="max-w-4xl mx-auto">
-            <div className="flex items-center mb-4">
-              <p className="mb-0 text-sm capitalize preheading">
-                {format(new Date(item.attributes.date), "dd LLLL yyyy")}
-              </p>
-              <span className="mx-3 text-gray-400">|</span>
-              <Link href="/">
-                <a className="no-underline hover:underline">
-                  <p className="mb-0 text-sm">{item.attributes.category}</p>
-                </a>
-              </Link>
-            </div>
-            <h1 className="mb-10">{item.attributes.title}</h1>
-            {author && <div className="flex items-center">
-              <div className="relative w-12 h-12 mr-4">
-                <Image
-                  className="rounded-full"
-                  src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                    author?.profileImage?.data.attributes.url
-                  }`}
-                  layout="fill"
-                  objectFit="cover"
-                  alt=""
-                />
-              </div>
-              <div>
-                <p className="mb-0 font-bold text-black capitalize">
-                  {author.fullName}
-                </p>
-                <p className="mb-0 text-sm capitalize">
-                  {author.position || "Writer"}
-                </p>
-              </div>
-            </div>}
-          </header>
-          <div className="relative my-20">
-            <Image
+        // <div class="overflow-hidden">
+        // <section class="max-w-screen-xl px-4 mx-auto">
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-full lg:w-1/2 lg:mr-10">
+            <p class="pre-headline-secondary">Event Details</p>
+            <h1 class="mb-8 md:mb-16 leading-tight">{item.attributes.title}</h1>
+            <img
+              class="w-full lg:hidden"
               src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                item.attributes?.image?.data.attributes.url
+                item.attributes.featuredImage?.data?.attributes?.url
               }`}
-              width={item.attributes.image.data.attributes.width}
-              height={item.attributes.image.data.attributes.height}
-              layout="responsive"
-              alt=""
+              alt={item.attributes.title}
             />
-          </div>
-          <div
-            className="max-w-2xl mx-auto"
-            dangerouslySetInnerHTML={getHTML(item.attributes.content)}
-          ></div>
-          <div className="max-w-2xl mx-auto">
-            {/* TODO: Implement Tag functionality */}
-            {item.tags && (
-              <div className="grid grid-flow-col gap-2 mb-4 auto-cols-max">
-                {item.attributes.tags.map((tag) => {
-                  return <Tag key={tag.tag} item={tag}></Tag>;
-                })}
+
+            <div class="sm:mx-6 lg:ml-12 lg:mr-0">
+              <div class="mt-10">
+                <p class="text-primary-70 mb-5">
+                  <strong class="text-primary">When:&nbsp;</strong>
+                  {item.attributes.startTime},&nbsp;
+                  <span>
+                    {format(new Date(item.attributes.date), "dd LLLL yyyy")}
+                  </span>
+                </p>
+                {item.attributes.venue && (
+                  <p class="text-primary-70 mb-5">
+                    <strong class="text-primary">Where:&nbsp;</strong>
+                    {item.attributes.venue}
+                  </p>
+                )}
+                {item.attributes.genre && (
+                  <p class="text-primary-70 mb-5">
+                    <strong class="text-primary">Genre:&nbsp;</strong>
+                    {item.attributes.genre}
+                  </p>
+                )}
+                {item.attributes.duration && (
+                  <p class="text-primary-70 mb-5">
+                    <strong class="text-primary">Duration:&nbsp;</strong>
+                    {item.attributes.duration}
+                  </p>
+                )}
+                {item.attributes.restrictions && (
+                  <p class="text-primary-70 mb-5">
+                    <strong class="text-primary">Restrictions:&nbsp;</strong>
+                    {item.attributes.restrictions}
+                  </p>
+                )}
+                {item.attributes.infoWebsite && (
+                  <p class="text-primary-70 mb-8 lg:mb-12">
+                    <strong class="text-primary">Website:&nbsp;</strong>
+                    <a
+                      class="hover:text-secondary-dark transition-colors duration-200"
+                      href={item.attributes.infoWebsite}
+                    >
+                      {item.attributes.infoWebsite}
+                    </a>
+                  </p>
+                )}
+                {/* {% call ctaBtnSimple.default({text: 'Ticket information', url: '#booking'}) %}{% endcall %} */}
               </div>
-            )}
+
+              <div class="dropcap text-primary-70 leading-7" dangerouslySetInnerHTML={getHTML(item.attributes.body)}></div>
+              {item.attributes.cTABlurb && (
+                <div class="mt-10">
+                  <p class="leading-7">
+                    <strong>{item.attributes.cTABlurb}</strong>
+                  </p>
+                </div>
+              )}
+            </div>
+            <section
+              id="booking"
+              class="pt-10 lg:pt-20 mb-24 md:mb-32 lg:mb-48"
+            >
+              <div class="pt-10 lg:pt-20">
+                <p class="pre-headline-secondary">Tickets</p>
+                <h2 class="mb-8 md:mb-16 leading-tight">Booking information</h2>
+                <div class="sm:ml-6 lg:ml-12">
+                  <div class="text-primary-70 leading-7 mb-12" dangerouslySetInnerHTML={getHTML(item.attributes.bookingInfo)}>
+                    {/* {{ blox.page.item.fields.bookingInfo | safe}} */}
+                  </div>
+                  {/* {item.attributes.ticketUrl && 
+                                    // {% call ctaBtn.default({text: 'Buy tickets online', url: blox.page.item.fields.ticketUrl}) %}{% endcall %}
+                                } */}
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="w-full lg:w-1/2 relative">
+            <div class="w-full">
+            <Image
+              className="mx-auto filter-grayscale-1 hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
+              src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                item.attributes.featuredImage.data.attributes.url
+              }`}
+              width={item.attributes.featuredImage.data.attributes.width}
+              height={item.attributes.featuredImage.data.attributes.height}
+              alt={item.attributes.featuredImage.data.attributes.alternativeText}
+              layout="responsive"
+              objectFit="cover"
+              priority="true"
+            />
+              {/* <img
+                class="w-full hidden lg:block shadow-xl grayscale-img transition-all duration-500"
+                src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                  item.attributes.featuredImage?.data?.attributes?.url
+                }`}
+                alt={item.attributes.title}
+              /> */}
+            </div>
+            <div class="bg-squares hidden lg:block -mt-40 lg:mt-32 xl:mt-0"></div>
+            <div class="lg:mt-16 mb-32 lg:mb-48">
+              {/* {item.attributes.quote &&
+                            // {% call blockquote.default({quote: blox.page.item.fields.quote, source: blox.page.item.fields.quoteSource}) %}{% endcall %}
+                        } */}
+            </div>
           </div>
         </div>
       )}
+       </div>
     </article>
   );
 }

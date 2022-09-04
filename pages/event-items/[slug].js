@@ -6,15 +6,15 @@ import { pages } from "../../theme/constants";
 export default withRouter(Page);
 
 export async function getStaticPaths() {
-  const allItems = await getItems('blog-item');
+  const allItems = await getItems('event-item');
   return {
-    paths: allItems.items.map(({ attributes }) => `/blog-items/${attributes.slug}`) ?? [],
+    paths: allItems.items.map(({ attributes }) => `/event-items/${attributes.slug}`) ?? [],
     fallback: true,
   };
 }
 
 export async function getStaticProps({ params }) {
-  const config = await getConfig(pages.BLOG_ARTICLE);
+  const config = await getConfig(pages.EVENT_ARTICLE);
   config.params = params;
   return {
     props: { config }

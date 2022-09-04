@@ -9,12 +9,12 @@
         "featuredImage": {
           "data": {
             "attributes": {
-              "name": "image",
-              "path": "/images",
-              "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/e/5fc9df392ad4920500cd3cd1/a/61b52729e59bac0018976082/w800",
-              "width": 1280,
-              "height": 768
+              "name": "rebirth-of-cool",
+              "path": "/images/theme/event-items",
+              "ext": "jpeg",
+              "url": "/images/theme/event-items/rebirth-of-cool.jpeg",
+              "width": 1056,
+              "height": 594
             }
           }
         },
@@ -42,12 +42,12 @@
         "featuredImage": {
           "data": {
             "attributes": {
-              "name": "image",
-              "path": "/images",
-              "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/e/5fc9df392ad4920500cd3cd1/a/61b52729e59bac0018976082/w800",
-              "width": 1280,
-              "height": 768
+              "name": "rebirth-of-cool",
+              "path": "/images/theme/event-items",
+              "ext": "jpeg",
+              "url": "/images/theme/event-items/rebirth-of-cool.jpeg",
+              "width": 1056,
+              "height": 594
             }
           }
         },

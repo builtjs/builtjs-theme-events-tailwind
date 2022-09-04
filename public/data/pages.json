@@ -150,6 +150,23 @@
       ]
     },
     {
+      "slug": "event-article",
+      "singularName": "event-article",
+      "pluralName": "event-articles",
+      "displayName": "Event Article",
+      "contentType": {
+        "slug": "event-item"
+      },
+      "demoSections": [
+        {
+          "slug": "event-article"
+        },
+        {
+          "slug": "newsletter"
+        }
+      ]
+    },
+    {
       "slug": "banners",
       "singularName": "banners",
       "displayName": "Banners",

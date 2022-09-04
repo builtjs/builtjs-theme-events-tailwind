@@ -78,6 +78,19 @@
       "order": 0
     },
     {
+      "slug": "event-article",
+      "displayName": "Event Article",
+      "description": "The event post detail page.",
+      "templates": ["article-1"],
+      "defaultTemplate": {
+        "slug": "article-1"
+      },
+      "item": {
+        "slug": "event-item"
+      },
+      "order": 2
+    },
+    {
       "slug": "events-hero",
       "displayName": "Events Hero",
       "description": "The featured event, displayed with a hero image.",
@@ -86,6 +99,13 @@
         "slug": "hero-cover"
       },
       "attributes": {},
+      "collections": {
+        "event-items": {
+          "article": {
+            "slug": "event-article"
+          }
+        }
+      },
       "order": 2
     },
     {
@@ -293,7 +313,11 @@
         "headlineAlignment": "left"
       },
       "collections": {
-        "event-items": {}
+        "event-items": {
+          "article": {
+            "slug": "event-article"
+          }
+        }
       },
       "order": 2
     },
@@ -520,12 +544,12 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "image-square",
-              "path": "/images",
-              "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/dev/e/5fc9df392ad4920500cd3cd1/a/5fd5ca1be292f400135aa0ba/w1200",
-              "width": 1200,
-              "height": 600,
+              "name": "volunteer-teaser",
+              "path": "/images/theme",
+              "ext": "jpeg",
+              "url": "/images/theme/volunteer-teaser.jpeg",
+              "width": 1056,
+              "height": 514,
               "alternativeText": "Volunteer"
             }
           }
@@ -554,12 +578,12 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "image-square",
-              "path": "/images",
-              "ext": "png",
-              "url": "https://appyay.s3.amazonaws.com/dev/e/5fc9df392ad4920500cd3cd1/a/5fd5c268e292f400135aa0b3/w800",
-              "width": 1200,
-              "height": 600,
+              "name": "about-teaser",
+              "path": "/images/theme",
+              "ext": "jpeg",
+              "url": "/images/theme/about-teaser.jpeg",
+              "width": 800,
+              "height": 1067,
               "alternativeText": "About"
             }
           }
