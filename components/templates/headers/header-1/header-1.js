@@ -4,11 +4,9 @@ import Link from "next/link";
 import getConfig from "next/config";
 import { useRouter } from "next/router";
 
-
 export default function Header1({ content }) {
   const router = useRouter();
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [mobileNavIsOpen, setMobileNavIsOpen] = React.useState(false);
   const { publicRuntimeConfig } = getConfig();
   if (!content) return <></>;
   let { collections, global } = { ...content };
@@ -43,13 +41,13 @@ export default function Header1({ content }) {
 
       <nav
         className={`nav fixed top-0 z-40 w-full shadow-md ${
-          isOpen ? "open" : ""
+          mobileNavIsOpen ? "open" : ""
         }`}
       >
         <div className="bg-white relative flex items-center justify-between xl:pl-20">
           <button
             type="button"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}
             className="lg:hidden p-4 text-white bg-primary focus:outline-none active:bg-primary transition duration-200 ease-in-out"
           >
             <svg
@@ -58,18 +56,18 @@ export default function Header1({ content }) {
               fill="none"
               viewBox="0 0 24 24"
             >
-              <path
+              {!mobileNavIsOpen && <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h16M4 18h16"
-              />
-              <path
+              />}
+              {mobileNavIsOpen && <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
-              />
+              />}
             </svg>
           </button>
 
@@ -105,11 +103,16 @@ export default function Header1({ content }) {
             </div>
             <div className="hidden lg:flex lg:items-center">
               {primaryMenuItems &&
-                primaryMenuItems.map((menuItem) => {
+                primaryMenuItems.map((menuItem, i) => {
                   return (
                     <a
                       href={`/${menuItem.attributes.slug}`}
-                      className={`primary-nav-link flex items-start border-l border-r ${router.pathname === `/${menuItem.attributes.slug}` ? 'active' : ''}`}
+                      className={`primary-nav-link flex items-start border-l border-r ${
+                        router.pathname === `/${menuItem.attributes.slug}`
+                          ? "active"
+                          : ""
+                      }`}
+                      key={i}
                     >
                       <img
                         className="h-4 mr-2"
@@ -125,11 +128,16 @@ export default function Header1({ content }) {
 
           <div className="flex items-center">
             {secondaryMenuItems &&
-              secondaryMenuItems.map((menuItem) => {
+              secondaryMenuItems.map((menuItem, i) => {
                 return (
                   <a
                     href={`/${menuItem.attributes.slug}/`}
-                    className={`secondary-nav-link hidden lg:block  ${router.pathname === `/${menuItem.attributes.slug}` ? 'active' : ''}`}
+                    className={`secondary-nav-link hidden lg:block  ${
+                      router.pathname === `/${menuItem.attributes.slug}`
+                        ? "active"
+                        : ""
+                    }`}
+                    key={i}
                   >
                     {menuItem.attributes.label}
                   </a>
@@ -149,7 +157,6 @@ export default function Header1({ content }) {
                 <path d="M17.205,15.655a1.089,1.089,0,0,0,1.594,0L25.6,8.518a5.18,5.18,0,0,0-.35-7.425,4.751,4.751,0,0,0-6.556.481l-.7.731-.694-.725a4.745,4.745,0,0,0-6.556-.487,5.186,5.186,0,0,0-.35,7.425ZM35.329,20.5a2.069,2.069,0,0,0-2.662,0l-5.775,4.618a3.979,3.979,0,0,1-2.5.875H17a1,1,0,0,1,0-2h4.893a2.081,2.081,0,0,0,2.081-1.662A2,2,0,0,0,22,20H12a7.356,7.356,0,0,0-4.631,1.644L4.462,24H1a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H23.3a4,4,0,0,0,2.5-.875l9.449-7.562A2,2,0,0,0,35.329,20.5Z" />
               </svg>
             </a>
-            
           </div>
         </div>
 
@@ -160,9 +167,51 @@ export default function Header1({ content }) {
           //     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
           className="lg:hidden"
         >
-          <div className="bg-white shadow-lg">
-          </div>
+          <div className="bg-white shadow-lg"></div>
         </div>
+        {/* <div x-show="isOpen" x-transition:enter="transition ease-in-out duration-200 transform"
+            x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-200 transform"
+            x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
+            className="lg:hidden"> */}
+        {mobileNavIsOpen && (
+          <div>
+            <div className="bg-white shadow-lg">
+              {primaryMenuItems &&
+                primaryMenuItems.map((menuItem, i) => {
+                  return (
+                    <a
+                      href={`/${menuItem.attributes.slug}`}
+                      className={`mobile-nav-link ${
+                        router.pathname === `/${menuItem.attributes.slug}`
+                          ? "active"
+                          : ""
+                      }`}
+                      key={i}
+                    >
+                      {menuItem.attributes.label}
+                    </a>
+                  );
+                })}
+              {secondaryMenuItems &&
+                secondaryMenuItems.map((menuItem, i) => {
+                  return (
+                    <a
+                      href={`/${menuItem.attributes.slug}`}
+                      className={`mobile-nav-link ${
+                        router.pathname === `/${menuItem.attributes.slug}`
+                          ? "active"
+                          : ""
+                      }`}
+                      key={i}
+                    >
+                      {menuItem.attributes.label}
+                    </a>
+                  );
+                })}
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );

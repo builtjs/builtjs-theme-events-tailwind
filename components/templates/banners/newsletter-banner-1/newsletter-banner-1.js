@@ -31,7 +31,7 @@ export default function NewsletterBanner1({ content }) {
               <div className="form-group w-full">
                 <input
                   type="email"
-                  value=""
+                  defaultValue=""
                   name="EMAIL"
                   className="required email form-control text-primary-50 rounded-none shadow-none px-2 py-4 sm:px-4 w-full"
                   aria-describedby="email"
@@ -47,14 +47,14 @@ export default function NewsletterBanner1({ content }) {
                   type="text"
                   name="b_b4fb38b38c92a79eb8753fde2_ef75133ad0"
                   tabIndex="-1"
-                  value=""
+                  defaultValue=""
                 />
               </div>
               <button
                 id="mc-embedded-subscribe"
                 type="submit"
                 className="submit-btn text-xs sm:text-sm whitespace-no-wrap px-2 py-4 sm:px-4 md:px-8 text-white text-center uppercase tracking-wide sm:tracking-widest border border-secondary hover:border-secondary-dark bg-secondary hover:bg-secondary-dark transition-colors duration-200"
-                value="Sign up"
+                defaultValue="Sign up"
                 name="subscribe"
               >
                 <div className="spinner pb-4  px-5 hidden"></div>

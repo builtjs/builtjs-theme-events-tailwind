@@ -20,7 +20,7 @@ export default function HeroCover({ content }) {
   return (
     <section
       id="hero-cover"
-      className="relative xl:mt-16 mb-24 md:mb-32 xl:mb-48 template"
+      className="relative xl:mt-16 template"
     >
       <div className="media-item-hero-container">
         <div

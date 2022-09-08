@@ -11,7 +11,7 @@ export default function Block4({ content }) {
     items = collection.items;
   }
   return (
-    <section id="block-4" className="my-16 md:my-28 lg:my-48 template">
+    <section id="block-4" className="py-24 md:py-32 template">
       <div className="max-w-screen-xl px-4 mx-auto">
         <p className="pre-headline-secondary">{attributes.preheading}</p>
         <h2 className="mb-8 md:mb-16 leading-tight">{attributes.heading}</h2>
@@ -24,11 +24,11 @@ export default function Block4({ content }) {
               {/* {% call ctaBtnSimple.default({text: args.ctaText, url: args.ctaUrl}) %}{% endcall %} */}
             </div>
           </div>
-          <div className="w-full lg:w-3/5 sm:mx-4 lg:ml-0 lg:mr-0">
+          <div className="w-full flex flex-col md:flex-row items-center justify-center flex-wrap">
             {items &&
               items.map((sponsor) => {
                 return (
-                  <div className="flex flex-wrap sm:mr-8 lg:mr-0">
+                  // <div className="flex flex-wrap sm:mr-8 lg:mr-0">
                     <div className="w-1/2 md:w-1/3">
                       <a href={sponsor.attributes.url} target="_blank">
                         <img
@@ -42,7 +42,7 @@ export default function Block4({ content }) {
                         />
                       </a>
                     </div>
-                  </div>
+                  // </div>
                 );
               })}
           </div>

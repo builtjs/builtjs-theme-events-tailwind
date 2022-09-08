@@ -367,6 +367,20 @@
       "order": 2
     },
     {
+      "slug": "subscribe-faq",
+      "displayName": "Subscribe FAQ",
+      "description": "The FAQ section on the Subscribe.",
+      "templates": ["faq-block"],
+      "defaultTemplate": {
+        "slug": "faq-block"
+      },
+      "attributes": {},
+      "collections": {
+        "faq-items": {}
+      },
+      "order": 3
+    },
+    {
       "slug": "subscribe-seo",
       "displayName": "Subscribe SEO",
       "templates": ["seo"],
@@ -406,7 +420,8 @@
       },
       "attributes": {
         "heading": "Want to make a donation?",
-        "blurb": "We depend on the generosity of individual donors who make it possible for us to present world-class concerts in Wanaka."
+        "blurb": "We depend on the generosity of individual donors who make it possible for us to present world-class concerts in Wanaka.",
+        "url": "/donate"
       },
       "order": 2
     },
@@ -419,8 +434,9 @@
         "slug": "cta-card"
       },
       "attributes": {
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "heading": "Want to become a Subscriber?",
+        "blurb": "When you choose to partner with us by becoming a Wanaka Concert Society supporter, you help enable remarkable musical experiences right here in Wanaka.",
+        "url": "/subscribe"
       },
       "order": 2
     },
@@ -435,7 +451,13 @@
       "attributes": {
         "preheading": "Donate",
         "heading": "Your donation will make all the difference.",
-        "blurb": "We depend on the generosity of donors which enables us to present more expensive, often international, concerts in Wanaka, while keeping admission prices affordable. For donations of $5 or more you can claim a tax credit of one-third of the amount (up to the amount of your taxable income). The Wanaka Concert Society appreciates your donations. Thank you for being generous."
+        "blurb": "We depend on the generosity of donors which enables us to present more expensive, often international, concerts in Wanaka, while keeping admission prices affordable. For donations of $5 or more you can claim a tax credit of one-third of the amount (up to the amount of your taxable income). The Wanaka Concert Society appreciates your donations. Thank you for being generous.",
+        "benefitHeading1": "Bringing world-class musicians to Wanaka.",
+        "benefitBlurb1": "Enjoying live performances with friends and fellow music-lovers.",
+        "benefitHeading2": "Providing performers with the opportunity to share their talents with us.",
+        "benefitBlurb2": "Contributing to the culture of our local community.",
+        "benefitHeading3": "Enabling the Wanaka Concert Society to invite top performers to Wanaka.",
+        "benefitBlurb3": "Helping with the cost of publicity and other costs."
       },
       "order": 2
     },
@@ -468,20 +490,6 @@
         "twitterUsername": ""
       },
       "order": 0
-    },
-    {
-      "slug": "donate-teaser",
-      "displayName": "Donate Teaser",
-      "description": "Call-to-action for donation.",
-      "templates": ["cta-card"],
-      "defaultTemplate": {
-        "slug": "cta-card"
-      },
-      "attributes": {
-        "heading": "Want to make a donation?",
-        "blurb": "We depend on the generosity of individual donors who make it possible for us to present world-class concerts in Wanaka."
-      },
-      "order": 2
     },
     {
       "slug": "sponsors",

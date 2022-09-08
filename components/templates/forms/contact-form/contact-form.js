@@ -7,9 +7,9 @@ export default function ContactForm({ content }) {
   return (
     <section
       id="contact-form"
-      className="overflow-x-hidden mb-24 md:mb-32 lg:mb-48template"
+      className="overflow-x-hidden template"
     >
-      <div className="max-w-screen-xl px-4 mx-auto mb-24 md:mb-32 lg:mb-48">
+      <div className="max-w-screen-xl px-4 mx-auto mb-10">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-2/5">
           <LeftAlignedHeadline attributes={attributes} />
@@ -144,7 +144,7 @@ export default function ContactForm({ content }) {
               </div>
               <form id="contactForm">
                 <div className="form-group flex flex-col mb-5">
-                  <label className="text-primary-60 mb-2" for="name">
+                  <label className="text-primary-60 mb-2" htmlFor="name">
                     Name
                   </label>
                   <input
@@ -157,7 +157,7 @@ export default function ContactForm({ content }) {
                   />
                 </div>
                 <div className="form-group flex flex-col mb-5">
-                  <label className="text-primary-60 mb-2" for="email">
+                  <label className="text-primary-60 mb-2" htmlFor="email">
                     Email
                   </label>
                   <input
@@ -176,7 +176,7 @@ export default function ContactForm({ content }) {
                   </small>
                 </div>
                 <div className="form-group flex flex-col mb-5">
-                  <label className="text-primary-60 mb-2" for="message">
+                  <label className="text-primary-60 mb-2" htmlFor="message">
                     Message
                   </label>
                   <textarea
@@ -186,10 +186,10 @@ export default function ContactForm({ content }) {
                     rows="3"
                   ></textarea>
                 </div>
-                <label className="ohno" for="ohno"></label>
+                <label className="ohno" htmlFor="ohno"></label>
                 <input
                   className="ohno"
-                  autocomplete="off"
+                  autoComplete="off"
                   type="text"
                   id="ohno"
                   name="ohno"

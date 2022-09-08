@@ -34,3 +34,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# google service account (rename to the name of your service account json file!)
+service_account.json

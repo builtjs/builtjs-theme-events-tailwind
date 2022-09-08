@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "attributes": {
+        "question": "How many WCS concerts are held each year?",
+        "answer": "<p>WCS usually presents between five to seven concerts a year, depending on whether the Festival of Colour is being held that year. We liaise with the Festival of Colour to ensure that our programmes do not overlap.</p>"
+      }
+    },
+    {
+      "attributes": {
+        "question": "Who receives the on-line newsletter and how often is it sent out?",
+        "answer": "<p>The WCS newsletter is available to everyone. You do not need to be a subscriber or donor to receive it, although it would be great if you became one! It is sent out when we are promoting a concert or other event. If other presenters' concerts do not clash with ours, and we think they would appeal to our supporters, we are happy to include information about these too.</p>"
+      }
+    },
+    {
+      "attributes": {
+        "question": "What is the difference between a subscription and a donation?",
+        "answer": "<p>The annual subscription is only $10 and the donation size is over to you! The WCS presents one concert/event each year just for subscribers and donors to thank them for their support. The subscription year begins following the AGM in January. However, donations and subscriptions are welcomed at any time of year.</p>"
+      }
+    },
+    {
+      "attributes": {
+        "question": "How are musicians chosen to perform in Wanaka?",
+        "answer": "<p>The WCS receives information annually about groups travelling throughout New Zealand in Chamber Music New Zealand's Regional Tours programme, from which we choose two or three concerts a year. Groups are chosen according to instrumentation, repertoire, and the time of year they wish to perform. We attempt to present as much variety as possible in our year’s programme. Jazz is very popular and when possible we include it in our annual repertoire.</p>"
+      }
+    },
+    {
+      "attributes": {
+        "question": "What sponsor support does the WCS receive?",
+        "answer": "<p>Chamber Music New Zealand organises annual regional tours of musicians from which WCS chooses performers. The new Three Lakes Cultural Trust (Wakatipu, Wanaka and Hawea) provides financial support and oversight of events. Central Lakes Trust, through the Upper Clutha Arts Society, provides annual funding.</p><p>The Queenstown Lakes District Council provides subsidies for WCS’s use of the Lake Wanaka Centre. The Wanaka Festival of Colour publicizes WCS’s concerts.</p>"
+      }
+    }
+  ]
+}

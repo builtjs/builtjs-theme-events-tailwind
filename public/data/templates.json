@@ -468,6 +468,18 @@
       },
       "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/articles/profile-article-1/profile-article-1/article-1.js",
       "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#profile-article-1"
+    },
+    {
+      "slug": "faq-block",
+      "displayName": "FAQ Block",
+      "category": "blocks",
+      "description": "Section for displaying frequently asked questions.",
+      "images": {
+        "thumb": "",
+        "lrg": ""
+      },
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/articles/profile-article-1/profile-article-1/article-1.js",
+      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#profile-article-1"
     }
   ]
 }

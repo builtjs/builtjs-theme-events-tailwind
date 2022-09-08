@@ -1,7 +1,6 @@
 import { format } from "date-fns";
 import Image from "next/image";
 import getConfig from "next/config";
-import Link from "next/link";
 
 const getHTML = (content) => {
   return {
@@ -12,7 +11,6 @@ const getHTML = (content) => {
 export default function Article1({ content }) {
   if (!content) return <></>;
   let { item } = { ...content };
-  console.log({ item });
   const { publicRuntimeConfig } = getConfig();
   return (
     <article id="article-1" className="template">
@@ -20,58 +18,58 @@ export default function Article1({ content }) {
 
      
       {item && (
-        // <div class="overflow-hidden">
-        // <section class="max-w-screen-xl px-4 mx-auto">
-        <div class="flex flex-col lg:flex-row">
-          <div class="w-full lg:w-1/2 lg:mr-10">
-            <p class="pre-headline-secondary">Event Details</p>
-            <h1 class="mb-8 md:mb-16 leading-tight">{item.attributes.title}</h1>
+        // <div className="overflow-hidden">
+        // <section className="max-w-screen-xl px-4 mx-auto">
+        <div className="flex flex-col lg:flex-row">
+          <div className="w-full lg:w-1/2 lg:mr-10">
+            <p className="pre-headline-secondary">Event Details</p>
+            <h1 className="mb-8 md:mb-16 leading-tight">{item.attributes.title}</h1>
             <img
-              class="w-full lg:hidden"
+              className="w-full lg:hidden"
               src={`${publicRuntimeConfig.BACKEND_URL || ""}${
                 item.attributes.featuredImage?.data?.attributes?.url
               }`}
               alt={item.attributes.title}
             />
 
-            <div class="sm:mx-6 lg:ml-12 lg:mr-0">
-              <div class="mt-10">
-                <p class="text-primary-70 mb-5">
-                  <strong class="text-primary">When:&nbsp;</strong>
+            <div className="sm:mx-6 lg:ml-12 lg:mr-0">
+              <div className="mt-10">
+                <p className="text-primary-70 mb-5">
+                  <strong className="text-primary">When:&nbsp;</strong>
                   {item.attributes.startTime},&nbsp;
                   <span>
                     {format(new Date(item.attributes.date), "dd LLLL yyyy")}
                   </span>
                 </p>
                 {item.attributes.venue && (
-                  <p class="text-primary-70 mb-5">
-                    <strong class="text-primary">Where:&nbsp;</strong>
+                  <p className="text-primary-70 mb-5">
+                    <strong className="text-primary">Where:&nbsp;</strong>
                     {item.attributes.venue}
                   </p>
                 )}
                 {item.attributes.genre && (
-                  <p class="text-primary-70 mb-5">
-                    <strong class="text-primary">Genre:&nbsp;</strong>
+                  <p className="text-primary-70 mb-5">
+                    <strong className="text-primary">Genre:&nbsp;</strong>
                     {item.attributes.genre}
                   </p>
                 )}
                 {item.attributes.duration && (
-                  <p class="text-primary-70 mb-5">
-                    <strong class="text-primary">Duration:&nbsp;</strong>
+                  <p className="text-primary-70 mb-5">
+                    <strong className="text-primary">Duration:&nbsp;</strong>
                     {item.attributes.duration}
                   </p>
                 )}
                 {item.attributes.restrictions && (
-                  <p class="text-primary-70 mb-5">
-                    <strong class="text-primary">Restrictions:&nbsp;</strong>
+                  <p className="text-primary-70 mb-5">
+                    <strong className="text-primary">Restrictions:&nbsp;</strong>
                     {item.attributes.restrictions}
                   </p>
                 )}
                 {item.attributes.infoWebsite && (
-                  <p class="text-primary-70 mb-8 lg:mb-12">
-                    <strong class="text-primary">Website:&nbsp;</strong>
+                  <p className="text-primary-70 mb-8 lg:mb-12">
+                    <strong className="text-primary">Website:&nbsp;</strong>
                     <a
-                      class="hover:text-secondary-dark transition-colors duration-200"
+                      className="hover:text-secondary-dark transition-colors duration-200"
                       href={item.attributes.infoWebsite}
                     >
                       {item.attributes.infoWebsite}
@@ -81,10 +79,10 @@ export default function Article1({ content }) {
                 {/* {% call ctaBtnSimple.default({text: 'Ticket information', url: '#booking'}) %}{% endcall %} */}
               </div>
 
-              <div class="dropcap text-primary-70 leading-7" dangerouslySetInnerHTML={getHTML(item.attributes.body)}></div>
+              <div className="dropcap text-primary-70 leading-7" dangerouslySetInnerHTML={getHTML(item.attributes.body)}></div>
               {item.attributes.cTABlurb && (
-                <div class="mt-10">
-                  <p class="leading-7">
+                <div className="mt-10">
+                  <p className="leading-7">
                     <strong>{item.attributes.cTABlurb}</strong>
                   </p>
                 </div>
@@ -92,13 +90,13 @@ export default function Article1({ content }) {
             </div>
             <section
               id="booking"
-              class="pt-10 lg:pt-20 mb-24 md:mb-32 lg:mb-48"
+              className="pt-10 lg:pt-20 mb-24 md:mb-32 lg:mb-48"
             >
-              <div class="pt-10 lg:pt-20">
-                <p class="pre-headline-secondary">Tickets</p>
-                <h2 class="mb-8 md:mb-16 leading-tight">Booking information</h2>
-                <div class="sm:ml-6 lg:ml-12">
-                  <div class="text-primary-70 leading-7 mb-12" dangerouslySetInnerHTML={getHTML(item.attributes.bookingInfo)}>
+              <div className="pt-10 lg:pt-20">
+                <p className="pre-headline-secondary">Tickets</p>
+                <h2 className="mb-8 md:mb-16 leading-tight">Booking information</h2>
+                <div className="sm:ml-6 lg:ml-12">
+                  <div className="text-primary-70 leading-7 mb-12" dangerouslySetInnerHTML={getHTML(item.attributes.bookingInfo)}>
                     {/* {{ blox.page.item.fields.bookingInfo | safe}} */}
                   </div>
                   {/* {item.attributes.ticketUrl && 
@@ -108,8 +106,8 @@ export default function Article1({ content }) {
               </div>
             </section>
           </div>
-          <div class="w-full lg:w-1/2 relative">
-            <div class="w-full">
+          <div className="w-full lg:w-1/2 relative">
+            <div className="w-full">
             <Image
               className="mx-auto filter-grayscale-1 hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
               src={`${publicRuntimeConfig.BACKEND_URL || ""}${
@@ -123,15 +121,15 @@ export default function Article1({ content }) {
               priority="true"
             />
               {/* <img
-                class="w-full hidden lg:block shadow-xl grayscale-img transition-all duration-500"
+                className="w-full hidden lg:block shadow-xl grayscale-img transition-all duration-500"
                 src={`${publicRuntimeConfig.BACKEND_URL || ""}${
                   item.attributes.featuredImage?.data?.attributes?.url
                 }`}
                 alt={item.attributes.title}
               /> */}
             </div>
-            <div class="bg-squares hidden lg:block -mt-40 lg:mt-32 xl:mt-0"></div>
-            <div class="lg:mt-16 mb-32 lg:mb-48">
+            <div className="bg-squares hidden lg:block -mt-40 lg:mt-32 xl:mt-0"></div>
+            <div className="lg:mt-16 mb-32 lg:mb-48">
               {/* {item.attributes.quote &&
                             // {% call blockquote.default({quote: blox.page.item.fields.quote, source: blox.page.item.fields.quoteSource}) %}{% endcall %}
                         } */}

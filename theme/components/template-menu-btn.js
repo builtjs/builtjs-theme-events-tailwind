@@ -43,8 +43,7 @@ export default function TemplateMenuBtn({ router }) {
                   type="radio"
                   id={`radio-${template.slug}`}
                   name="tabs"
-                  checked={slug === template.slug}
-                  readOnly
+                  defaultChecked={slug === template.slug}
                 />
                 <label
                   className="px-4 py-2 cursor-pointer tab hover:text-gray-500"

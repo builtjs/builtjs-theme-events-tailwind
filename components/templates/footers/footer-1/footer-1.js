@@ -41,9 +41,9 @@ export default function Footer1({ content }) {
                 </li>
 
                 {primaryMenuItems &&
-                  primaryMenuItems.map((menuItem) => {
+                  primaryMenuItems.map((menuItem, i) => {
                     return (
-                      <li className="mb-2">
+                      <li className="mb-2" key={i}>
                         <a
                           className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
                           href={`/${menuItem.attributes.slug}`}
@@ -94,9 +94,9 @@ export default function Footer1({ content }) {
                   <h5 className="mb-5">Organisation</h5>
                 </li>
                 {secondaryMenuItems &&
-                  secondaryMenuItems.map((menuItem) => {
+                  secondaryMenuItems.map((menuItem, i) => {
                     return (
-                      <li className="mb-2">
+                      <li className="mb-2" key={i}>
                         <a
                           className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
                           href={`/${menuItem.attributes.slug}/`}

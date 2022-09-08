@@ -2,7 +2,7 @@ export default function Block7({ content }) {
   if (!content) return <></>;
   let { attributes } = content;
   return (
-    <section id="block-6" className="cta-multi mb-16 lg:mb-64 template">
+    <section id="block-7" className="cta-multi py-24 md:py-32 template">
         <div className="max-w-screen-xl px-4 mx-auto">
             <div className="flex flex-col md:flex-row">
                 <div className="w-full lg:w-2/5">
