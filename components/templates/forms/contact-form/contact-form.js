@@ -1,8 +1,10 @@
+import getConfig from "next/config";
 import { LeftAlignedHeadline } from "@/elements";
 
 export default function ContactForm({ content }) {
-  // if (!content) return <></>;
+  if (!content) return <></>;
   let { attributes } = content;
+  const { publicRuntimeConfig } = getConfig();
 
   return (
     <section
@@ -37,9 +39,9 @@ export default function ContactForm({ content }) {
                     <p>
                       <a
                         className="text-primary-50 hover:text-primary leading-7"
-                        href="mailto:info@wanakaconcertsociety.org.nz"
+                        href={`mailto:${publicRuntimeConfig.EMAIL}`}
                       >
-                        info@wanakaconcertsociety.org.nz
+                        {publicRuntimeConfig.EMAIL}
                       </a>
                     </p>
                   </div>

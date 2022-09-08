@@ -1,6 +1,9 @@
+import getConfig from "next/config";
+
 export default function NewsletterForm1({ content }) {
   if (!content) return <></>;
   let { attributes } = content;
+  const { publicRuntimeConfig } = getConfig();
 
   return (
     <section
@@ -23,7 +26,7 @@ export default function NewsletterForm1({ content }) {
                 <form
                   id="mc-embedded-subscribe-form"
                   className="flex validate"
-                  action="https://wanakaconcertsociety.us18.list-manage.com/subscribe/post?u=9425e366bda64b3abe929b7f5&amp;id=edb480e86a"
+                  action={publicRuntimeConfig.NEWSLETTER_URL}
                   method="post"
                   name="mc-embedded-subscribe-form"
                   target="_blank"
