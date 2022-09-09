@@ -71,7 +71,7 @@ export default function SubscribeForm({ content }) {
 
   return (
     <section id="subscribe-form" className="relative template">
-      <section className="max-w-screen-xl px-4 mx-auto">
+      <section className="max-w-screen-xl px-4 mx-auto py-24">
         <CenterAlignedHeadline attributes={attributes} topSpacing={150} />
         <p className="max-w-xl mx-auto text-primary-50 text-center leading-7 mb-20">
           {attributes.body}

@@ -7,7 +7,8 @@ module.exports = {
   images: {
     domains: [
       process.env.BACKEND_DOMAIN || DEFAULT_BACKEND_DOMAIN,
-      'res.cloudinary.com'
+      'res.cloudinary.com',
+      'localhost'
     ],
   },
   publicRuntimeConfig: {
