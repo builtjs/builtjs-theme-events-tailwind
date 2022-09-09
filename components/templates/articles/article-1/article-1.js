@@ -1,7 +1,8 @@
 import { format } from "date-fns";
 import Image from "next/image";
 import getConfig from "next/config";
-
+import {CTAButtonSimple} from "@/elements";
+import {CTAButton} from "@/elements";
 const getHTML = (content) => {
   return {
     __html: content,
@@ -18,8 +19,6 @@ export default function Article1({ content }) {
 
      
       {item && (
-        // <div className="overflow-hidden">
-        // <section className="max-w-screen-xl px-4 mx-auto">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/2 lg:mr-10">
             <p className="pre-headline-secondary">Event Details</p>
@@ -76,7 +75,7 @@ export default function Article1({ content }) {
                     </a>
                   </p>
                 )}
-                {/* {% call ctaBtnSimple.default({text: 'Ticket information', url: '#booking'}) %}{% endcall %} */}
+                <CTAButtonSimple attributes={{ctaText: 'Ticket information', ctaUrl: '#booking'}} />
               </div>
 
               <div className="dropcap text-primary-70 leading-7" dangerouslySetInnerHTML={getHTML(item.attributes.body)}></div>
@@ -97,11 +96,8 @@ export default function Article1({ content }) {
                 <h2 className="mb-8 md:mb-16 leading-tight">Booking information</h2>
                 <div className="sm:ml-6 lg:ml-12">
                   <div className="text-primary-70 leading-7 mb-12" dangerouslySetInnerHTML={getHTML(item.attributes.bookingInfo)}>
-                    {/* {{ blox.page.item.fields.bookingInfo | safe}} */}
                   </div>
-                  {/* {item.attributes.ticketUrl && 
-                                    // {% call ctaBtn.default({text: 'Buy tickets online', url: blox.page.item.fields.ticketUrl}) %}{% endcall %}
-                                } */}
+                  {item.attributes.ticketUrl && <CTAButton attributes={{ctaUrl: item.attributes.ticketUrl,ctaText: 'Buy tickets online'}} />}
                 </div>
               </div>
             </section>
@@ -120,13 +116,6 @@ export default function Article1({ content }) {
               objectFit="cover"
               priority="true"
             />
-              {/* <img
-                className="w-full hidden lg:block shadow-xl grayscale-img transition-all duration-500"
-                src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                  item.attributes.featuredImage?.data?.attributes?.url
-                }`}
-                alt={item.attributes.title}
-              /> */}
             </div>
             <div className="bg-squares hidden lg:block -mt-40 lg:mt-32 xl:mt-0"></div>
             <div className="lg:mt-16 mb-32 lg:mb-48">

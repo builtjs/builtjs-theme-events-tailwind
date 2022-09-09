@@ -1,21 +1,21 @@
-export default function CTAButton({ attributes }) {
-  // if (!attributes) return <></>;
+export default function CTAButton({ attributes, type="lightBg" }) {
+  if (!attributes) return <></>;
   return (
     <div className="inline-flex items-center group">
       <a
-        className="text-secondary border-secondary hover:text-white hover:bg-secondary
-          inline-block text-sm py-4 px-4 md:px-8 text-center uppercase tracking-widest border bg-transparent transition-colors duration-200"
-        href="attributes.url"
+      className={`${type === 'lightBg' ? `text-secondary border-secondary hover:text-white hover:bg-secondary` : `text-white border-white hover:text-primary hover:bg-white`} inline-block text-sm py-4 px-4 md:px-8 text-center uppercase tracking-widest border bg-transparent transition-colors duration-200`}
+        href={attributes.ctaUrl}
       >
-        browse our events
+        {attributes.ctaText}
       </a>
-      <a href="attributes.url">
+      <a href={attributes.ctaUrl}>
         <svg
           viewBox="0 0 161.21 17.414"
           className="w-20 md:w-32 -ml-3 md:-ml-5 group-hover:ml-10 transition-all duration-200"
         >
           <g
-            className="text-primary stroke-2 stroke-current"
+          
+            className={`${type === 'darkBg' ? `text-white` : `text-primary`} stroke-2 stroke-current`}
             transform="translate(5923 8387.2)"
             fill="none"
             strokeLinecap="round"

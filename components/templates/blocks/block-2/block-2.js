@@ -25,13 +25,7 @@ export default function Block2({ content }) {
         </div>
         <div className="lg:w-1/2 sm:mx-6 lg:ml-12 lg:mb-0 mt-12 lg:mt-0">
           <p className="text-primary-70 leading-7 mb-12">{attributes.body}</p>
-          <CTAButton />
-          {/* {% if blox.page.item.fields.ctaBlurb %} */}
-          {/* <p className="text-primary-70 leading-7 mb-12">
-                            <strong>{{ blox.page.item.fields.ctaBlurb }}</strong>
-                        </p> */}
-          {/* {% endif %} */}
-          {/* {% call ctaBtn.default({text: 'Browse our events', url: '/events/page-1/'}) %}{% endcall %} */}
+          <CTAButton attributes={attributes} />
         </div>
       </div>
     </section>

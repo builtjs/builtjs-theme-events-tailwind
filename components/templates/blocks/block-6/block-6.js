@@ -36,11 +36,7 @@ export default function Block6({ content }) {
               {attributes.body}
             </p>
             <div className="inline-flex items-center group">
-              <CTAButton />
-              {/* {% call ctaBtn.default({
-                            text: args.ctaText,
-                            url: args.ctaUrl
-                        }, 'mid') %}{% endcall %} */}
+              <CTAButton attributes={attributes} type="primaryBg"/>
             </div>
           </div>
         </div>

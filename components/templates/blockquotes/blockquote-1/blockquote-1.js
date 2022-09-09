@@ -12,27 +12,21 @@ export default function Blockquote1({ content }) {
             <p className="text-primary-50 text-sm mt-6">—{attributes.source}</p>
           )}
           <div className="blockquote-apostrophy rotate-sm">
-            <svg viewBox="0 0 175 129.83" xmlns="http://www.w3.org/2000/svg" width="50px">
-                <path d="M0,129.833V119.186c5.333.129,36.068-5.055,37.833-44.858H0V0H74.328V74.328C74.4,78.342,73.864,129.7,0,129.833Z" fill="#b09159"></path>
-                <path d="M100.668,129.833V119.186c5.333.129,36.068-5.055,37.833-44.858H100.668V0H175V74.328C175.071,78.342,174.532,129.7,100.668,129.833Z" fill="#b09159"></path>
-            </svg>
-        </div>
-          {/* <div className="blockquote-apostrophy">
             <svg
-              viewbox="0 0 175 129.83"
+              viewBox="0 0 175 129.83"
               xmlns="http://www.w3.org/2000/svg"
               width="50px"
             >
               <path
                 d="M0,129.833V119.186c5.333.129,36.068-5.055,37.833-44.858H0V0H74.328V74.328C74.4,78.342,73.864,129.7,0,129.833Z"
                 fill="#b09159"
-              />
+              ></path>
               <path
                 d="M100.668,129.833V119.186c5.333.129,36.068-5.055,37.833-44.858H100.668V0H175V74.328C175.071,78.342,174.532,129.7,100.668,129.833Z"
                 fill="#b09159"
-              />
+              ></path>
             </svg>
-          </div> */}
+          </div>
         </blockquote>
       </div>
     </section>

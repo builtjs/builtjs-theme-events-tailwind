@@ -57,10 +57,6 @@
             "type": "text"
           },"infoWebsite": {
             "type": "text"
-          },"quote": {
-            "type": "text"
-          },"quoteSource": {
-            "type": "text"
           },"bookingInfo": {
             "type": "text"
           },"ticketUrl": {

@@ -29,7 +29,7 @@ export default function Block5({ content }) {
               {attributes.body}
             </p>
             <div className="sm:ml-6 lg:ml-12">
-             <CTAButton />
+             <CTAButton attributes={attributes} type="darkBg" />
             </div>
           </div>
         </div>

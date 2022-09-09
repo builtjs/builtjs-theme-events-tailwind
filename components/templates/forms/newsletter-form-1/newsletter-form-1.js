@@ -1,9 +1,19 @@
+import { useState } from "react";
 import getConfig from "next/config";
 
 export default function NewsletterForm1({ content }) {
   if (!content) return <></>;
   let { attributes } = content;
   const { publicRuntimeConfig } = getConfig();
+  const [showSuccessMsg, setShowSuccessMsg] = useState(false);
+
+  function processSubmission(event) {
+    event.preventDefault();
+    if (event.target.ohno.value === "") {
+      setShowSuccessMsg(true);
+    }
+    return false;
+  }
 
   return (
     <section
@@ -19,7 +29,7 @@ export default function NewsletterForm1({ content }) {
             </h2>
 
             <div className="sm:mx-6 lg:mx-12">
-              <div className="newsletter-form">
+            {!showSuccessMsg && <div className="newsletter-form">
                 <p className="text-primary-50 mb-10 leading-7 max-w-xl">
                   {attributes.blurb}
                 </p>
@@ -31,6 +41,7 @@ export default function NewsletterForm1({ content }) {
                   name="mc-embedded-subscribe-form"
                   target="_blank"
                   noValidate="novalidate"
+                  onSubmit={processSubmission}
                 >
                   <div className="form-group w-full">
                     <input
@@ -64,8 +75,8 @@ export default function NewsletterForm1({ content }) {
                     <span className="label whitespace-nowrap">Sign up</span>
                   </button>
                 </form>
-              </div>
-              <div className="newsletter-success-msg hidden text-center mb-10">
+              </div>}
+              {showSuccessMsg && <div className="newsletter-success-msg text-center mb-10">
                 <svg
                   viewBox="0 0 123.32 114.07"
                   width="120px"
@@ -112,7 +123,7 @@ export default function NewsletterForm1({ content }) {
                 <p className="mb-10 text-lg">
                   We will be sending out the next newsletter soon!
                 </p>
-              </div>
+              </div>}
             </div>
           </div>
         
