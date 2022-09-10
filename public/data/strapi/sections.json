@@ -289,7 +289,13 @@
         "attributes": {
           "preheading": { "type": "string" },
           "heading": { "type": "string" },
-          "blurb": { "type": "text" }
+          "blurb": { "type": "text" },
+          "benefitHeading1": { "type": "string" },
+          "benefitBlurb1": { "type": "string" },
+          "benefitHeading2": { "type": "string" }, 
+          "benefitBlurb2": { "type": "string" },
+          "benefitHeading3": { "type": "string" },
+          "benefitBlurb3": { "type": "string" }
         }
       }
     },
