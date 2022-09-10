@@ -309,8 +309,8 @@
           "preheading": { "type": "string" },
           "heading": { "type": "string" },
           "body": { "type": "richtext" },
-          "ctaText": "Become a sponsor",
-          "ctaUrl": "/contact"
+          "ctaText": { "type": "string" },
+          "ctaUrl": { "type": "string" }
         }
       }
     },
