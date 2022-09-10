@@ -263,7 +263,21 @@
         "info": { "displayName": "Donate Teaser", "icon": "heading" },
         "attributes": {
           "heading": { "type": "string" },
-          "blurb": { "type": "text" }
+          "blurb": { "type": "text" },
+          "url": { "type": "text" }
+        }
+      }
+    },
+    "subscribe-teaser": {
+      "slug": "subscribe-teaser",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_subscribe_teaser",
+        "info": { "displayName": "Subscribe Teaser", "icon": "heading" },
+        "attributes": {
+          "heading": { "type": "string" },
+          "blurb": { "type": "text" },
+          "url": { "type": "text" }
         }
       }
     },

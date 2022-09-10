@@ -11,13 +11,11 @@ export default function CTACard({ content }) {
             </h3>
             <p className="text-primary-50 leading-7 mb-8">{attributes.blurb}</p>
             <div className="inline-flex items-center group flex">
-              <a
-                className="text-secondary tracking-widest uppercase leading-none text-sm pr-4"
-                href={attributes.url}
-              >
+              <a className="text-secondary tracking-widest uppercase leading-none text-sm pr-4"
+                href={attributes.url}>
                 Learn more
               </a>
-              <a href="/contact/">
+              <a href={attributes.url}>
                 <svg
                   className="group-hover:ml-5 transition-all duration-200"
                   viewBox="0 0 9.414 17.414"
