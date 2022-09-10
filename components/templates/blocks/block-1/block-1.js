@@ -27,13 +27,12 @@ export default function Block1({ content }) {
               {attributes.leadingSentence}
             </strong>
           </p>
-          <p className="text-primary-70 leading-7" dangerouslySetInnerHTML={getHTML(attributes.body)}>
+          <p className="text-primary-70 leading-7 pb-12" dangerouslySetInnerHTML={getHTML(attributes.body)}>
           </p>
           {attributes.ctaText && <CTAButton attributes={attributes} />}
         </div>
         <div className="lg:w-1/2 relative">
-          {/* <img className="blurry-load" src="{{ blox.db.about.fields.image1.sizes.w150 }}" data-large="{{ blox.db.about.fields.image1.sizes.w800 }}" alt="About image 1"> */}
-          <div
+           <div
             className="aos-init aos-animate shadow-xl"
             data-aos="fade-zoom-in"
             data-aos-duration="1000"
@@ -56,7 +55,6 @@ export default function Block1({ content }) {
         </div>
       </div>
       </div>
-      
     </section>
   );
 }
