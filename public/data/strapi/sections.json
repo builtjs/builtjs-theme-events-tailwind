@@ -281,6 +281,15 @@
         }
       }
     },
+    "subscribe-faq": {
+      "slug": "subscribe-faq",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_subscribe_faq_teaser",
+        "info": { "displayName": "Subscribe FAQ", "icon": "heading" },
+        "attributes": {}
+      }
+    },
     "subscribe-landing": {
       "slug": "subscribe-landing",
       "category": "sections",

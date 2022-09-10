@@ -371,7 +371,7 @@
     {
       "slug": "subscribe-faq",
       "displayName": "Subscribe FAQ",
-      "description": "The FAQ section on the Subscribe.",
+      "description": "The FAQ section on the Subscribe page.",
       "templates": ["faq-block"],
       "defaultTemplate": {
         "slug": "faq-block"
