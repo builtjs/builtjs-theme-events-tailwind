@@ -380,7 +380,7 @@
       "collections": {
         "faq-items": {}
       },
-      "order": 3
+      "order": 4
     },
     {
       "slug": "subscribe-seo",
@@ -425,7 +425,7 @@
         "blurb": "We depend on the generosity of individual donors who make it possible for us to present world-class concerts in Wanaka.",
         "url": "/donate"
       },
-      "order": 2
+      "order": 3
     },
     {
       "slug": "subscribe-teaser",
