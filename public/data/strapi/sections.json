@@ -308,7 +308,9 @@
         "attributes": {
           "preheading": { "type": "string" },
           "heading": { "type": "string" },
-          "body": { "type": "richtext" }
+          "body": { "type": "richtext" },
+          "ctaText": "Become a sponsor",
+          "ctaUrl": "/contact"
         }
       }
     },
@@ -566,7 +568,9 @@
             "type": "media",
             "multiple": false,
             "required": false
-          }
+          },
+          "ctaText": { "type": "string" },
+          "ctaUrl": { "type": "string" }
         }
       }
     }
