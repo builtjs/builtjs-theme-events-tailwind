@@ -7,7 +7,7 @@ export default function Block2({ content }) {
   const { publicRuntimeConfig } = getConfig();
   let { attributes } = content;
   return (
-    <section id="block-2" className="pt-5 pb-16 template">
+    <section id="block-2" className="pt-24 pb-16 template">
       <div className="flex flex-col lg:flex-row max-w-screen-xl mx-auto">
         <div className="lg:w-1/2 relative">
           <Image

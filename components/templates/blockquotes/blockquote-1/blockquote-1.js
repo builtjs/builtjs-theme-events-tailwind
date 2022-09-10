@@ -2,7 +2,7 @@ export default function Blockquote1({ content }) {
   if (!content) return <></>;
   let { attributes } = content;
   return (
-    <section id="blockquote-1" className="py-24 lg:py-48 template">
+    <section id="blockquote-1" className="py-5 lg:py-48 template">
       <div className="max-w-5xl mx-auto">
         <blockquote className="border-t border-b border-secondary py-8 sm:px-10 relative">
           <p className="text-2xl text-primary-80 font-display">
