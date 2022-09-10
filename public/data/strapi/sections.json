@@ -34,7 +34,7 @@
           "icon": "robot"
         },
         "attributes": {
-          "heading": {
+          "title": {
             "type": "string"
           },
           "description": {
@@ -67,7 +67,7 @@
           "icon": "robot"
         },
         "attributes": {
-          "heading": {
+          "title": {
             "type": "string"
           },
           "description": {
@@ -100,7 +100,7 @@
           "icon": "robot"
         },
         "attributes": {
-          "heading": {
+          "title": {
             "type": "string"
           },
           "description": {
@@ -133,7 +133,7 @@
           "icon": "robot"
         },
         "attributes": {
-          "heading": {
+          "title": {
             "type": "string"
           },
           "description": {
@@ -166,7 +166,7 @@
           "icon": "robot"
         },
         "attributes": {
-          "heading": {
+          "title": {
             "type": "string"
           },
           "description": {
@@ -199,7 +199,7 @@
           "icon": "robot"
         },
         "attributes": {
-          "heading": {
+          "title": {
             "type": "string"
           },
           "description": {
@@ -232,7 +232,7 @@
           "icon": "robot"
         },
         "attributes": {
-          "heading": {
+          "title": {
             "type": "string"
           },
           "description": {

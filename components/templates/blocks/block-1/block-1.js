@@ -1,5 +1,6 @@
 import Image from "next/image";
 import getConfig from "next/config";
+import {CTAButton} from "@/elements";
 import {LeftAlignedHeadline} from "@/elements";
 
 export default function Block1({ content }) {
@@ -28,6 +29,7 @@ export default function Block1({ content }) {
           </p>
           <p className="text-primary-70 leading-7" dangerouslySetInnerHTML={getHTML(attributes.body)}>
           </p>
+          {attributes.ctaText && <CTAButton attributes={attributes} />}
         </div>
         <div className="lg:w-1/2 relative">
           {/* <img className="blurry-load" src="{{ blox.db.about.fields.image1.sizes.w150 }}" data-large="{{ blox.db.about.fields.image1.sizes.w800 }}" alt="About image 1"> */}

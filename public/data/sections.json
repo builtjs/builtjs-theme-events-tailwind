@@ -537,7 +537,9 @@
               "alternativeText": "Volunteer Landing"
             }
           }
-        }
+        },
+        "ctaText": "Contact Us",
+        "ctaUrl": "/contact"
       },
       "order": 2
     },
