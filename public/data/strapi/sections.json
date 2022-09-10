@@ -291,11 +291,11 @@
           "heading": { "type": "string" },
           "blurb": { "type": "text" },
           "benefitHeading1": { "type": "string" },
-          "benefitBlurb1": { "type": "string" },
+          "benefitBlurb1": { "type": "text" },
           "benefitHeading2": { "type": "string" }, 
-          "benefitBlurb2": { "type": "string" },
+          "benefitBlurb2": { "type": "text" },
           "benefitHeading3": { "type": "string" },
-          "benefitBlurb3": { "type": "string" }
+          "benefitBlurb3": { "type": "text" }
         }
       }
     },
