@@ -2,7 +2,7 @@
 const DEFAULT_BACKEND_DOMAIN = 'localhost';
 const DEFAULT_BACKEND_URL = `http://${DEFAULT_BACKEND_DOMAIN}:1337`;
 const DEFAULT_API_URL = `${DEFAULT_BACKEND_URL}/api`;
-const USE_IMAGE_PROVIDER = true;
+const USE_IMAGE_PROVIDER = false;
 
 module.exports = {
   images: {
