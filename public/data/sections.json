@@ -57,8 +57,8 @@
       "category": "head",
       "type": "head",
       "attributes": {
-        "title": "Home | Corporate Tailwind Built.JS Theme",
-        "description": "Home page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "title": "Home | Events Tailwind Built.JS Theme",
+        "description": "Home page for a site built with the Events Tailwind Built.JS Theme.",
         "shareImage": {
           "data": {
             "attributes": {
@@ -118,8 +118,8 @@
       "category": "head",
       "type": "head",
       "attributes": {
-        "title": "About | Corporate Tailwind Built.JS Theme",
-        "description": "About page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "title": "About | Events Tailwind Built.JS Theme",
+        "description": "About page for a site built with the Events Tailwind Built.JS Theme.",
         "shareImage": {
           "data": {
             "attributes": {
@@ -178,8 +178,8 @@
       "category": "head",
       "type": "head",
       "attributes": {
-        "title": "Contact | Corporate Tailwind Built.JS Theme",
-        "description": "Contact page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "title": "Contact | Events Tailwind Built.JS Theme",
+        "description": "Contact page for a site built with the Events Tailwind Built.JS Theme.",
         "shareImage": {
           "data": {
             "attributes": {
@@ -512,6 +512,37 @@
         "sponsor-items": {}
       },
       "order": 8
+    },
+    {
+      "slug": "volunteer-seo",
+      "displayName": "Volunteer SEO",
+      "templates": ["seo"],
+      "defaultTemplate": {
+        "slug": "seo"
+      },
+      "category": "head",
+      "type": "head",
+      "attributes": {
+        "title": "Volunteer | Events Tailwind Built.JS Theme",
+        "description": "Volunteer page for a site built with the Events Tailwind Built.JS Theme.",
+        "shareImage": {
+          "data": {
+            "attributes": {
+              "name": "wcs-logo",
+              "path": "/images/theme",
+              "ext": "svg",
+              "url": "/images/theme/wcs-logo.svg",
+              "width": 150,
+              "height": 150,
+              "alternativeText": "Logo"
+            }
+          }
+        }
+        ,
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      },
+      "order": 0
     },
     {
       "slug": "volunteer-landing",
