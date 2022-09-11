@@ -8,6 +8,8 @@ module.exports = {
   images: {
     domains: [
       process.env.BACKEND_DOMAIN || DEFAULT_BACKEND_DOMAIN,
+      'res.cloudinary.com',
+      'herokuapp.com',
       'localhost'
     ],
   },
