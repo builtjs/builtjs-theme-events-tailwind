@@ -9,9 +9,7 @@ export default function NewsletterBanner1({ content }) {
 
   function processSubmission(event) {
     event.preventDefault();
-    if (event.target.ohno.value === "") {
-      setShowSuccessMsg(true);
-    }
+    setShowSuccessMsg(event.target.ohno.value === "");
     return false;
   }
 
