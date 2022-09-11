@@ -40,6 +40,7 @@ export default function NewsletterForm1({ content }) {
                   method="post"
                   name="mc-embedded-subscribe-form"
                   target="_blank"
+                  rel="noreferrer"
                   noValidate="novalidate"
                   onSubmit={processSubmission}
                 >
