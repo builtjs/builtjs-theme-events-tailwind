@@ -1,5 +1,6 @@
+import Link from "next/link";
 import getConfig from "next/config";
-import { format } from 'date-fns';
+import { format } from "date-fns";
 
 export default function HeroCover({ content }) {
   if (!content) return <></>;
@@ -18,25 +19,27 @@ export default function HeroCover({ content }) {
   }
   if (!item) return <></>;
   return (
-    <section
-      id="hero-cover"
-      className="relative xl:mt-16 template"
-    >
+    <section id="hero-cover" className="relative xl:mt-16 template">
       <div className="media-item-hero-container">
         <div
           className="filter-grayscale-1 hover:filter-grayscale-0 backdrop-darken transition-filter duration-500 media-item-hero h-screen bg-cover bg-center xl:bg-fixed flex items-center justify-center relative xl:-mt-16"
-          style={{ backgroundImage: `url(${publicRuntimeConfig.BACKEND_URL || ""}${
-            item.attributes.featuredImage?.data?.attributes?.url
-          })` }}>
+          style={{
+            backgroundImage: `url(${publicRuntimeConfig.BACKEND_URL || ""}${
+              item.attributes.featuredImage?.data?.attributes?.url
+            })`,
+          }}
+        >
           <div className="flex flex-col justify-center py-64 md:py-0 md:-mt-48 lg:-mt-56 xl:-mt-8 z-10">
             <p className="text-center text-white tracking-widest uppercase text-xs lg:text-sm md:mb-4">
               Featured Event
             </p>
-            <a href={`event-items/${item.attributes.slug}`}>
+            <Link href={`event-items/${item.attributes.slug}`}>
+              <a>
               <h1 className="text-center text-white text-shadow-lg max-w-3xl lg:max-w-4xl px-8 lg:px-16">
               {item.attributes.title}
               </h1>
-            </a>
+              </a>
+            </Link>
           </div>
           <div className="absolute top-0 left-0 w-full h-full backdrop-darken"></div>
         </div>
@@ -66,13 +69,13 @@ export default function HeroCover({ content }) {
                 </h4>
                 <div className="flex flex-wrap justify-center md:justify-start">
                   <p className="text-primary-10 tracking-wider text-lg text-shadow-sm mb-2 lg:mb-0">
-                  {item.attributes.venue}
+                    {item.attributes.venue}
                   </p>
                   <span className="text-primary-50 lg:text-primary-30 px-2 lg:px-3 mb-2 lg:mb-0">
                     |
                   </span>
                   <p className="text-primary-10 tracking-wider text-lg text-shadow-sm mb-2 lg:mb-0">
-                  {item.attributes.townCity}
+                    {item.attributes.townCity}
                   </p>
                 </div>
               </div>

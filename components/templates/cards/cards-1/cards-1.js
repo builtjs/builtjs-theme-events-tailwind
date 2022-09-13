@@ -1,3 +1,4 @@
+import Link from "next/link";
 import getConfig from "next/config";
 import { format } from "date-fns";
 import { LeftAlignedHeadline, CenterAlignedHeadline } from "@/elements";
@@ -22,7 +23,7 @@ export default function Cards1({ content }) {
   return (
     <section id="cards-1" className="py-24 md:py-32 template">
       {attributes.headlineAlignment === "left" && (
-        <LeftAlignedHeadline attributes={attributes} topSpacing={50}/>
+        <LeftAlignedHeadline attributes={attributes} topSpacing={50} />
       )}
       {attributes.headlineAlignment === "center" && (
         <CenterAlignedHeadline attributes={attributes} topSpacing={150} />
@@ -38,38 +39,43 @@ export default function Cards1({ content }) {
                       {format(new Date(item.attributes.date), "dd LLLL yyyy")}
                     </p>
                   </div>
-                  <a href={`event-items/${item.attributes.slug}`}>
-                    <img
-                      className="w-full blurry-load filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full h-48 md:h-56 lg:h-64 xl:h-72 object-cover mb-8 shadow-2xl"
-                      src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                        item.attributes.featuredImage?.data?.attributes?.url
-                      }`}
-                      alt={item.attributes.title}
-                    />
-                  </a>
+
                   <div className="px-5 lg:px-10 mb-6">
-                    <a href={`event-items/${item.attributes.slug}`}>
-                      <h3 className="text-white mb-5">
-                        {item.attributes.title}
-                      </h3>
-                    </a>
+                    <Link href={`event-items/${item.attributes.slug}`}>
+                      <a>
+                        <img
+                          className="w-full blurry-load filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full h-48 md:h-56 lg:h-64 xl:h-72 object-cover mb-8 shadow-2xl"
+                          src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                            item.attributes.featuredImage?.data?.attributes?.url
+                          }`}
+                          alt={item.attributes.title}
+                        />
+                      </a>
+                    </Link>
+
+                    <Link href={`event-items/${item.attributes.slug}`}>
+                      <a className="text-white mb-5">
+                        <h3 className="text-white mb-5">
+                          {item.attributes.title}
+                        </h3>
+                      </a>
+                    </Link>
                     <div className="text-white mb-6 md:mb-12 lg:leading-8">
                       {item.attributes.cTABlurb}
-                      {/* {item.attributes.body.length > 88 ? `${item.attributes.body.substring(0, 5)}...` : item.attributes.body} */}
                     </div>
                     <div className="flex items-center flex-col lg:flex-row">
-                      <a
-                        className="flex flex-grow justify-center w-full mb-4 lg:mb-0 mr-0 lg:mr-2 py-3 lg:py-3 text-white text-center uppercase tracking-widest text-sm border border-white hover:bg-white hover:text-primary transition-colors duration-200"
-                        href={`event-items/${item.attributes.slug}`}
-                      >
-                        More Info
-                      </a>
-                      <a
-                        className="flex flex-grow justify-center w-full ml-0 lg:ml-2 py-3 lg:py-3 text-secondary text-center uppercase tracking-widest text-sm border border-secondary hover:bg-secondary hover:text-white hover:border-secondary transition-colors duration-200"
+                      <Link href={`event-items/${item.attributes.slug}`}>
+                        <a className="flex flex-grow justify-center w-full mb-4 lg:mb-0 mr-0 lg:mr-2 py-3 lg:py-3 text-white text-center uppercase tracking-widest text-sm border border-white hover:bg-white hover:text-primary transition-colors duration-200">
+                          More Info
+                        </a>
+                      </Link>
+                      <Link
                         href={`event-items/${item.attributes.slug}#booking`}
                       >
-                        Buy Tickets
-                      </a>
+                        <a className="flex flex-grow justify-center w-full ml-0 lg:ml-2 py-3 lg:py-3 text-secondary text-center uppercase tracking-widest text-sm border border-secondary hover:bg-secondary hover:text-white hover:border-secondary transition-colors duration-200">
+                          Buy Tickets
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

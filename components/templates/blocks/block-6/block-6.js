@@ -8,7 +8,7 @@ export default function Block6({ content }) {
   return (
     <section
       id="block-6"
-      className="cta-bg-image pt-16 mb-24 md:mb-32 xl:mb-48"
+      className="cta-bg-image pt-32 mb-24 md:mb-32 xl:mb-48"
     >
       <div className="flex items-start flex-col lg:flex-row relative">
         <div

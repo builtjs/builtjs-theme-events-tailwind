@@ -2,14 +2,14 @@ import { useState } from "react";
 import getConfig from "next/config";
 
 export default function NewsletterBanner1({ content }) {
-  if (!content) return <></>;
   let { attributes } = content;
   const { publicRuntimeConfig } = getConfig();
   const [showSuccessMsg, setShowSuccessMsg] = useState(false);
-
+  if (!content) return <></>;
   function processSubmission(event) {
     event.preventDefault();
-    setShowSuccessMsg(event.target.ohno.value === "");
+    let isValid = event.target.ohno.value === "";
+    setShowSuccessMsg(isValid);
     return false;
   }
 
@@ -20,12 +20,14 @@ export default function NewsletterBanner1({ content }) {
     >
       <div className="max-w-screen-xl px-4 mx-auto relative z-10">
         <div className="flex flex-col md:flex-row md:items-center justify-between">
-        {!showSuccessMsg && <div className="w-full lg:w-1/2 mb-10 md:mb-0 mr-5">
-            <h3 className="text-white mb-2 leading-tight">
-              {attributes.heading}
-            </h3>
-            <p className="text-primary-20 leading-7">{attributes.blurb}</p>
-          </div>}
+          {!showSuccessMsg && (
+            <div className="w-full lg:w-1/2 mb-10 md:mb-0 mr-5">
+              <h3 className="text-white mb-2 leading-tight">
+                {attributes.heading}
+              </h3>
+              <p className="text-primary-20 leading-7">{attributes.blurb}</p>
+            </div>
+          )}
           <div className="w-full lg:ml-12">
             {!showSuccessMsg && (
               <form
@@ -35,6 +37,7 @@ export default function NewsletterBanner1({ content }) {
                 method="post"
                 name="mc-embedded-subscribe-form"
                 target="_blank"
+                rel="noreferrer"
                 noValidate="novalidate"
                 onSubmit={processSubmission}
               >

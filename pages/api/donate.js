@@ -1,11 +1,7 @@
-import { config as dotenvConfig } from "dotenv";
-// import enableCORS from "./lib/enable-cors";
-import sendEmail from "./lib/send-email";
+import sendEmail from "./email/send-email";
 import addToCol from "./lib/add-to-col";
-import getDonateOrgEmail from "./email/getDonateOrgEmail";
-import getDonateUserEmail from "./email/getDonateUserEmail";
-
-dotenvConfig();
+import {getDonateOrgEmail} from "./email/getEmail";
+import {getDonateUserEmail} from "./email/getEmail";
 
 export default async function handler(req, res) {
   try {
@@ -28,9 +24,9 @@ export default async function handler(req, res) {
       emailConfig,
       process.env.DONATIONS_SPREADSHEET_ID
     );
-    let donateOrgEmail = getDonateOrgEmail(emailConfig);
+    let donateOrgEmail = await getDonateOrgEmail(emailConfig);
     await sendEmail(donateOrgEmail);
-    let donateUserEmail = getDonateUserEmail(emailConfig);
+    let donateUserEmail = await getDonateUserEmail(emailConfig);
     sendEmail(donateUserEmail).then(
       () => {
         res.status(200).json({

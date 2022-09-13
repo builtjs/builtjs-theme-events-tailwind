@@ -1,10 +1,7 @@
-import { config as dotenvConfig } from "dotenv";
-import sendEmail from "./lib/send-email";
+import sendEmail from "./email/send-email";
 import addToCol from "./lib/add-to-col";
-import getSubscribeOrgEmail from "./email/getSubscribeOrgEmail";
-import getSubscribeUserEmail from "./email/getSubscribeUserEmail";
-
-dotenvConfig();
+import {getSubscribeOrgEmail} from "./email/getEmail";
+import {getSubscribeUserEmail} from "./email/getEmail";
 
 export default async function handler(req, res){
   try {
@@ -34,9 +31,9 @@ export default async function handler(req, res){
       partnerPhone: partnerPhone
     }
     const sheetsRes = await addToCol("Sheet1!A1:L1", emailConfig, process.env.SUBSRIPTIONS_SPREADSHEET_ID);
-    let subscribeOrgEmail = getSubscribeOrgEmail(emailConfig);
+    let subscribeOrgEmail = await getSubscribeOrgEmail(emailConfig);
     await sendEmail(subscribeOrgEmail);
-    let subscribeUserEmail = getSubscribeUserEmail(emailConfig);
+    let subscribeUserEmail = await getSubscribeUserEmail(emailConfig);
     sendEmail(subscribeUserEmail).then(
       () => {
         res.status(200).json({

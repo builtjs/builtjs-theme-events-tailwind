@@ -19,7 +19,7 @@ export default function Block1({ content }) {
       className="template"
     >
       <LeftAlignedHeadline attributes={attributes} />
-      <div className="max-w-screen-xl px-4 mx-auto pt-5 pb-24 md:pb-32 lg:pb-48">
+      <div className="max-w-screen-xl px-4 mx-auto pt-5 pb-24">
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2 mb-16 lg:mb-0 lg:mr-10 sm:mx-6 lg:ml-12">
           <p className="text-primary-70 leading-7 text-lg mb-8">

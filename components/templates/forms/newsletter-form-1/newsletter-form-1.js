@@ -2,16 +2,15 @@ import { useState } from "react";
 import getConfig from "next/config";
 
 export default function NewsletterForm1({ content }) {
-  if (!content) return <></>;
   let { attributes } = content;
   const { publicRuntimeConfig } = getConfig();
   const [showSuccessMsg, setShowSuccessMsg] = useState(false);
+  if (!content) return <></>;
 
   function processSubmission(event) {
     event.preventDefault();
-    if (event.target.ohno.value === "") {
-      setShowSuccessMsg(true);
-    }
+    let isValid = event.target.ohno.value === "";
+    setShowSuccessMsg(isValid);
     return false;
   }
 

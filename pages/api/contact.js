@@ -1,14 +1,10 @@
-import { config as dotenvConfig } from "dotenv";
-import sendEmail from "./lib/send-email";
-
-import getContactOrgEmail from "./email/getContactOrgEmail";
-
-dotenvConfig();
+import sendEmail from "./email/send-email";
+import {getContactOrgEmail} from "./email/getEmail";
 
 export default async function handler(req, res) {
   try {
     let emailConfig = req.body;
-    let contactOrgEmail = getContactOrgEmail(emailConfig);
+    let contactOrgEmail = await getContactOrgEmail(emailConfig);
     sendEmail(contactOrgEmail).then(
       () => {
         res.status(200).json({

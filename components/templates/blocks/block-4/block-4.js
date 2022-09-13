@@ -1,3 +1,4 @@
+import Link from "next/link";
 import getConfig from "next/config";
 import CTAButtonSimple from "../../../elements/cta-button-simple";
 
@@ -12,7 +13,7 @@ export default function Block4({ content }) {
     items = collection.items;
   }
   return (
-    <section id="block-4" className="py-24 md:py-32 template">
+    <section id="block-4" className="py-32 template">
       <div className="max-w-screen-xl px-4 mx-auto">
         <p className="pre-headline-secondary">{attributes.preheading}</p>
         <h2 className="mb-8 md:mb-16 leading-tight">{attributes.heading}</h2>
@@ -29,21 +30,25 @@ export default function Block4({ content }) {
             {items &&
               items.map((sponsor, i) => {
                 return (
-                  // <div className="flex flex-wrap sm:mr-8 lg:mr-0">
-                    <div className="w-1/2 md:w-1/3" key={i}>
-                      <a href={sponsor.attributes.url} target="_blank">
+                  <div className="w-1/2 md:w-1/3" key={i}>
+                    <Link href={attributes.ctaUrl}>
+                      <a
+                        href={sponsor.attributes.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <img
-                          className="filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full px-2 sm:px-10 pb-8"
+                          className="filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full px-2 sm:px-10 pb-8" 
+                          data-aos="fade-up" 
+                          data-aos-once="true"
                           src={`${publicRuntimeConfig.BACKEND_URL || ""}${
                             sponsor.attributes.image.data.attributes.url
                           }`}
                           alt={sponsor.attributes.heading}
-                          data-aos="fade-up"
-                          data-aos-once="true"
                         />
                       </a>
-                    </div>
-                  // </div>
+                    </Link>           
+                  </div>
                 );
               })}
           </div>

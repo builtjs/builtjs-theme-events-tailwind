@@ -136,7 +136,7 @@ const EmailManager = {
                           <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Hi ${args.firstName},</p>
                           <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Thank you for your pledge of $${args.donationAmount}. To complete your donation, please follow these instructions:</p>
                           <br>
-                          <p style="font-family: sans-serif; font-size: 16px; font-weight: normal; margin: 0; margin-bottom: 15px;"><strong>Internet banking:</strong> ${process.env.NAME} a/c BANK_ACCOUNT_NO with your name in the particulars box.</p>
+                          <p style="font-family: sans-serif; font-size: 16px; font-weight: normal; margin: 0; margin-bottom: 15px;"><strong>Internet banking:</strong> ${process.env.NAME} a/c ${process.env.BANK_ACCOUNT_NO} with your name in the particulars box.</p>
                           <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Or alternatively, post the completed form, with cheque to: Subscriptions, ${process.env.NAME}, ${process.env.POSTAL_ADDRESS}</p>
                           <br>
                           <br>

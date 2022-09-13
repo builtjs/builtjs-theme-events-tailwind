@@ -1,20 +1,58 @@
+import Link from "next/link";
+import { useState } from "react";
 import getConfig from "next/config";
 import { LeftAlignedHeadline } from "@/elements";
 
 export default function ContactForm({ content }) {
-  if (!content) return <></>;
   let { attributes } = content;
   const { publicRuntimeConfig } = getConfig();
+  const [showSuccess, setSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showError, setShowError] = useState(false);
+  if (!content) return <></>;
+
+  async function processSubmission(event) {
+    event.preventDefault();
+    const data = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      message: event.target.message.value,
+    };
+    if (event.target.ohno.value !== "") {
+      return false;
+    }
+    setIsLoading(true);
+    await fetch(`/api/contact`, {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((res) => {
+        debugger
+        if (res.statusCode === 200) {
+          setIsLoading(false);
+          setShowError(false);
+          setSuccess(true);
+        } else {
+          setIsLoading(false);
+          setShowError(true);
+          setSuccess(false);
+        }
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setShowError(true);
+        setSuccess(false);
+      });
+  }
 
   return (
-    <section
-      id="contact-form"
-      className="overflow-x-hidden template"
-    >
+    <section id="contact-form" className="overflow-x-hidden template">
       <div className="max-w-screen-xl px-4 mx-auto mb-10">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-2/5">
-          <LeftAlignedHeadline attributes={attributes} />
+            <LeftAlignedHeadline attributes={attributes} />
             <div className="sm:ml-6 lg:ml-12">
               <div>
                 <div className="flex items-start mb-10 lg:w-1/2 mr-12 lg:mr-0">
@@ -83,44 +121,11 @@ export default function ContactForm({ content }) {
                     </p>
                   </div>
                 </div>
-
-                {/* <div className="flex items-start mb-10 lg:mb-20 lg:w-1/2">
-                  <div className="mr-5 mt-px">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewbox="0 0 20 20"
-                    >
-                      <path
-                        d="M17,11v3l-3-3H8A2,2,0,0,1,6,9V2A2.006,2.006,0,0,1,8,0H18a2,2,0,0,1,2,2V9a2,2,0,0,1-2,2Zm-3,2v2a2,2,0,0,1-2,2H6L3,20V17H2a2,2,0,0,1-2-2V8A2.006,2.006,0,0,1,2,6H4V9a4,4,0,0,0,4,4Z"
-                        fill="#b09159"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-sans text-lg font-semibold mb-2">Social</h3>
-                    <p>
-                      <a
-                        className="text-primary-50 hover:text-primary leading-7"
-                        href="#"
-                      >
-                        Facebook
-                      </a>
-                    </p>
-                    <p>
-                      <a
-                        className="text-primary-50 hover:text-primary leading-7"
-                        href="#"
-                      >
-                        Youtube
-                      </a>
-                    </p>
-                  </div>
-                </div> */}
               </div>
 
-              <p className="text-primary-50 leading-7 mb-20">{attributes.blurb}</p>
+              <p className="text-primary-50 leading-7 mb-20">
+                {attributes.blurb}
+              </p>
             </div>
           </div>
           <div className="w-full lg:w-3/5 lg:pl-20 relative">
@@ -144,122 +149,133 @@ export default function ContactForm({ content }) {
                   />
                 </svg>
               </div>
-              <form id="contactForm">
-                <div className="form-group flex flex-col mb-5">
-                  <label className="text-primary-60 mb-2" htmlFor="name">
-                    Name
-                  </label>
+              {!showSuccess && (
+                <form id="contactForm" onSubmit={processSubmission}>
+                  <div className="form-group flex flex-col mb-5">
+                    <label className="text-primary-60 mb-2" htmlFor="name">
+                      Name
+                    </label>
+                    <input
+                      className="form-control px-4 py-3 border rounded"
+                      type="text"
+                      id="name"
+                      name="name"
+                      aria-describedby="name"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div className="form-group flex flex-col mb-5">
+                    <label className="text-primary-60 mb-2" htmlFor="email">
+                      Email
+                    </label>
+                    <input
+                      className="form-control px-4 py-3 border mb-2 rounded"
+                      type="email"
+                      id="email"
+                      name="email"
+                      aria-describedby="email"
+                      placeholder="Your email"
+                    />
+                    <small
+                      id="emailHelp"
+                      className="form-text text-xs text-primary-50"
+                    >
+                      We&apos;ll never share your email with anyone else.
+                    </small>
+                  </div>
+                  <div className="form-group flex flex-col mb-5">
+                    <label className="text-primary-60 mb-2" htmlFor="message">
+                      Message
+                    </label>
+                    <textarea
+                      className="form-control px-4 py-3 border form-control rounded"
+                      id="message"
+                      name="message"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <label className="ohno" htmlFor="ohno"></label>
                   <input
-                    className="form-control px-4 py-3 border rounded"
+                    className="ohno"
+                    autoComplete="off"
                     type="text"
-                    id="name"
-                    name="name"
-                    aria-describedby="name"
-                    placeholder="Your name"
+                    id="ohno"
+                    name="ohno"
+                    placeholder="Your ohno here"
                   />
-                </div>
-                <div className="form-group flex flex-col mb-5">
-                  <label className="text-primary-60 mb-2" htmlFor="email">
-                    Email
-                  </label>
-                  <input
-                    className="form-control px-4 py-3 border mb-2 rounded"
-                    type="email"
-                    id="email"
-                    name="email"
-                    aria-describedby="email"
-                    placeholder="Your email"
-                  />
-                  <small
-                    id="emailHelp"
-                    className="form-text text-xs text-primary-50"
-                  >
-                    We'll never share your email with anyone else.
-                  </small>
-                </div>
-                <div className="form-group flex flex-col mb-5">
-                  <label className="text-primary-60 mb-2" htmlFor="message">
-                    Message
-                  </label>
-                  <textarea
-                    className="form-control px-4 py-3 border form-control rounded"
-                    id="message"
-                    name="message"
-                    rows="3"
-                  ></textarea>
-                </div>
-                <label className="ohno" htmlFor="ohno"></label>
-                <input
-                  className="ohno"
-                  autoComplete="off"
-                  type="text"
-                  id="ohno"
-                  name="ohno"
-                  placeholder="Your ohno here"
-                />
 
-                <button
-                  type="submit"
-                  className="submit-btn w-full py-4 text-white text-sm tracking-widest hover:text-white bg-secondary hover:bg-secondary-dark uppercase focus:outline-none focus:text-white focus:bg-secondary transition duration-200 ease-in-out"
-                >
-                  <div className="spinner pb-4 hidden"></div>
-                  <span className="label">Send</span>
-                </button>
-              </form>
-              <div className="contact-success-msg hidden text-center mb-10">
-                <svg
-                  viewBox="0 0 123.32 114.07"
-                  width="120px"
-                  className="mx-auto mb-10"
-                >
-                  <g transform="translate(-872.42 -913.15)">
-                    <path
-                      transform="translate(369.74 578.68)"
-                      d="m552.71 446.05 36.794-39.613a27.586 27.586 0 1 0-39.441-38.581 27.586 27.586 0 1 0-38.583 39.44l41.23 38.754"
-                      fill="none"
-                      stroke="#e6e6e6"
-                    />
-                    <path
-                      transform="translate(385.92 581.17)"
-                      d="m552.71 446.05 36.794-39.613a27.586 27.586 0 1 0-39.441-38.581 27.586 27.586 0 1 0-38.583 39.44l41.23 38.754"
-                      fill="#b09159"
-                    />
-                    <path
-                      transform="translate(394.15 578.68)"
-                      d="m552.71 446.05 36.794-39.613a27.586 27.586 0 1 0-39.441-38.581 27.586 27.586 0 1 0-38.583 39.44l41.23 38.754"
-                      fill="none"
-                      stroke="#272727"
-                    />
-                    <path
-                      transform="translate(377.73 646.22)"
-                      d="m510.53 372.4 5.461-5.879a4.094 4.094 0 0 0-5.854-5.726 4.094 4.094 0 0 0-5.726 5.854l6.119 5.752"
-                      fill="none"
-                      stroke="#e6e6e6"
-                    />
-                    <path
-                      transform="translate(448.7 554.09)"
-                      d="m510.53 372.4 5.461-5.879a4.094 4.094 0 0 0-5.854-5.726 4.094 4.094 0 0 0-5.726 5.854l6.119 5.752"
-                      fill="none"
-                      stroke="#272727"
-                    />
-                    <path
-                      transform="translate(478.58 636.26)"
-                      d="m510.53 372.4 5.461-5.879a4.094 4.094 0 0 0-5.854-5.726 4.094 4.094 0 0 0-5.726 5.854l6.119 5.752"
-                      fill="#b09159"
-                    />
-                  </g>
-                </svg>
-                <h4 className="mb-10">Thank you for your message</h4>
-                <p className="mb-10 text-lg">We will be in touch soon!</p>
-              </div>
-              <div className="contact-error-msg hidden">
-                <h3 className="mb-2">Error</h3>
-                <p className="mb-5">There was a problem submitting your details.</p>
-                <p className="text-primary-60">
-                  Please try again or
-                  <a href="/contact/">contact the administrator</a>.
-                </p>
-              </div>
+                  <button
+                    type="submit"
+                    className="submit-btn w-full py-4 text-white text-sm tracking-widest hover:text-white bg-secondary hover:bg-secondary-dark uppercase focus:outline-none focus:text-white focus:bg-secondary transition duration-200 ease-in-out"
+                  >
+                    {isLoading && <div className="spinner pb-4"></div>}
+                    {!isLoading && <span className="label">Send</span>}
+                  </button>
+                </form>
+              )}
+              {showSuccess && (
+                <div className="contact-success-msg text-center mb-10">
+                  <svg
+                    viewBox="0 0 123.32 114.07"
+                    width="120px"
+                    className="mx-auto mb-10"
+                  >
+                    <g transform="translate(-872.42 -913.15)">
+                      <path
+                        transform="translate(369.74 578.68)"
+                        d="m552.71 446.05 36.794-39.613a27.586 27.586 0 1 0-39.441-38.581 27.586 27.586 0 1 0-38.583 39.44l41.23 38.754"
+                        fill="none"
+                        stroke="#e6e6e6"
+                      />
+                      <path
+                        transform="translate(385.92 581.17)"
+                        d="m552.71 446.05 36.794-39.613a27.586 27.586 0 1 0-39.441-38.581 27.586 27.586 0 1 0-38.583 39.44l41.23 38.754"
+                        fill="#b09159"
+                      />
+                      <path
+                        transform="translate(394.15 578.68)"
+                        d="m552.71 446.05 36.794-39.613a27.586 27.586 0 1 0-39.441-38.581 27.586 27.586 0 1 0-38.583 39.44l41.23 38.754"
+                        fill="none"
+                        stroke="#272727"
+                      />
+                      <path
+                        transform="translate(377.73 646.22)"
+                        d="m510.53 372.4 5.461-5.879a4.094 4.094 0 0 0-5.854-5.726 4.094 4.094 0 0 0-5.726 5.854l6.119 5.752"
+                        fill="none"
+                        stroke="#e6e6e6"
+                      />
+                      <path
+                        transform="translate(448.7 554.09)"
+                        d="m510.53 372.4 5.461-5.879a4.094 4.094 0 0 0-5.854-5.726 4.094 4.094 0 0 0-5.726 5.854l6.119 5.752"
+                        fill="none"
+                        stroke="#272727"
+                      />
+                      <path
+                        transform="translate(478.58 636.26)"
+                        d="m510.53 372.4 5.461-5.879a4.094 4.094 0 0 0-5.854-5.726 4.094 4.094 0 0 0-5.726 5.854l6.119 5.752"
+                        fill="#b09159"
+                      />
+                    </g>
+                  </svg>
+                  <h4 className="mb-10">Thank you for your message</h4>
+                  <p className="mb-10 text-lg">We will be in touch soon!</p>
+                </div>
+              )}
+              {showError && (
+                <div className="contact-error-msg">
+                  <h3 className="mb-2">Error</h3>
+                  <p className="mb-5">
+                    There was a problem submitting your details.
+                  </p>
+                  <p className="text-primary-60">
+                    Please try again or
+                    <Link href="/contact/">
+                      <a>contact the administrator</a>
+                    </Link>
+                    .
+                  </p>
+                </div>
+              )}
             </div>
             <div className="bg-squares"></div>
           </div>

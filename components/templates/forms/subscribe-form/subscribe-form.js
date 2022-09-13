@@ -1,15 +1,28 @@
+import Link from "next/link";
 import { useState } from "react";
 import getConfig from "next/config";
 import { CenterAlignedHeadline } from "@/elements";
 
 export default function SubscribeForm({ content }) {
-  if (!content) return <></>;
-  let { attributes, collections } = content;
+  let { attributes } = content;
+  const subscriptionTypes = {
+    single: {
+      fee: 10,
+      displayName: "Single",
+    },
+    double: {
+      fee: 20,
+      displayName: "Double",
+    },
+  };
   const { publicRuntimeConfig } = getConfig();
   const [showInstructions, setShowInstructions] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [donationAmount, setDonationAmount] = useState(0);
   const [showError, setShowError] = useState(false);
+  const [currentSub, setCurrentSub] = useState(subscriptionTypes["single"]);
+  if (!content) return <></>;
+  
 
   async function processSubmission(event) {
     event.preventDefault();
@@ -32,42 +45,29 @@ export default function SubscribeForm({ content }) {
       subscriptionFee: currentSub.fee,
       subscriptionType: currentSub.displayName,
     };
-    if (event.target.ohno.value === "") {
-      setIsLoading(true);
-      await fetch(`/api/subscribe`, {
-        method: "post",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then(() => {
-          setIsLoading(false);
-          setShowError(false);
-          setDonationAmount(data.donationAmount);
-          setShowInstructions(true);
-        })
-        .catch((error) => {
-          setIsLoading(false);
-          setShowError(true);
-          setDonationAmount(0);
-          setShowInstructions(false);
-        });
+    if (event.target.ohno.value !== "") {
+      return false;
     }
-    return false;
+    setIsLoading(true);
+    await fetch(`/api/subscribe`, {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        setIsLoading(false);
+        setShowError(false);
+        setDonationAmount(data.donationAmount);
+        setShowInstructions(true);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setShowError(true);
+        setDonationAmount(0);
+        setShowInstructions(false);
+      });
   }
-
-  const subscriptionTypes = {
-    single: {
-      fee: 10,
-      displayName: "Single",
-    },
-    double: {
-      fee: 20,
-      displayName: "Double",
-    },
-  };
-
-  const [currentSub, setCurrentSub] = useState(subscriptionTypes["single"]);
 
   return (
     <section id="subscribe-form" className="relative template">
@@ -170,7 +170,7 @@ export default function SubscribeForm({ content }) {
                     id="emailHelp"
                     className="form-text text-xs text-primary-50"
                   >
-                    We'll never share your email with anyone else.
+                    We&apos;ll never share your email with anyone else.
                   </small>
                 </div>
                 <div className="form-group flex flex-col mb-5">
@@ -187,7 +187,10 @@ export default function SubscribeForm({ content }) {
                   />
                 </div>
                 <div className="form-group flex flex-col mb-5">
-                  <label className="text-primary-60 mb-2" htmlFor="donationAmount">
+                  <label
+                    className="text-primary-60 mb-2"
+                    htmlFor="donationAmount"
+                  >
                     Donation
                   </label>
                   <label className="inline-flex items-center">
@@ -232,7 +235,10 @@ export default function SubscribeForm({ content }) {
                   <div className="partner-details mb-10">
                     <h4 className="mb-5">Partner details</h4>
                     <div className="form-group flex flex-col mb-5">
-                      <label className="text-primary-60 mb-2" htmlFor="partnerName">
+                      <label
+                        className="text-primary-60 mb-2"
+                        htmlFor="partnerName"
+                      >
                         Full name
                       </label>
                       <input
@@ -407,7 +413,10 @@ export default function SubscribeForm({ content }) {
                 </p>
                 <p className="text-primary-60">
                   Please try again or
-                  <a href="/contact/">contact the administrator</a>.
+                  <Link href="/contact">
+                    <a>contact the administrator</a>
+                  </Link>
+                  .
                 </p>
               </div>
             )}

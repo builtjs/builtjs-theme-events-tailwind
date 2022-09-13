@@ -1,15 +1,16 @@
+import Link from "next/link";
 import { useState } from "react";
 import getConfig from "next/config";
 import { LeftAlignedHeadline } from "@/elements";
 
 export default function DonateForm({ content }) {
-  if (!content) return <></>;
   let { attributes } = content;
   const { publicRuntimeConfig } = getConfig();
   const [showInstructions, setShowInstructions] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [showError, setShowError] = useState(false);
   const [donationAmount, setDonationAmount] = useState(0);
+  if (!content) return <></>;
 
   async function processSubmission(event) {
     event.preventDefault();
@@ -21,28 +22,28 @@ export default function DonateForm({ content }) {
       lastName: event.target.lastName.value,
       phone: event.target.phone.value,
     };
-    if (event.target.ohno.value === "") {
-      setIsLoading(true);
-      await fetch(`/api/donate`, {
-        method: "post",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then(() => {
-          setIsLoading(false);
-          setShowError(false);
-          setDonationAmount(data.donationAmount);
-          setShowInstructions(true);
-        })
-        .catch((error) => {
-          setIsLoading(false);
-          setShowError(true);
-          setDonationAmount(0);
-          setShowInstructions(false);
-        });
+    if (event.target.ohno.value !== "") {
+      return false;
     }
-    return false;
+    setIsLoading(true);
+    await fetch(`/api/donate`, {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        setIsLoading(false);
+        setShowError(false);
+        setDonationAmount(data.donationAmount);
+        setShowInstructions(true);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setShowError(true);
+        setDonationAmount(0);
+        setShowInstructions(false);
+      });
   }
 
   return (
@@ -213,7 +214,7 @@ export default function DonateForm({ content }) {
                       id="emailHelp"
                       className="form-text text-xs text-primary-50"
                     >
-                      We'll never share your email with anyone else.
+                      We&apos;ll never share your email with anyone else.
                     </small>
                   </div>
                   <div className="form-group flex flex-col mb-5">
@@ -325,7 +326,10 @@ export default function DonateForm({ content }) {
                   </p>
                   <p className="text-primary-60">
                     Please try again or
-                    <a href="/contact">contact the administrator</a>.
+                    <Link href="/contact">
+                      <a>contact the administrator</a>
+                    </Link>
+                    .
                   </p>
                 </div>
               )}
