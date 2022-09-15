@@ -8,10 +8,12 @@
       },
       "sections": [
         {
-          "slug": "events-seo"
+          "slug": "events-seo",
+          "index": 0
         },
         {
-          "slug": "events-landing"
+          "slug": "events-landing",
+          "index": 1
         }
       ]
     },
@@ -23,10 +25,12 @@
       },
       "sections": [
         {
-          "slug": "subscribe-seo"
+          "slug": "subscribe-seo",
+          "index": 0
         },
         {
-          "slug": "subscribe-landing"
+          "slug": "subscribe-landing",
+          "index": 1
         }
       ]
     },
@@ -38,10 +42,12 @@
       },
       "sections": [
         {
-          "slug": "contact-seo"
+          "slug": "contact-seo",
+          "index": 0
         },
         {
-          "slug": "contact-landing"
+          "slug": "contact-landing",
+          "index": 1
         }
       ]
     },
@@ -53,7 +59,8 @@
       },
       "sections": [
         {
-          "slug": "home-seo"
+          "slug": "home-seo",
+          "index": 0
         }
       ]
     },
@@ -65,10 +72,12 @@
       },
       "sections": [
         {
-          "slug": "donate-seo"
+          "slug": "donate-seo",
+          "index": 0
         },
         {
-          "slug": "donate-landing"
+          "slug": "donate-landing",
+          "index": 1
         }
       ]
     },
@@ -80,16 +89,20 @@
       },
       "sections": [
         {
-          "slug": "about-seo"
+          "slug": "about-seo",
+          "index": 0
         },
         {
-          "slug": "about-landing"
+          "slug": "about-landing",
+          "index": 1
         },
         {
-          "slug": "about-blockquote"
+          "slug": "about-blockquote",
+          "index": 2
         },
         {
-          "slug": "newsletter-banner"
+          "slug": "newsletter",
+          "index": 10
         }
       ]
     },
@@ -101,10 +114,12 @@
       },
       "sections": [
         {
-          "slug": "volunteer-seo"
+          "slug": "volunteer-seo",
+          "index": 0
         },
         {
-          "slug": "volunteer-landing"
+          "slug": "volunteer-landing",
+          "index": 1
         }
       ]
     },
@@ -116,7 +131,8 @@
       },
       "sections": [
         {
-          "slug": "about-events-teaser"
+          "slug": "about-events-teaser",
+          "index": 3
         }
       ]
     },
@@ -128,7 +144,8 @@
       },
       "sections": [
         {
-          "slug": "about-teaser"
+          "slug": "about-teaser",
+          "index": 4
         }
       ]
     },
@@ -140,22 +157,12 @@
       },
       "sections": [
         {
-          "slug": "events-hero"
+          "slug": "events-hero",
+          "index": 1
         },
         {
-          "slug": "events-list"
-        }
-      ]
-    },
-    {
-      "slug": "home-newsletter",
-      "description": "Get Informed module content on Home page",
-      "page": {
-        "slug": "home"
-      },
-      "sections": [
-        {
-          "slug": "newsletter-lrg"
+          "slug": "events-list",
+          "index": 2
         }
       ]
     },
@@ -167,13 +174,16 @@
       },
       "sections": [
         {
-          "slug": "support-teaser"
+          "slug": "support-teaser",
+          "index": 5
         },
         {
-          "slug": "volunteer-teaser"
+          "slug": "volunteer-teaser",
+          "index": 6
         },
         {
-          "slug": "sponsors"
+          "slug": "sponsors",
+          "index": 7
         }
       ]
     },
@@ -185,7 +195,8 @@
       },
       "sections": [
         {
-          "slug": "newsletter-lrg"
+          "slug": "newsletter-lrg",
+          "index": 3
         }
       ]
     },
@@ -197,7 +208,8 @@
       },
       "sections": [
         {
-          "slug": "newsletter"
+          "slug": "newsletter",
+          "index": 10
         }
       ]
     },
@@ -209,7 +221,9 @@
       },
       "sections": [
         {
-          "slug": "newsletter"
+          "slug": "newsletter",
+          "index": 10
+          
         }
       ]
     },
@@ -221,7 +235,8 @@
       },
       "sections": [
         {
-          "slug": "newsletter"
+          "slug": "newsletter",
+          "index": 10
         }
       ]
     },
@@ -233,7 +248,8 @@
       },
       "sections": [
         {
-          "slug": "newsletter"
+          "slug": "newsletter",
+          "index": 10
         }
       ]
     },
@@ -245,7 +261,8 @@
       },
       "sections": [
         {
-          "slug": "newsletter"
+          "slug": "newsletter",
+          "index": 10
         }
       ]
     },
@@ -257,7 +274,8 @@
       },
       "sections": [
         {
-          "slug": "newsletter"
+          "slug": "newsletter",
+          "index": 10
         }
       ]
     },
@@ -269,7 +287,8 @@
       },
       "sections": [
         {
-          "slug": "subscribe-faq"
+          "slug": "subscribe-faq",
+          "index": 2
         }
       ]
     },
@@ -281,7 +300,8 @@
       },
       "sections": [
         {
-          "slug": "subscribe-teaser"
+          "slug": "subscribe-teaser",
+          "index": 2
         }
       ]
     },
@@ -293,7 +313,8 @@
       },
       "sections": [
         {
-          "slug": "donate-teaser"
+          "slug": "donate-teaser",
+          "index": 3
         }
       ]
     },
@@ -305,10 +326,12 @@
       },
       "sections": [
         {
-          "slug": "event-article"
+          "slug": "event-article",
+          "index": 1
         },
         {
-          "slug": "newsletter"
+          "slug": "newsletter",
+          "index": 10
         }
       ]
     }
