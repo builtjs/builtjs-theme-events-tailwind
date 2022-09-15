@@ -118,11 +118,6 @@ export default function Article1({ content }) {
             />
             </div>
             <div className="bg-squares hidden lg:block -mt-40 lg:mt-32 xl:mt-0"></div>
-            <div className="lg:mt-16 mb-32 lg:mb-48">
-              {/* {item.attributes.quote &&
-                            // {% call blockquote.default({quote: blox.page.item.fields.quote, source: blox.page.item.fields.quoteSource}) %}{% endcall %}
-                        } */}
-            </div>
           </div>
         </div>
       )}

@@ -140,7 +140,7 @@ export default function Footer1({ content }) {
                 <li className="mb-2">
                   <a
                     className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="/privacy"
+                    href="http://example.com"
                   >
                     Privacy Policy
                   </a>
@@ -148,7 +148,7 @@ export default function Footer1({ content }) {
                 <li className="mb-2">
                   <a
                     className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="/terms"
+                    href="http://example.com"
                   >
                     Terms
                   </a>
@@ -156,7 +156,7 @@ export default function Footer1({ content }) {
                 <li className="mb-2">
                   <a
                     className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="/admin?space={{blox.db.meta.space.slug}}"
+                    href="http://example.com"
                   >
                     Admin
                   </a>
@@ -171,53 +171,26 @@ export default function Footer1({ content }) {
                 <li className="mb-2">
                   <a
                     className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="https://www.eventfinda.co.nz/"
+                    href="http://example.com"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    Eventfinda
+                    Social 1
                   </a>
                 </li>
                 <li className="mb-5">
                   <a
                     className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="https://chambermusic.co.nz/"
+                    href="http://example.com"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    Chamber Music
+                    Social 2
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start md:justify-end xl:mt-6">
-          <a
-            className="self-center sm:mr-6"
-            href="https://www.eventfinda.co.nz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="w-40" src="/images/eventfinda-logo.png" alt="" />
-          </a>
-          <a
-            className="self-center my-6 sm:my-0 sm:mr-6"
-            href="https://chambermusic.co.nz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="w-48"
-              src="/images/chamber-music-nz-logo.png"
-              alt=""
-            />
-          </a>
-          <img
-            className="w-16 md:mr-20 xl:mr-32"
-            src="/images/theme/best-awards-badge.svg"
-            alt=""
-          />
         </div>
         <hr className="border-t border-primary-30 mt-20 mb-10" />
         <div className="flex flex-col md:flex-row items-center justify-between text-center">

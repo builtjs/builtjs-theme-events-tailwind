@@ -92,7 +92,7 @@ export default function NewsletterForm1({ content }) {
                     <path
                       transform="translate(385.92 581.17)"
                       d="m552.71 446.05 36.794-39.613a27.586 27.586 0 1 0-39.441-38.581 27.586 27.586 0 1 0-38.583 39.44l41.23 38.754"
-                      fill="#b09159"
+                      fill="#d46e3a"
                     />
                     <path
                       transform="translate(394.15 578.68)"
@@ -115,7 +115,7 @@ export default function NewsletterForm1({ content }) {
                     <path
                       transform="translate(478.58 636.26)"
                       d="m510.53 372.4 5.461-5.879a4.094 4.094 0 0 0-5.854-5.726 4.094 4.094 0 0 0-5.726 5.854l6.119 5.752"
-                      fill="#b09159"
+                      fill="#d46e3a"
                     />
                   </g>
                 </svg>
