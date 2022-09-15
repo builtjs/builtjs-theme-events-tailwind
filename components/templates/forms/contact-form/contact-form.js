@@ -106,17 +106,17 @@ export default function ContactForm({ content }) {
                     <p>
                       <a
                         className="text-primary-50 hover:text-primary leading-7"
-                        href="tel:021481358"
+                        href="tel:123456789"
                       >
-                        Kate Lovell (President): 021 481 358
+                        Mary Smith (President): 123 456 789
                       </a>
                     </p>
                     <p>
                       <a
                         className="text-primary-50 hover:text-primary leading-7"
-                        href="tel:0274732249"
+                        href="tel:012345678"
                       >
-                        Lynne Fegan (Treasurer): 027 473 2249
+                        Joe Bloggs (Treasurer): 012 345 678
                       </a>
                     </p>
                   </div>

@@ -18,7 +18,7 @@ export default function Block6({ content }) {
           data-aos-duration="500"
         >
           <img
-            className="cta-generic-img filter-grayscale-1 w-full home-about-image object-cover"
+            className="cta-generic-img filter-grayscale-1 home-about-image cta-generic-img home-about-image hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
             src={`${publicRuntimeConfig.BACKEND_URL || ""}${
               attributes.image.data.attributes.url
             }`}

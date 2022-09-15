@@ -82,8 +82,8 @@ export default function Header1({ content }) {
                 <a>
                   <img
                     className="block lg:hidden w-10 sm:mr-3"
-                    src="/images/wcs-logogram.svg"
-                    alt="WCS"
+                    src="/images/logo-light.svg"
+                    alt="logo"
                   />
                 </a>
               </Link>
@@ -92,7 +92,7 @@ export default function Header1({ content }) {
                   <img
                     className="hidden sm:block lg:hidden w-48"
                     src="/images/wcs-logotype.svg"
-                    alt="WCS"
+                    alt="logo"
                   />
                 </a>
               </Link>
@@ -106,8 +106,8 @@ export default function Header1({ content }) {
                     data-aos-anchor="#logo-anchor"
                     data-aos-anchor-placement="bottom-top"
                     data-aos-once="false"
-                    src="/images/wcs-logogram.svg"
-                    alt="WCS"
+                    src="/images/logo-light.png"
+                    alt="logo"
                   />
                 </a>
               </Link>
@@ -156,7 +156,7 @@ export default function Header1({ content }) {
               })}
             <Link href="/subscribe/">
               <a className="hidden lg:block lg:ml-4 px-6 py-5 xl:px-10 xl:py-4 xl:py-6 text-white lg:text-sm lg:tracking-wider xl:tracking-widest hover:text-white bg-secondary hover:bg-secondary-dark uppercase focus:outline-none focus:text-white focus:bg-secondary transition duration-200 ease-in-out">
-                Join WCS
+                Join Us
               </a>
             </Link>
             <Link href="/subscribe/">

@@ -16,7 +16,7 @@
       },
       "attributes": {
         "name": {
-          "default": "Wanaka Concert Society",
+          "default": "Events Tailwind",
           "type": "string"
         },
         "description": {

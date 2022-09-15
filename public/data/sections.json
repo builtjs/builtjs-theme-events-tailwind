@@ -14,10 +14,10 @@
         "image": {
           "data": {
             "attributes": {
-              "name": "wcs-logo",
+              "name": "logo-dark",
               "path": "/images/theme",
               "ext": "svg",
-              "url": "/images/theme/wcs-logo.svg",
+              "url": "/images/theme/logo-dark.png",
               "width": 48,
               "height": 48,
               "alternativeText": "Logo"
@@ -62,10 +62,10 @@
         "shareImage": {
           "data": {
             "attributes": {
-              "name": "wcs-logo",
+              "name": "logo-dark",
               "path": "/images/theme",
-              "ext": "svg",
-              "url": "/images/theme/wcs-logo.svg",
+              "ext": "png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -123,10 +123,10 @@
         "shareImage": {
           "data": {
             "attributes": {
-              "name": "wcs-logo",
+              "name": "logo-dark",
               "path": "/images/theme",
-              "ext": "svg",
-              "url": "/images/theme/wcs-logo.svg",
+              "ext": "png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -149,16 +149,16 @@
       },
       "attributes": {
         "preheading": "About",
-        "heading": "Wanaka Concert Society",
-        "leadingSentence": "For more than 40 years, the Wanaka Concert Society has proudly played an important role in the culture of our region.",
-        "body": "Wanaka Concert Society is an Incorporated Society and Registered Charity.<br><br>Although many of its concerts are sourced through Chamber Music New Zealand and Arts on Tour, an increasing number of performers contact us directly, many of whom are top international musicians. We have hosted violinist Natalia Lomeiko twice and she is always keen to return. Natalia is the inaugural winner of the Sir Michael Hill International Violin Competition and is currently a Professor at the Royal College of Music, London.<br><br>Jazz is very popular in Wanaka and in 2019 top American trumpet player, Allen Vizzutti and his wife, pianist Laura Vizzutti amazed the spell-bound audience with their unique techniques, sense of humour and sheer delight of performance.<br><br>One of the aims of the Wanaka Concert Society is to support young people - admission is free to our concerts for students at school. We also host the current young recipients of the annual Royal Over-Seas League Pettman/ROSL Scholarship for Chamber Ensembles. Master classes are facilitated for music students by some of our visiting performers.<br><br>The Wanaka Concert Society is administered by an annually elected group of music lovers. The inspiration and work carried out by the founding committee over 40 years ago is very much appreciated. One of the wonderful projects undertaken was fundraising for and purchase of our Steinway Grand Piano, of which we are immensely proud. It is praised not only by local pianists but also acclaimed international pianists.<br><br>The Wanaka Concert Society appreciates the support of its donors, subscribers, sponsors and volunteers which enables us to present the very best of music available.",
+        "heading": "Events Tailwind",
+        "leadingSentence": "For many 40 years, Events Tailwind has proudly played an important role in the culture of our region.",
+        "body": "<p>Donec efficitur ullamcorper diam a feugiat. Aliquam id erat egestas, ultricies nunc a, porttitor dui. Vivamus ornare imperdiet ipsum, id tempus nisi condimentum id. Donec ac commodo lorem, eu pharetra ex. Nullam iaculis finibus mi et lobortis. Ut et arcu eu mi sagittis ultrices eu sit amet felis. Mauris condimentum vel ipsum vitae fringilla. Donec porta eros cursus nisi ullamcorper ultricies. Nam purus lorem, dapibus nec volutpat nec, gravida sit amet neque. Integer auctor sit amet leo non fermentum.</p><br/><p>Integer fringilla iaculis justo, et tincidunt elit auctor quis. Mauris eget tellus pharetra, scelerisque est vitae, convallis quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id eros a ante auctor vehicula in sit amet elit. Sed volutpat at tortor quis cursus. Curabitur auctor quis odio vitae porttitor. Nullam sit amet sapien neque.</p><br/><p>Quisque a interdum sem. Integer lobortis interdum rhoncus. Integer sed elit in mauris gravida bibendum. Nullam dictum dapibus massa, nec efficitur elit mattis eget. Aenean sit amet eros aliquet, congue odio vitae, finibus lacus. Nullam suscipit risus tellus, eget vestibulum magna venenatis eu. In ornare lacinia nulla, cursus suscipit justo dignissim id. Suspendisse potenti. In dictum erat eu consequat maximus. Nullam sit amet feugiat nisl. Quisque imperdiet consectetur pellentesque. Aliquam in aliquet mi.</p>",
         "image": {
           "data": {
             "attributes": {
-              "name": "about-landing",
+              "name": "folk-jazz",
               "path": "/images/theme",
-              "ext": "jpeg",
-              "url": "/images/theme/about-landing.jpeg",
+              "ext": "jpg",
+              "url": "/images/theme/folk-jazz.jpg",
               "width": 763,
               "height": 882,
               "alternativeText": "About Landing"
@@ -183,10 +183,10 @@
         "shareImage": {
           "data": {
             "attributes": {
-              "name": "wcs-logo",
+              "name": "logo-dark",
               "path": "/images/theme",
-              "ext": "svg",
-              "url": "/images/theme/wcs-logo.svg",
+              "ext": "png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -209,7 +209,7 @@
       "attributes": {
         "preheading": "Contact",
         "heading": "Get in touch",
-        "blurb": "We are happy to answer any questions regarding concerts, performers, repertoire, becoming a subscriber, donor or sponsor, and generally the Wanaka Concert Society. Of course we would love to answer your questions about any help you can give us with accommodating billets when necessary, or generally spreading the word about upcoming concerts. Also, don't forget people who live by themselves who might like to go with you to concerts."
+        "blurb": "Maecenas porttitor mauris rhoncus, viverra mauris in, mollis nunc. Praesent gravida lectus sed ligula imperdiet laoreet. Aenean sit amet nisi sed dui rutrum volutpat. Cras dapibus fringilla tortor, quis efficitur lorem tincidunt at. Sed sagittis nisl vitae dolor porta efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed purus augue, condimentum nec felis vitae, porttitor pretium sapien."
       },
       "order": 2
     },
@@ -223,7 +223,7 @@
       },
       "attributes": {
         "heading": "Sign up for our newsletter",
-        "blurb": "Stay in touch with all the latest Wanaka Concert Society events happening in Wanaka and other related news. You can cancel your newsletter at any time."
+        "blurb": "Stay in touch with all the latest Events Tailwind events happening in our area and other related news. You can cancel your newsletter at any time."
       },
       "order": 5
     },
@@ -238,7 +238,7 @@
       "attributes": {
         "preheading": "Newsletter",
         "heading": "Sign up for our newsletter",
-        "blurb": "Stay in touch with all the latest Wanaka Concert Society events happening in Wanaka and other related news. You can cancel your newsletter at any time."
+        "blurb": "Stay in touch with all the latest Events Tailwind events happening in our area and other related news. You can cancel your newsletter at any time."
       },
       "order": 4
     },
@@ -251,7 +251,7 @@
         "slug": "blockquote-1"
       },
       "attributes": {
-        "quote": "The Wanaka Concert Society was formed to present concerts and other entertainment for our local community. Our aim is to support our arts culture by promoting the enjoyment and encouragement of the performing arts."
+        "quote": "The Events Tailwind was formed to present concerts and other entertainment for our local community. Our aim is to support our arts culture by promoting the enjoyment and encouragement of the performing arts."
       },
       "order": 5
     },
@@ -264,14 +264,14 @@
         "slug": "block-2"
       },
       "attributes": {
-        "body": "Wanaka is a favourite destination for concerts and we are lucky to have so many wonderful musicians to choose from.<br><br>In addition to the classical works of the well-known composers, less well known pieces are programmed which extend our knowledge and hopefully enjoyment of our contemporary composers. Other genres such as jazz and folk music are often included in the year's programme.<br><br>When concerts are confirmed they are added to the website with information about date, venue and booking details.",
+        "body": "<p>Donec efficitur ullamcorper diam a feugiat. Aliquam id erat egestas, ultricies nunc a, porttitor dui. Vivamus ornare imperdiet ipsum, id tempus nisi condimentum id. Donec ac commodo lorem, eu pharetra ex. Nullam iaculis finibus mi et lobortis. Ut et arcu eu mi sagittis ultrices eu sit amet felis. Mauris condimentum vel ipsum vitae fringilla. Donec porta eros cursus nisi ullamcorper ultricies. Nam purus lorem, dapibus nec volutpat nec, gravida sit amet neque. Integer auctor sit amet leo non fermentum.</p><br/><p>Integer fringilla iaculis justo, et tincidunt elit auctor quis. Mauris eget tellus pharetra, scelerisque est vitae, convallis quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id eros a ante auctor vehicula in sit amet elit. Sed volutpat at tortor quis cursus. Curabitur auctor quis odio vitae porttitor. Nullam sit amet sapien neque.</p>",
         "image": {
           "data": {
             "attributes": {
-              "name": "about-events-teaser",
+              "name": "street-jazz",
               "path": "/images/theme",
-              "ext": "jpeg",
-              "url": "/images/theme/about-events-teaser.jpeg",
+              "ext": "jpg",
+              "url": "/images/theme/street-jazz.jpg",
               "width": 800,
               "height": 451,
               "alternativeText": "Events"
@@ -293,7 +293,7 @@
       },
       "attributes": {
         "preheading": "Events",
-        "heading": "The latest WCS events in Wanaka",
+        "heading": "The latest events in our area",
         "headlineAlignment": "center"
       },
       "collections": {
@@ -338,10 +338,10 @@
         "shareImage": {
           "data": {
             "attributes": {
-              "name": "wcs-logo",
+              "name": "logo-dark",
               "path": "/images/theme",
-              "ext": "svg",
-              "url": "/images/theme/wcs-logo.svg",
+              "ext": "png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -364,7 +364,7 @@
       "attributes": {
         "preheading": "Become a Subscriber",
         "heading": "Continuous support allows us to do what we do.",
-        "body": "By becoming a WCS subscriber, you help us present memorable concerts. WCS is a not-for-profit charity which needs the support of passionate music lovers to ensure we continue to offer top quality concerts to our community. Each year a concert or other event is held exclusively for Subscribers and Donors as a thank you for their support."
+        "body": "By becoming a subscriber, you help us present memorable concerts. We are a not-for-profit charity which needs the support of passionate music lovers to ensure we continue to offer top quality concerts to our community. Each year a concert or other event is held exclusively for Subscribers and Donors as a thank you for their support."
       },
       "order": 2
     },
@@ -397,10 +397,10 @@
         "shareImage": {
           "data": {
             "attributes": {
-              "name": "wcs-logo",
+              "name": "logo-dark",
               "path": "/images/theme",
-              "ext": "svg",
-              "url": "/images/theme/wcs-logo.svg",
+              "ext": "png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -422,7 +422,7 @@
       },
       "attributes": {
         "heading": "Want to make a donation?",
-        "blurb": "We depend on the generosity of individual donors who make it possible for us to present world-class concerts in Wanaka.",
+        "blurb": "We depend on the generosity of individual donors who make it possible for us to present world-class concerts in our area.",
         "url": "/donate"
       },
       "order": 3
@@ -437,7 +437,7 @@
       },
       "attributes": {
         "heading": "Want to become a Subscriber?",
-        "blurb": "When you choose to partner with us by becoming a Wanaka Concert Society supporter, you help enable remarkable musical experiences right here in Wanaka.",
+        "blurb": "When you choose to partner with us by becoming a Events Tailwind supporter, you help enable remarkable musical experiences right here.",
         "url": "/subscribe"
       },
       "order": 2
@@ -453,12 +453,12 @@
       "attributes": {
         "preheading": "Donate",
         "heading": "Your donation will make all the difference.",
-        "blurb": "We depend on the generosity of donors which enables us to present more expensive, often international, concerts in Wanaka, while keeping admission prices affordable. For donations of $5 or more you can claim a tax credit of one-third of the amount (up to the amount of your taxable income). The Wanaka Concert Society appreciates your donations. Thank you for being generous.",
-        "benefitHeading1": "Bringing world-class musicians to Wanaka.",
+        "blurb": "We depend on the generosity of donors which enables us to present more expensive concerts, while keeping admission prices affordable. The Events Tailwind appreciates your donations. Thank you for being generous.",
+        "benefitHeading1": "Bringing world-class musicians to our city.",
         "benefitBlurb1": "Enjoying live performances with friends and fellow music-lovers.",
         "benefitHeading2": "Providing performers with the opportunity to share their talents with us.",
         "benefitBlurb2": "Contributing to the culture of our local community.",
-        "benefitHeading3": "Enabling the Wanaka Concert Society to invite top performers to Wanaka.",
+        "benefitHeading3": "Enabling the Events Tailwind to invite top performers to our city.",
         "benefitBlurb3": "Helping with the cost of publicity and other costs."
       },
       "order": 2
@@ -478,10 +478,10 @@
         "shareImage": {
           "data": {
             "attributes": {
-              "name": "wcs-logo",
+              "name": "logo-dark",
               "path": "/images/theme",
-              "ext": "svg",
-              "url": "/images/theme/wcs-logo.svg",
+              "ext": "png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -504,7 +504,7 @@
       "attributes": {
         "preheading": "Sponsors",
         "heading": "Our Sponsors",
-        "body": "We are delighted to acknowledge the assistance of our sponsors who assist in making a significant difference to the work of Wanaka Concert Society. Our sponsors help ensure that our activities are able to flourish, and that the highest quality music is available to us here in our town. If you would like to join our list of official sponsors and support live music in Wanaka, please get in touch.",
+        "body": "We are delighted to acknowledge the assistance of our sponsors who assist in making a significant difference to the work of Events Tailwind. Our sponsors help ensure that our activities are able to flourish, and that the highest quality music is available to us here. If you would like to join our list of official sponsors and support live music, please get in touch.",
         "ctaText": "Become a sponsor",
         "ctaUrl": "/contact"
       },
@@ -528,10 +528,10 @@
         "shareImage": {
           "data": {
             "attributes": {
-              "name": "wcs-logo",
+              "name": "logo-dark",
               "path": "/images/theme",
-              "ext": "svg",
-              "url": "/images/theme/wcs-logo.svg",
+              "ext": "png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -555,14 +555,14 @@
       "attributes": {
         "preheading": "Volunteer",
         "heading": "Join the team",
-        "body": "An alternative way to support the WCS is by assisting us with promotion of concerts, especially by spreading news of upcoming concerts. It is well-known that this is one of the best ways of ensuring that people know about them.<br><br>People who live on their own, or new people to Wanaka, might appreciate being asked whether they would like you to take them to a concert.<br><br>One of the aims of the Wanaka Concert Society is to encourage young people to attend concerts. If you are involved with young people – either as a parent, grandparent, or teacher, or a friend of the family –perhaps you could offer to accompany them to concerts (admission is free to those of school age).<br><br>Occasionally performers need billeting. This usually involves one night's accommodation with a light evening meal and breakfast – an opportunity to get to know our talented performers!",
+        "body": "<p>Quisque a interdum sem. Integer lobortis interdum rhoncus. Integer sed elit in mauris gravida bibendum. Nullam dictum dapibus massa, nec efficitur elit mattis eget. Aenean sit amet eros aliquet, congue odio vitae, finibus lacus. Nullam suscipit risus tellus, eget vestibulum magna venenatis eu. In ornare lacinia nulla, cursus suscipit justo dignissim id. Suspendisse potenti. In dictum erat eu consequat maximus. Nullam sit amet feugiat nisl. Quisque imperdiet consectetur pellentesque. Aliquam in aliquet mi.</p><br/><p>Maecenas porttitor mauris rhoncus, viverra mauris in, mollis nunc. Praesent gravida lectus sed ligula imperdiet laoreet. Aenean sit amet nisi sed dui rutrum volutpat. Cras dapibus fringilla tortor, quis efficitur lorem tincidunt at. Sed sagittis nisl vitae dolor porta efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed purus augue, condimentum nec felis vitae, porttitor pretium sapien. Praesent sed nibh eu ipsum eleifend eleifend. Morbi purus libero, bibendum in diam eget, congue tempus augue. Cras dapibus augue est, mollis pretium mauris cursus eu. Aliquam non pharetra arcu. Mauris ultrices venenatis risus nec sodales. Sed turpis nulla, iaculis ac risus vitae, pretium condimentum est. Pellentesque accumsan diam enim, id mollis ipsum faucibus at. Pellentesque porta mi et justo euismod, a rhoncus sem porttitor. Sed non malesuada nunc.</p>",
         "image": {
           "data": {
             "attributes": {
-              "name": "volunteer-landing",
+              "name": "team",
               "path": "/images/theme",
               "ext": "jpeg",
-              "url": "/images/theme/volunteer-landing.jpeg",
+              "url": "/images/theme/team.jpg",
               "width": 800,
               "height": 533,
               "alternativeText": "Volunteer Landing"
@@ -584,15 +584,15 @@
       },
       "attributes": {
         "preheading": "Volunteer",
-        "heading": "Get involved with WCS",
-        "body": "Encourage people to come and enjoy our concerts by telling your friends, neighbours, people you see socially, and new arrivals to Wanaka about our concerts. Don't forget those who live on their own.",
+        "heading": "Get involved",
+        "body": "Encourage people to come and enjoy our concerts by telling your friends, neighbours, people you see socially, and new arrivals to our city about our concerts. Don't forget those who live on their own.",
         "image": {
           "data": {
             "attributes": {
-              "name": "volunteer-teaser",
+              "name": "concert",
               "path": "/images/theme",
-              "ext": "jpeg",
-              "url": "/images/theme/volunteer-teaser.jpeg",
+              "ext": "jpg",
+              "url": "/images/theme/concert.jpg",
               "width": 1056,
               "height": 514,
               "alternativeText": "Volunteer"
@@ -617,16 +617,16 @@
       },
       "attributes": {
         "preheading": "About Us",
-        "heading": "Wanaka Concert Society",
+        "heading": "Events Tailwind",
         "blurb": "Music has a wonderful ability to inspire people. It forms a common connection and brings us together to enjoy performances by wonderful musicians.",
-        "body": "Bringing top musicians to Wanaka, WCS is committed to creating opportunities for Wanaka locals and visitors to experience the very best of the world's musicians.",
+        "body": "Bringing top musicians to our city, Events Tailwind is committed to creating opportunities for locals and visitors to experience the very best of the world's musicians.",
         "image": {
           "data": {
             "attributes": {
-              "name": "about-teaser",
+              "name": "guitarist",
               "path": "/images/theme",
               "ext": "jpeg",
-              "url": "/images/theme/about-teaser.jpeg",
+              "url": "/images/theme/guitarist.jpg",
               "width": 800,
               "height": 1067,
               "alternativeText": "About"
@@ -653,13 +653,13 @@
         "preheading": "Support",
         "heading": "How to Support Us",
         "blurb": "Music has a wonderful ability to inspire people. It forms a common connection and brings us together to enjoy performances by wonderful musicians.",
-        "body": "Bringing top musicians to Wanaka, WCS is committed to creating opportunities for Wanaka locals and visitors to experience the very best of the world's musicians.",
+        "body": "Bringing top musicians to our city, Events Tailwind is committed to creating opportunities for locals and visitors to experience the very best of the world's musicians.",
         "subheading1": "Subscription",
-        "blurb1": "Become a subscriber and enjoy a special concert organised annually for just subscribers and donors. For only $10 (subscription fee) per person, you get that nice warm feeling of supporting WCS!",
+        "blurb1": "Become a subscriber and enjoy a special concert organised annually for just subscribers and donors. For only $10 (subscription fee) per person, you get that nice warm feeling of supporting us!",
         "cta1": "Subscribe",
         "url1": "/subscribe",
         "subheading2": "Donation",
-        "blurb2": "Make a donation to help us bring the best performers to Wanaka. The generosity of donors enables us to present more expensive, often international concerts in Wanaka, while keeping admission prices affordable. For donations of $5 or more you can claim a tax credit.",
+        "blurb2": "Make a donation to help us bring the best performers to our city. The generosity of donors enables us to present more expensive concerts, while keeping admission prices affordable. For donations of $5 or more you can claim a tax credit.",
         "cta2": "Donate",
         "url2": "/donate"
       },

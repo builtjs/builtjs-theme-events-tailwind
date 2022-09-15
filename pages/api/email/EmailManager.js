@@ -194,7 +194,7 @@ const EmailManager = {
                         </tr>
                         <tr>
                           <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
-                            <p style="font-family: sans-serif; font-size: 16px; font-weight: normal; margin: 0; margin-bottom: 15px;"><strong>Donation amount (NZD):</strong></p>
+                            <p style="font-family: sans-serif; font-size: 16px; font-weight: normal; margin: 0; margin-bottom: 15px;"><strong>Donation amount:</strong></p>
                           </td>
                           <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                             <p style="font-family: sans-serif; font-size: 16px; font-weight: normal; margin: 0; margin-bottom: 15px;">$${args.donationAmount}</p>
@@ -420,7 +420,7 @@ const EmailManager = {
                   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                   <tr>
                     <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
-                      <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">A new enquiry has been submitted through the WCS contact form:</p>
+                      <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">A new enquiry has been submitted through the contact form:</p>
                       <br>
                       <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                         <tr>

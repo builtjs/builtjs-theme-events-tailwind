@@ -26,7 +26,7 @@ export default function Footer1({ content }) {
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/5 mb-10 lg:mb-0">
             <a href="/">
-              <img className="w-16" src="/images/wcs-logogram.svg" alt="" />
+              <img className="w-16" src="/images/logo-light.png" alt="" />
             </a>
             <p className="text-primary-70 font-bold tracking-wide text-xs my-5 lg:mr-5">
               {global.name}

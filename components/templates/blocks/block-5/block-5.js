@@ -8,7 +8,7 @@ export default function Block5({ content }) {
   return (
     <section id="block-5" className="cta-generic relative mt-48 template">
       <img
-        className="filter-grayscale-1 w-full home-volunteer-image object-cover"
+        className="filter-grayscale-1 w-full home-volunteer-image object-cover hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
         src={`${publicRuntimeConfig.BACKEND_URL || ""}${
           attributes.image.data.attributes.url
         }`}

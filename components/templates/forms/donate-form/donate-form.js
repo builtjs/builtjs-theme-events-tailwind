@@ -184,7 +184,7 @@ export default function DonateForm({ content }) {
                       className="text-primary-60 mb-2"
                       htmlFor="donationAmount"
                     >
-                      Donation amount (NZD)
+                      Donation amount
                     </label>
                     <input
                       className="form-control px-4 py-3 border mb-2 rounded"

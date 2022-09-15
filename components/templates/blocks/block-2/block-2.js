@@ -2,6 +2,12 @@ import Image from "next/image";
 import getConfig from "next/config";
 import { CTAButton } from "@/elements";
 
+const getHTML = (content) => {
+  return {
+    __html: content,
+  };
+};
+
 export default function Block2({ content }) {
   if (!content) return <></>;
   const { publicRuntimeConfig } = getConfig();
@@ -11,7 +17,8 @@ export default function Block2({ content }) {
       <div className="flex flex-col lg:flex-row max-w-screen-xl mx-auto">
         <div className="lg:w-1/2 relative">
           <Image
-            className="shadow-xl mx-auto grayscale-img transition-all duration-500 blur-out"
+          
+            className="shadow-xl mx-auto filter-grayscale-1 hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
             src={`${publicRuntimeConfig.BACKEND_URL || ""}${
               attributes.image.data.attributes.url
             }`}
@@ -24,7 +31,7 @@ export default function Block2({ content }) {
           />
         </div>
         <div className="lg:w-1/2 sm:mx-6 lg:ml-12 lg:mb-0 mt-12 lg:mt-0">
-          <p className="text-primary-70 leading-7 mb-12">{attributes.body}</p>
+          <div className="text-primary-70 leading-7 mb-12" dangerouslySetInnerHTML={getHTML(attributes.body)}></div>
           <CTAButton attributes={attributes} />
         </div>
       </div>

@@ -5,7 +5,7 @@ export default function CenterAlignedHeadline({ attributes, topSpacing }) {
       <p className="text-secondary tracking-widest leading-none uppercase text-xs pl-4 py-1 mb-2 text-center">
         {attributes.preheading}
       </p>
-      <h1 className="h2 max-w-2xl mx-auto mb-8 md:mb-10 leading-tight text-center">
+      <h1 className="h2 max-w-2xl mx-auto mb-20 leading-tight text-center">
         {attributes.heading}
       </h1>
       <div className="bg-squares"></div>

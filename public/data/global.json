@@ -1,16 +1,16 @@
 {
   "global": {
-    "name": "Wanaka Concert Society",
-    "description": "Wanaka Concert Society is an Incorporated Society and Registered Charity.",
-    "email": "info@wanakaconcertsociety.org.nz",
-    "tel": "021481358",
+    "name": "Events Tailwind",
+    "description": "Events Tailwind brings the best performers to our city",
+    "email": "info@example.com",
+    "tel": "012345678",
     "logo": {
       "data": {
         "attributes": {
-          "name": "wcs-logo",
+          "name": "logo-dark",
           "path": "/images",
           "ext": "svg",
-          "url": "/images/theme/wcs-logo.svg",
+          "url": "/images/logo-dark.svg",
           "width": 45,
           "height": 45
         }

@@ -107,6 +107,10 @@ export default function TemplateMenuBtn({ router }) {
           }
 
           input[id="radio-blocks"]:checked ~ #glider {
+            transform: translateY(0);
+          }
+
+          input[id="radio-forms"]:checked ~ #glider {
             transform: translateY(calc(100% + 0.5rem));
           }
 
@@ -118,20 +122,8 @@ export default function TemplateMenuBtn({ router }) {
             transform: translateY(calc(300% + 1.5rem));
           }
 
-          input[id="radio-footers"]:checked ~ #glider {
+          input[id="radio-banners"]:checked ~ #glider {
             transform: translateY(calc(400% + 2rem));
-          }
-
-          input[id="radio-forms"]:checked ~ #glider {
-            transform: translateY(calc(500% + 2.5rem));
-          }
-
-          input[id="radio-headers"]:checked ~ #glider {
-            transform: translateY(calc(600% + 3rem));
-          }
-
-          input[id="radio-lists"]:checked ~ #glider {
-            transform: translateY(calc(700% + 3.5rem));
           }
         `}
       </style>

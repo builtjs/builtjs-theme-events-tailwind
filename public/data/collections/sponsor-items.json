@@ -2,73 +2,73 @@
   "items": [
     {
       "attributes": {
-        "slug": "chamber-music-new-zealand",
-        "name": "Chamber Music New Zealand",
+        "slug": "sponsor-1",
+        "name": "Sponsor 1",
         "image": {
           "data": {
             "attributes": {
-              "name": "chamber-music",
+              "name": "image-square.png",
               "path": "/images/theme/sponsor-items",
               "ext": "jpeg",
-              "url": "/images/theme/sponsor-items/chamber-music.jpeg",
-              "width": 1200,
-              "height": 900
+              "url": "/images/theme/sponsor-items/image-square.png",
+              "width": 500,
+              "height": 500
             }
           }
         },
-        "url": "https://chambermusic.co.nz"
+        "url": "https://example.com"
       }
     },{
       "attributes": {
-        "slug": "three-lakes-cultural-trust",
-        "name": "Three Lakes Cultural Trust",
+        "slug": "sponsor-2",
+        "name": "Sponsor 2",
         "image": {
           "data": {
             "attributes": {
-              "name": "three-lakes",
+              "name": "image-square.png",
               "path": "/images/theme/sponsor-items",
               "ext": "jpeg",
-              "url": "/images/theme/sponsor-items/three-lakes.jpeg",
-              "width": 1200,
-              "height": 632
+              "url": "/images/theme/sponsor-items/image-square.png",
+              "width": 500,
+              "height": 500
             }
           }
         },
-        "url": ""
+        "url": "https://example.com"
       }
     },
     {
       "attributes": {
-        "slug": "queenstown-lakes-district-council",
-        "name": "Queenstown Lakes District Council",
+        "slug": "sponsor-3",
+        "name": "Sponsor 3",
         "image": {
           "data": {
             "attributes": {
-              "name": "qldc",
+              "name": "image-square.png",
               "path": "/images/theme/sponsor-items",
-              "ext": "png",
-              "url": "/images/theme/sponsor-items/qldc.png",
-              "width": 1200,
-              "height": 632
+              "ext": "jpeg",
+              "url": "/images/theme/sponsor-items/image-square.png",
+              "width": 500,
+              "height": 500
             }
           }
         },
-        "url": "https://www.qldc.govt.nz"
+        "url": "https://example.com"
       }
     },
     {
       "attributes": {
-        "slug": "festival-of-colour",
-        "name": "Festival of Colour",
+        "slug": "sponsor-4",
+        "name": "Sponsor 4",
         "image": {
           "data": {
             "attributes": {
-              "name": "festival-of-colour",
+              "name": "image-square.png",
               "path": "/images/theme/sponsor-items",
-              "ext": "png",
-              "url": "/images/theme/sponsor-items/festival-of-colour.png",
-              "width": 420,
-              "height": 205
+              "ext": "jpeg",
+              "url": "/images/theme/sponsor-items/image-square.png",
+              "width": 500,
+              "height": 500
             }
           }
         },
@@ -76,21 +76,21 @@
       }
     },{
       "attributes": {
-        "slug": "central-lakes-trust",
-        "name": "Central Lakes Trust",
+        "slug": "sponsor-5",
+        "name": "Sponsor 5",
         "image": {
           "data": {
             "attributes": {
-              "name": "qldc",
+              "name": "image-square.png",
               "path": "/images/theme/sponsor-items",
-              "ext": "png",
-              "url": "/images/theme/sponsor-items/qldc.png",
-              "width": 1200,
-              "height": 900
+              "ext": "jpeg",
+              "url": "/images/theme/sponsor-items/image-square.png",
+              "width": 500,
+              "height": 500
             }
           }
         },
-        "url": "https://www.clt.net.nz"
+        "url": "https://example.com"
       }
     }
   ]
