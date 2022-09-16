@@ -9,11 +9,11 @@
       "sections": [
         {
           "slug": "events-seo",
-          "index": 0
+          "position": 0
         },
         {
           "slug": "events-landing",
-          "index": 1
+          "position": 1
         }
       ]
     },
@@ -26,11 +26,11 @@
       "sections": [
         {
           "slug": "subscribe-seo",
-          "index": 0
+          "position": 0
         },
         {
           "slug": "subscribe-landing",
-          "index": 1
+          "position": 1
         }
       ]
     },
@@ -43,11 +43,11 @@
       "sections": [
         {
           "slug": "contact-seo",
-          "index": 0
+          "position": 0
         },
         {
           "slug": "contact-landing",
-          "index": 1
+          "position": 1
         }
       ]
     },
@@ -60,7 +60,7 @@
       "sections": [
         {
           "slug": "home-seo",
-          "index": 0
+          "position": 0
         }
       ]
     },
@@ -73,11 +73,11 @@
       "sections": [
         {
           "slug": "donate-seo",
-          "index": 0
+          "position": 0
         },
         {
           "slug": "donate-landing",
-          "index": 1
+          "position": 1
         }
       ]
     },
@@ -90,19 +90,19 @@
       "sections": [
         {
           "slug": "about-seo",
-          "index": 0
+          "position": 0
         },
         {
           "slug": "about-landing",
-          "index": 1
+          "position": 1
         },
         {
           "slug": "about-blockquote",
-          "index": 2
+          "position": 2
         },
         {
           "slug": "newsletter",
-          "index": 10
+          "position": 10
         }
       ]
     },
@@ -115,11 +115,11 @@
       "sections": [
         {
           "slug": "volunteer-seo",
-          "index": 0
+          "position": 0
         },
         {
           "slug": "volunteer-landing",
-          "index": 1
+          "position": 1
         }
       ]
     },
@@ -132,7 +132,7 @@
       "sections": [
         {
           "slug": "about-events-teaser",
-          "index": 3
+          "position": 3
         }
       ]
     },
@@ -145,7 +145,7 @@
       "sections": [
         {
           "slug": "about-teaser",
-          "index": 4
+          "position": 4
         }
       ]
     },
@@ -158,11 +158,11 @@
       "sections": [
         {
           "slug": "events-hero",
-          "index": 1
+          "position": 1
         },
         {
           "slug": "events-list",
-          "index": 2
+          "position": 2
         }
       ]
     },
@@ -175,15 +175,15 @@
       "sections": [
         {
           "slug": "support-teaser",
-          "index": 5
+          "position": 5
         },
         {
           "slug": "volunteer-teaser",
-          "index": 6
+          "position": 6
         },
         {
           "slug": "sponsors",
-          "index": 7
+          "position": 7
         }
       ]
     },
@@ -196,7 +196,7 @@
       "sections": [
         {
           "slug": "newsletter-lrg",
-          "index": 3
+          "position": 3
         }
       ]
     },
@@ -209,7 +209,7 @@
       "sections": [
         {
           "slug": "newsletter",
-          "index": 10
+          "position": 10
         }
       ]
     },
@@ -222,7 +222,7 @@
       "sections": [
         {
           "slug": "newsletter",
-          "index": 10
+          "position": 10
           
         }
       ]
@@ -236,7 +236,7 @@
       "sections": [
         {
           "slug": "newsletter",
-          "index": 10
+          "position": 10
         }
       ]
     },
@@ -249,7 +249,7 @@
       "sections": [
         {
           "slug": "newsletter",
-          "index": 10
+          "position": 10
         }
       ]
     },
@@ -262,7 +262,7 @@
       "sections": [
         {
           "slug": "newsletter",
-          "index": 10
+          "position": 10
         }
       ]
     },
@@ -275,7 +275,7 @@
       "sections": [
         {
           "slug": "newsletter",
-          "index": 10
+          "position": 10
         }
       ]
     },
@@ -288,7 +288,7 @@
       "sections": [
         {
           "slug": "subscribe-faq",
-          "index": 2
+          "position": 2
         }
       ]
     },
@@ -301,7 +301,7 @@
       "sections": [
         {
           "slug": "subscribe-teaser",
-          "index": 2
+          "position": 2
         }
       ]
     },
@@ -314,7 +314,7 @@
       "sections": [
         {
           "slug": "donate-teaser",
-          "index": 3
+          "position": 3
         }
       ]
     },
@@ -327,11 +327,11 @@
       "sections": [
         {
           "slug": "event-article",
-          "index": 1
+          "position": 1
         },
         {
           "slug": "newsletter",
-          "index": 10
+          "position": 10
         }
       ]
     }
