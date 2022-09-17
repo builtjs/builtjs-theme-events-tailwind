@@ -91,7 +91,7 @@ export default function Header1({ content }) {
                 <a>
                   <img
                     className="hidden sm:block lg:hidden w-48"
-                    src="/images/wcs-logotype.svg"
+                    src="/images/logo-type.svg"
                     alt="logo"
                   />
                 </a>

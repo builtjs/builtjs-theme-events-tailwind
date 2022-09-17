@@ -10,9 +10,9 @@
           "data": {
             "attributes": {
               "name": "jazz-concert",
-              "path": "/images/theme/event-items",
+              "path": "/images/event-items",
               "ext": "jpg",
-              "url": "/images/theme/event-items/jazz-concert.jpg",
+              "url": "/images/event-items/jazz-concert.jpg",
               "width": 1056,
               "height": 594
             }
@@ -41,9 +41,9 @@
           "data": {
             "attributes": {
               "name": "rock-event",
-              "path": "/images/theme/event-items",
+              "path": "/images/event-items",
               "ext": "jpg",
-              "url": "/images/theme/event-items/rock-event.jpg",
+              "url": "/images/event-items/rock-event.jpg",
               "width": 1056,
               "height": 594
             }

@@ -15,9 +15,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images/theme",
-              "ext": "svg",
-              "url": "/images/theme/logo-dark.png",
+              "path": "/images",
+              "ext": "png",
+              "url": "/images/logo-dark.png",
               "width": 48,
               "height": 48,
               "alternativeText": "Logo"
@@ -63,9 +63,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "png",
-              "url": "/images/theme/logo-dark.png",
+              "url": "/images/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -124,9 +124,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "png",
-              "url": "/images/theme/logo-dark.png",
+              "url": "/images/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -156,9 +156,9 @@
           "data": {
             "attributes": {
               "name": "folk-jazz",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "jpg",
-              "url": "/images/theme/folk-jazz.jpg",
+              "url": "/images/folk-jazz.jpg",
               "width": 763,
               "height": 882,
               "alternativeText": "About Landing"
@@ -184,9 +184,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "png",
-              "url": "/images/theme/logo-dark.png",
+              "url": "/images/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -269,9 +269,9 @@
           "data": {
             "attributes": {
               "name": "street-jazz",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "jpg",
-              "url": "/images/theme/street-jazz.jpg",
+              "url": "/images/street-jazz.jpg",
               "width": 800,
               "height": 451,
               "alternativeText": "Events"
@@ -339,9 +339,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "png",
-              "url": "/images/theme/logo-dark.png",
+              "url": "/images/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -398,9 +398,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "png",
-              "url": "/images/theme/logo-dark.png",
+              "url": "/images/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -479,9 +479,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "png",
-              "url": "/images/theme/logo-dark.png",
+              "url": "/images/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -529,9 +529,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "png",
-              "url": "/images/theme/logo-dark.png",
+              "url": "/images/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -560,9 +560,9 @@
           "data": {
             "attributes": {
               "name": "team",
-              "path": "/images/theme",
-              "ext": "jpeg",
-              "url": "/images/theme/team.jpg",
+              "path": "/images",
+              "ext": "jpg",
+              "url": "/images/team.jpg",
               "width": 800,
               "height": 533,
               "alternativeText": "Volunteer Landing"
@@ -590,9 +590,9 @@
           "data": {
             "attributes": {
               "name": "concert",
-              "path": "/images/theme",
+              "path": "/images",
               "ext": "jpg",
-              "url": "/images/theme/concert.jpg",
+              "url": "/images/concert.jpg",
               "width": 1056,
               "height": 514,
               "alternativeText": "Volunteer"
@@ -624,9 +624,9 @@
           "data": {
             "attributes": {
               "name": "guitarist",
-              "path": "/images/theme",
-              "ext": "jpeg",
-              "url": "/images/theme/guitarist.jpg",
+              "path": "/images",
+              "ext": "jpg",
+              "url": "/images/guitarist.jpg",
               "width": 800,
               "height": 1067,
               "alternativeText": "About"
