@@ -8,9 +8,9 @@
       "data": {
         "attributes": {
           "name": "logo-dark",
-          "path": "/images",
+          "path": "/images/theme",
           "ext": "png",
-          "url": "/images/logo-dark.png",
+          "url": "/images/theme/logo-dark.png",
           "width": 150,
           "height": 150
         }

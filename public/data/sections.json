@@ -11,13 +11,26 @@
       },
       "position": "start",
       "attributes": {
-        "image": {
+        "logoLight": {
           "data": {
             "attributes": {
-              "name": "logo-dark",
-              "path": "/images",
+              "name": "logo-light",
+              "path": "/images/theme",
               "ext": "png",
-              "url": "/images/logo-dark.png",
+              "url": "/images/theme/logo-light.png",
+              "width": 48,
+              "height": 48,
+              "alternativeText": "Logo"
+            }
+          }
+        },
+        "logoType": {
+          "data": {
+            "attributes": {
+              "name": "logo-type",
+              "path": "/images/theme",
+              "ext": "svg",
+              "url": "/images/theme/logo-type.svg",
               "width": 48,
               "height": 48,
               "alternativeText": "Logo"
@@ -41,6 +54,21 @@
         "slug": "footer-1"
       },
       "position": "end",
+      "attributes": {
+        "logoLight": {
+          "data": {
+            "attributes": {
+              "name": "logo-light",
+              "path": "/images/theme",
+              "ext": "png",
+              "url": "/images/theme/logo-light.png",
+              "width": 48,
+              "height": 48,
+              "alternativeText": "Logo"
+            }
+          }
+        }
+      },
       "collections": {
         "primary-menu-items": {},
         "secondary-menu-items": {}
@@ -63,9 +91,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "png",
-              "url": "/images/logo-dark.png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -124,9 +152,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "png",
-              "url": "/images/logo-dark.png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -156,9 +184,9 @@
           "data": {
             "attributes": {
               "name": "folk-jazz",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "jpg",
-              "url": "/images/folk-jazz.jpg",
+              "url": "/images/theme/folk-jazz.jpg",
               "width": 763,
               "height": 882,
               "alternativeText": "About Landing"
@@ -184,9 +212,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "png",
-              "url": "/images/logo-dark.png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -238,7 +266,20 @@
       "attributes": {
         "preheading": "Newsletter",
         "heading": "Sign up for our newsletter",
-        "blurb": "Stay in touch with all the latest Events Tailwind events happening in our area and other related news. You can cancel your newsletter at any time."
+        "blurb": "Stay in touch with all the latest Events Tailwind events happening in our area and other related news. You can cancel your newsletter at any time.",
+        "image": {
+          "data": {
+            "attributes": {
+              "name": "newsletter-illustration",
+              "path": "/images/theme",
+              "ext": "svg",
+              "url": "/images/theme/newsletter-illustration.svg",
+              "width": 800,
+              "height": 451,
+              "alternativeText": "Newsletter"
+            }
+          }
+        }
       },
       "order": 4
     },
@@ -269,9 +310,9 @@
           "data": {
             "attributes": {
               "name": "street-jazz",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "jpg",
-              "url": "/images/street-jazz.jpg",
+              "url": "/images/theme/street-jazz.jpg",
               "width": 800,
               "height": 451,
               "alternativeText": "Events"
@@ -339,9 +380,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "png",
-              "url": "/images/logo-dark.png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -398,9 +439,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "png",
-              "url": "/images/logo-dark.png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -479,9 +520,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "png",
-              "url": "/images/logo-dark.png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -529,9 +570,9 @@
           "data": {
             "attributes": {
               "name": "logo-dark",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "png",
-              "url": "/images/logo-dark.png",
+              "url": "/images/theme/logo-dark.png",
               "width": 150,
               "height": 150,
               "alternativeText": "Logo"
@@ -560,9 +601,9 @@
           "data": {
             "attributes": {
               "name": "team",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "jpg",
-              "url": "/images/team.jpg",
+              "url": "/images/theme/team.jpg",
               "width": 800,
               "height": 533,
               "alternativeText": "Volunteer Landing"
@@ -590,9 +631,9 @@
           "data": {
             "attributes": {
               "name": "concert",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "jpg",
-              "url": "/images/concert.jpg",
+              "url": "/images/theme/concert.jpg",
               "width": 1056,
               "height": 514,
               "alternativeText": "Volunteer"
@@ -624,9 +665,9 @@
           "data": {
             "attributes": {
               "name": "guitarist",
-              "path": "/images",
+              "path": "/images/theme",
               "ext": "jpg",
-              "url": "/images/guitarist.jpg",
+              "url": "/images/theme/guitarist.jpg",
               "width": 800,
               "height": 1067,
               "alternativeText": "About"

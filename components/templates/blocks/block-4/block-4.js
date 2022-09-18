@@ -1,5 +1,6 @@
 import Link from "next/link";
 import getConfig from "next/config";
+import Image from "next/image";
 import CTAButtonSimple from "../../../elements/cta-button-simple";
 
 export default function Block4({ content }) {
@@ -28,26 +29,29 @@ export default function Block4({ content }) {
           </div>
           <div className="w-full flex flex-col md:flex-row items-center justify-center flex-wrap">
             {items &&
-              items.map((sponsor, i) => {
+              items.map((item, i) => {
                 return (
                   <div className="w-1/2 md:w-1/3" key={i}>
                     <Link href={attributes.ctaUrl}>
                       <a
-                        href={sponsor.attributes.url}
+                        href={item.attributes.url}
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <img
-                          className="filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full px-2 sm:px-10 pb-8" 
-                          data-aos="fade-up" 
-                          data-aos-once="true"
+                        <Image
+                          className="w-full lg:hidden"
                           src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                            sponsor.attributes.image.data.attributes.url
+                            item.attributes.image.data.attributes.url
                           }`}
-                          alt={sponsor.attributes.heading}
+                          width={item.attributes.image.data.attributes.width}
+                          height={item.attributes.image.data.attributes.height}
+                          alt={
+                            item.attributes.image.data.attributes
+                              .alternativeText
+                          }
                         />
                       </a>
-                    </Link>           
+                    </Link>
                   </div>
                 );
               })}

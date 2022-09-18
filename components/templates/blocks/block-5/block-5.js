@@ -1,3 +1,4 @@
+import Image from "next/image";
 import getConfig from "next/config";
 import { CTAButton } from "@/elements";
 
@@ -7,13 +8,16 @@ export default function Block5({ content }) {
   let { attributes } = content;
   return (
     <section id="block-5" className="cta-generic relative mt-48 template">
-      <img
-        className="filter-grayscale-1 w-full home-volunteer-image object-cover hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
+      <div className="relative filter-grayscale-1 w-full home-volunteer-image object-cover hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out">
+      <Image
         src={`${publicRuntimeConfig.BACKEND_URL || ""}${
           attributes.image.data.attributes.url
         }`}
+        layout="fill"
+        priority
         alt={attributes.preheading}
       />
+      </div>
       <div className="lg:absolute top-0 left-0 w-full lg:-mt-24">
         <div className="max-w-screen-xl lg:px-4 mx-auto">
           <div
@@ -29,7 +33,7 @@ export default function Block5({ content }) {
               {attributes.body}
             </p>
             <div className="sm:ml-6 lg:ml-12">
-             <CTAButton attributes={attributes} type="darkBg" />
+              <CTAButton attributes={attributes} type="darkBg" />
             </div>
           </div>
         </div>

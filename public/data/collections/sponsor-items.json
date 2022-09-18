@@ -8,9 +8,9 @@
           "data": {
             "attributes": {
               "name": "image-square",
-              "path": "/images/sponsor-items",
+              "path": "/images/theme/sponsor-items",
               "ext": "png",
-              "url": "/images/sponsor-items/image-square.png",
+              "url": "/images/theme/sponsor-items/image-square.png",
               "width": 500,
               "height": 500
             }
@@ -26,9 +26,9 @@
           "data": {
             "attributes": {
               "name": "image-square",
-              "path": "/images/sponsor-items",
+              "path": "/images/theme/sponsor-items",
               "ext": "png",
-              "url": "/images/sponsor-items/image-square.png",
+              "url": "/images/theme/sponsor-items/image-square.png",
               "width": 500,
               "height": 500
             }
@@ -45,9 +45,9 @@
           "data": {
             "attributes": {
               "name": "image-square",
-              "path": "/images/sponsor-items",
+              "path": "/images/theme/sponsor-items",
               "ext": "png",
-              "url": "/images/sponsor-items/image-square.png",
+              "url": "/images/theme/sponsor-items/image-square.png",
               "width": 500,
               "height": 500
             }
@@ -64,9 +64,9 @@
           "data": {
             "attributes": {
               "name": "image-square",
-              "path": "/images/sponsor-items",
+              "path": "/images/theme/sponsor-items",
               "ext": "png",
-              "url": "/images/sponsor-items/image-square.png",
+              "url": "/images/theme/sponsor-items/image-square.png",
               "width": 500,
               "height": 500
             }
@@ -82,9 +82,9 @@
           "data": {
             "attributes": {
               "name": "image-square",
-              "path": "/images/sponsor-items",
+              "path": "/images/theme/sponsor-items",
               "ext": "png",
-              "url": "/images/sponsor-items/image-square.png",
+              "url": "/images/theme/sponsor-items/image-square.png",
               "width": 500,
               "height": 500
             }

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import getConfig from "next/config";
 import { CTAButton } from "@/elements";
 
@@ -13,10 +14,22 @@ export default function Block6({ content }) {
       <div className="flex items-start flex-col lg:flex-row relative">
         <div
           className="w-full lg:w-2/5 lg:mt-17"
-          data-aos="fade-up"
-          data-aos-offset="250"
-          data-aos-duration="500"
         >
+          {/* <div className="cta-generic-img"> */}
+          {/* <div> */}
+          {/* <Image
+          className="cta-generic-img home-about-image filter-grayscale-1 hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
+            // className="cta-generic-img filter-grayscale-1 home-about-image cta-generic-img home-about-image hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
+            src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+              attributes.image.data.attributes.url
+            }`}
+            layout="fill"
+            alt={attributes.heading}
+          /> */}
+          {/* </div>
+          
+          </div> */}
+          
           <img
             className="cta-generic-img filter-grayscale-1 home-about-image cta-generic-img home-about-image hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
             src={`${publicRuntimeConfig.BACKEND_URL || ""}${
@@ -36,7 +49,7 @@ export default function Block6({ content }) {
               {attributes.body}
             </p>
             <div className="inline-flex items-center group">
-              <CTAButton attributes={attributes} type="primaryBg"/>
+              <CTAButton attributes={attributes} type="primaryBg" />
             </div>
           </div>
         </div>

@@ -23,14 +23,17 @@ export default function Article1({ content }) {
           <div className="w-full lg:w-1/2 lg:mr-10">
             <p className="pre-headline-secondary">Event Details</p>
             <h1 className="mb-8 md:mb-16 leading-tight">{item.attributes.title}</h1>
-            <img
-              className="w-full lg:hidden"
+            <div className="lg:hidden">
+            <Image
+              className="w-full"
               src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                item.attributes.featuredImage?.data?.attributes?.url
+                item.attributes.featuredImage.data.attributes.url
               }`}
-              alt={item.attributes.title}
+              width={item.attributes.featuredImage.data.attributes.width}
+              height={item.attributes.featuredImage.data.attributes.height}
+              alt={item.attributes.featuredImage.data.attributes.alternativeText}
             />
-
+            </div>
             <div className="sm:mx-6 lg:ml-12 lg:mr-0">
               <div className="mt-10">
                 <p className="text-primary-70 mb-5">
@@ -103,7 +106,7 @@ export default function Article1({ content }) {
             </section>
           </div>
           <div className="w-full lg:w-1/2 relative">
-            <div className="w-full">
+            <div className="hidden lg:block w-full">
             <Image
               className="mx-auto filter-grayscale-1 hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
               src={`${publicRuntimeConfig.BACKEND_URL || ""}${

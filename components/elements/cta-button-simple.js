@@ -14,8 +14,8 @@ export default function CTAButtonSimple({ attributes }) {
           <Link href={attributes.ctaUrl}>
             <a>
               <svg
-                className="group-hover:ml-5 w-10 transition-all duration-200"
-                viewbox="0 0 9.414 17.414"
+                className="h-5 group-hover:ml-5 w-10 transition-all duration-200"
+                viewBox="0 0 9.414 17.414"
                 width="7px"
               >
                 <path

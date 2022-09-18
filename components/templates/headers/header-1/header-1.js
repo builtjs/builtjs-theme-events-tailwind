@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import getConfig from "next/config";
 import { useRouter } from "next/router";
 
@@ -8,7 +9,7 @@ export default function Header1({ content }) {
   const [mobileNavIsOpen, setMobileNavIsOpen] = React.useState(false);
   const { publicRuntimeConfig } = getConfig();
   if (!content) return <></>;
-  let { collections, global } = { ...content };
+  let { attributes, collections, global } = { ...content };
   const collectionNames = {
     PRIMARY_MENU_ITEMS: "primary-menu-items",
     SECONDARY_MENU_ITEMS: "secondary-menu-items",
@@ -28,14 +29,15 @@ export default function Header1({ content }) {
   return (
     <header id="header-1" className="template relative">
       <Link href="/">
-        <a>
-          <img
+        <a className="hidden lg:block lg:absolute top-0 left-0 z-50 xl:ml-20 w-32 xl:w-40">
+          <Image
             id="logo-anchor"
-            className="hidden lg:block lg:absolute top-0 left-0 z-50 xl:ml-20 w-32 xl:w-40"
             src={`${publicRuntimeConfig.BACKEND_URL || ""}${
               global.logo.data.attributes.url
             }`}
-            alt="Logo"
+            width={global.logo.data.attributes.width}
+            height={global.logo.data.attributes.height}
+            alt={global.logo.data.attributes.alternativeText}
           />
         </a>
       </Link>
@@ -79,36 +81,41 @@ export default function Header1({ content }) {
           <div className="flex items-center">
             <div className="flex items-center">
               <Link href="/">
-                <a>
-                  <img
-                    className="block lg:hidden w-10 sm:mr-3"
-                    src="/images/logo-light.svg"
-                    alt="logo"
+                <a className="block lg:hidden w-10 sm:mr-3">
+                  <Image
+                    src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                      attributes.logoLight.data.attributes.url
+                    }`}
+                    width={attributes.logoLight.data.attributes.width}
+                    height={attributes.logoLight.data.attributes.height}
+                    alt={attributes.logoLight.data.attributes.alternativeText}
+                  />
+                </a>
+              </Link>
+              <Link href="/">
+                <a className="mt-1 -mb-2 block lg:hidden">
+                  <Image
+                    src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                      attributes.logoType.data.attributes.url
+                    }`}
+                    width={200}
+                    height={50}
+                    alt={attributes.logoType.data.attributes.alternativeText}
                   />
                 </a>
               </Link>
               <Link href="/">
                 <a>
-                  <img
-                    className="hidden sm:block lg:hidden w-48"
-                    src="/images/logo-type.svg"
-                    alt="logo"
-                  />
-                </a>
-              </Link>
-              <Link href="/">
-                <a>
-                  <img
-                    className="hidden lg:block absolut left-0 z-30 w-12 lg:mr-8 lg:ml-12 xl:ml-20"
-                    data-aos="fade-right"
-                    data-aos-duration="5000"
-                    data-aos-offset="20"
-                    data-aos-anchor="#logo-anchor"
-                    data-aos-anchor-placement="bottom-top"
-                    data-aos-once="false"
-                    src="/images/logo-light.png"
-                    alt="logo"
-                  />
+                  <div className="hidden lg:block absolut left-0 z-30 w-12 mr-8 xl:mr-5 lg:ml-12 xl:ml-20">
+                    <Image
+                      src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                        attributes.logoLight.data.attributes.url
+                      }`}
+                      width={attributes.logoLight.data.attributes.width}
+                      height={attributes.logoLight.data.attributes.height}
+                      alt={attributes.logoLight.data.attributes.alternativeText}
+                    />
+                  </div>
                 </a>
               </Link>
             </div>
@@ -118,18 +125,21 @@ export default function Header1({ content }) {
                   return (
                     <Link href={`/${menuItem.attributes.slug}`} key={i}>
                       <a
-                        className={`primary-nav-link flex items-start border-l border-r ${
+                        className={`primary-nav-link flex items-start border-r border-l ${
                           router.pathname === `/${menuItem.attributes.slug}`
                             ? "active"
                             : ""
                         }`}
                       >
-                        <img
-                          className="h-4 mr-2"
+                        <Image
                           src={`/images/${menuItem.attributes.slug}-icon.svg`}
+                          width={17}
+                          height={16}
                           alt={menuItem.attributes.label}
                         />
-                        {menuItem.attributes.label}
+                        <span className="pl-2">
+                          {menuItem.attributes.label}
+                        </span>
                       </a>
                     </Link>
                   );

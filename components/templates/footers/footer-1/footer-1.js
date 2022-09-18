@@ -1,11 +1,13 @@
-import { SocialLink } from "@/elements";
+import Image from "next/image";
+import getConfig from "next/config";
 
 export default function Footer1({ content }) {
   if (!content) return <></>;
-  let { collections, global } = { ...content };
+  let { attributes, collections, global } = { ...content };
+  const { publicRuntimeConfig } = getConfig();
   const collectionNames = {
     PRIMARY_MENU_ITEMS: "primary-menu-items",
-    SECONDARY_MENU_ITEMS: "secondary-menu-items"
+    SECONDARY_MENU_ITEMS: "secondary-menu-items",
   };
   let primaryMenuItems = [];
   let secondaryMenuItems = [];
@@ -26,12 +28,22 @@ export default function Footer1({ content }) {
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/5 mb-10 lg:mb-0">
             <a href="/">
-              <img className="w-16" src="/images/logo-light.png" alt="" />
+              <Image
+                src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                  attributes.logoLight.data.attributes.url
+                }`}
+                width={attributes.logoLight.data.attributes.width}
+                height={attributes.logoLight.data.attributes.height}
+                alt={attributes.logoLight.data.attributes.alternativeText}
+              />
+              {/* <img className="w-16" src="/images/theme/logo-light.png" alt="" /> */}
             </a>
             <p className="text-primary-70 font-bold tracking-wide text-xs my-5 lg:mr-5">
               {global.name}
             </p>
-            <p className="text-primary-70 tracking-wide text-xs my-5 lg:mr-5">{global.description}</p>
+            <p className="text-primary-70 tracking-wide text-xs my-5 lg:mr-5">
+              {global.description}
+            </p>
           </div>
           <div className="flex flex-wrap lg:w-4/5">
             <div className="w-1/2 md:w-1/4 lg:w-1/5 lg:flex-grow lg:ml-5">

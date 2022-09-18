@@ -121,18 +121,21 @@
 }
 
 .home-about-image {
-  height: 300px;
+  /* height: 300px; */
+  width: 500px;
 }
 
 @screen md {
   .home-about-image {
-    height: 400px;
+    /* width:100%; */
+    width: 500px;
   }
 }
 
 @screen lg {
   .home-about-image {
     height: 750px;
+    /* height: 750px; */
   }
 }
 
