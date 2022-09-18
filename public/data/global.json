@@ -9,10 +9,10 @@
         "attributes": {
           "name": "logo-dark",
           "path": "/images",
-          "ext": "svg",
+          "ext": "png",
           "url": "/images/logo-dark.png",
-          "width": 45,
-          "height": 45
+          "width": 150,
+          "height": 150
         }
       }
     }
