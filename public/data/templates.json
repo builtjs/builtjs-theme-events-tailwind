@@ -78,11 +78,11 @@
       "category": "blocks",
       "description": "Text block with image and call to action.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-5/block-5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-5/block-5.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-6/block-6.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-6/block-6.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/block-5/block-5.js",
-      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#block-5"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/block-6/block-6.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#block-6"
     },
     {
       "slug": "block-7",
@@ -222,8 +222,8 @@
       "category": "blocks",
       "description": "Section for displaying frequently asked questions.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/faq-block.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/faq-block.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/faq-block/faq-block.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/faq-block/faq-block.png"
       },
       "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/faq-block.js",
       "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#faq-block"
