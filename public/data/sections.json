@@ -41,8 +41,7 @@
       "collections": {
         "primary-menu-items": {},
         "secondary-menu-items": {}
-      },
-      "order": 1
+      }
     },
     {
       "slug": "footer",
@@ -72,8 +71,7 @@
       "collections": {
         "primary-menu-items": {},
         "secondary-menu-items": {}
-      },
-      "order": 10
+      }
     },
     {
       "slug": "home-seo",
@@ -102,8 +100,7 @@
         },
         "twitterCardType": "summary",
         "twitterUsername": ""
-      },
-      "order": 0
+      }
     },
     {
       "slug": "event-article",
@@ -115,8 +112,7 @@
       },
       "item": {
         "slug": "event-item"
-      },
-      "order": 2
+      }
     },
     {
       "slug": "events-hero",
@@ -133,8 +129,7 @@
             "slug": "event-article"
           }
         }
-      },
-      "order": 2
+      }
     },
     {
       "slug": "about-seo",
@@ -164,8 +159,7 @@
         ,
         "twitterCardType": "summary",
         "twitterUsername": ""
-      },
-      "order": 0
+      }
     },
     {
       "slug": "about-landing",
@@ -194,7 +188,10 @@
           }
         }
       },
-      "order": 2
+      "images": {
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/block-1-about.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/block-1-about.png"
+      }
     },
     {
       "slug": "contact-seo",
@@ -223,8 +220,7 @@
         },
         "twitterCardType": "summary",
         "twitterUsername": ""
-      },
-      "order": 0
+      }
     },
     {
       "slug": "contact-landing",
@@ -238,8 +234,7 @@
         "preheading": "Contact",
         "heading": "Get in touch",
         "blurb": "Maecenas porttitor mauris rhoncus, viverra mauris in, mollis nunc. Praesent gravida lectus sed ligula imperdiet laoreet. Aenean sit amet nisi sed dui rutrum volutpat. Cras dapibus fringilla tortor, quis efficitur lorem tincidunt at. Sed sagittis nisl vitae dolor porta efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed purus augue, condimentum nec felis vitae, porttitor pretium sapien."
-      },
-      "order": 2
+      }
     },
     {
       "slug": "newsletter",
@@ -252,8 +247,7 @@
       "attributes": {
         "heading": "Sign up for our newsletter",
         "blurb": "Stay in touch with all the latest Events Tailwind events happening in our area and other related news. You can cancel your newsletter at any time."
-      },
-      "order": 5
+      }
     },
     {
       "slug": "newsletter-lrg",
@@ -280,8 +274,7 @@
             }
           }
         }
-      },
-      "order": 4
+      }
     },
     {
       "slug": "about-blockquote",
@@ -293,8 +286,7 @@
       },
       "attributes": {
         "quote": "The Events Tailwind was formed to present concerts and other entertainment for our local community. Our aim is to support our arts culture by promoting the enjoyment and encouragement of the performing arts."
-      },
-      "order": 5
+      }
     },
     {
       "slug": "about-events-teaser",
@@ -321,8 +313,7 @@
         },        
         "ctaText": "Browse our events",
         "ctaUrl": "/events"
-      },
-      "order": 5
+      }
     },
     {
       "slug": "events-landing",
@@ -339,8 +330,7 @@
       },
       "collections": {
         "event-items": {}
-      },
-      "order": 2
+      }
     },
     {
       "slug": "events-list",
@@ -361,8 +351,7 @@
             "slug": "event-article"
           }
         }
-      },
-      "order": 3
+      }
     },
     {
       "slug": "events-seo",
@@ -391,8 +380,7 @@
         },
         "twitterCardType": "summary",
         "twitterUsername": ""
-      },
-      "order": 0
+      }
     },
     {
       "slug": "subscribe-landing",
@@ -406,8 +394,7 @@
         "preheading": "Become a Subscriber",
         "heading": "Continuous support allows us to do what we do.",
         "body": "By becoming a subscriber, you help us present memorable concerts. We are a not-for-profit charity which needs the support of passionate music lovers to ensure we continue to offer top quality concerts to our community. Each year a concert or other event is held exclusively for Subscribers and Donors as a thank you for their support."
-      },
-      "order": 2
+      }
     },
     {
       "slug": "subscribe-faq",
@@ -420,8 +407,7 @@
       "attributes": {},
       "collections": {
         "faq-items": {}
-      },
-      "order": 4
+      }
     },
     {
       "slug": "subscribe-seo",
@@ -450,8 +436,7 @@
         },
         "twitterCardType": "summary",
         "twitterUsername": ""
-      },
-      "order": 0
+      }
     },
     {
       "slug": "donate-teaser",
@@ -465,8 +450,7 @@
         "heading": "Want to make a donation?",
         "blurb": "We depend on the generosity of individual donors who make it possible for us to present world-class concerts in our area.",
         "url": "/donate"
-      },
-      "order": 3
+      }
     },
     {
       "slug": "subscribe-teaser",
@@ -480,8 +464,7 @@
         "heading": "Want to become a Subscriber?",
         "blurb": "When you choose to partner with us by becoming a Events Tailwind supporter, you help enable remarkable musical experiences right here.",
         "url": "/subscribe"
-      },
-      "order": 2
+      }
     },
     {
       "slug": "donate-landing",
@@ -501,8 +484,7 @@
         "benefitBlurb2": "Contributing to the culture of our local community.",
         "benefitHeading3": "Enabling the Events Tailwind to invite top performers to our city.",
         "benefitBlurb3": "Helping with the cost of publicity and other costs."
-      },
-      "order": 2
+      }
     },
     {
       "slug": "donate-seo",
@@ -531,8 +513,7 @@
         },
         "twitterCardType": "summary",
         "twitterUsername": ""
-      },
-      "order": 0
+      }
     },
     {
       "slug": "sponsors",
@@ -551,8 +532,7 @@
       },
       "collections": {
         "sponsor-items": {}
-      },
-      "order": 8
+      }
     },
     {
       "slug": "volunteer-seo",
@@ -582,8 +562,7 @@
         ,
         "twitterCardType": "summary",
         "twitterUsername": ""
-      },
-      "order": 0
+      }
     },
     {
       "slug": "volunteer-landing",
@@ -613,7 +592,10 @@
         "ctaText": "Contact Us",
         "ctaUrl": "/contact"
       },
-      "order": 2
+      "images": {
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/block-1-about.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/block-1-about.png"
+      }
     },
     {
       "slug": "volunteer-teaser",
@@ -645,8 +627,7 @@
       },
       "collections": {
         "sponsor-items": {}
-      },
-      "order": 7
+      }
     },
     {
       "slug": "about-teaser",
@@ -679,8 +660,7 @@
       },
       "collections": {
         "sponsor-items": {}
-      },
-      "order": 5
+      }
     },
     {
       "slug": "support-teaser",
@@ -703,8 +683,7 @@
         "blurb2": "Make a donation to help us bring the best performers to our city. The generosity of donors enables us to present more expensive concerts, while keeping admission prices affordable. For donations of $5 or more you can claim a tax credit.",
         "cta2": "Donate",
         "url2": "/donate"
-      },
-      "order": 6
+      }
     }
   ]
 }

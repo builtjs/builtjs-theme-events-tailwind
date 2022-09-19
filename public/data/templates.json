@@ -5,16 +5,16 @@
       "displayName": "Header 1",
       "category": "headers",
       "description": "Simple header with justified logo and nav links.",
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/headers/header-1/header-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/headers#header-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/headers/header-1/header-1.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/headers#header-1"
     },
     {
       "slug": "footer-1",
       "displayName": "Footer 1",
       "category": "footers",
       "description": "Simple footer with centered content and social links.",
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/footers/footer-1/footer-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/footers#footer-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/footers/footer-1/footer-1.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/footers#footer-1"
     },
     {
       "slug": "seo",
@@ -22,68 +22,7 @@
       "displayName": "SEO",
       "category": "head",
       "description": "Define SEO meta titles, meta descriptions and social media meta data.",
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/head/seo/seo.js"
-    },
-    {
-      "slug": "banner-1",
-      "displayName": "Banner 1",
-      "category": "banners",
-      "description": "Full width banner with centered content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-1/banner-1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-1/banner-1.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/banners/banner-1/banner-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/banners#banner-1"
-    },
-    {
-      "slug": "banner-2",
-      "displayName": "Banner 2",
-      "category": "banners",
-      "description": "Full width banner with left aligned content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-2/banner-2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-2/banner-2.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/banners/banner-2/banner-2.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/banners#banner-2"
-    },
-    {
-      "slug": "banner-3",
-      "type": "body",
-      "displayName": "Banner 3",
-      "category": "banners",
-      "description": "Full width banner with two offset columns.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-3/banner-3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-3/banner-3.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/banners/banner-3/banner-3.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/banners#banner-3"
-    },
-    {
-      "slug": "banner-4",
-      "displayName": "Banner 4",
-      "category": "banners",
-      "description": "Banner with centered content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-4/banner-4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-4/banner-4.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/banners/banner-4/banner-4.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/banners#banner-4"
-    },
-    {
-      "slug": "banner-5",
-      "displayName": "Banner 5",
-      "category": "banners",
-      "description": "Banner with two offset columns.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-5/banner-5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/banners/banner-5/banner-5.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/banners/banner-5/banner-5.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/banners#banner-5"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/head/seo/seo.js"
     },
     {
       "slug": "block-1",
@@ -91,11 +30,11 @@
       "category": "blocks",
       "description": "Text block with left aligned content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-1/block-1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-1/block-1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/block-1-about.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/block-1-about.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/blocks/block-1/block-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/blocks#block-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/block-1/block-1.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#block-1"
     },
     {
       "slug": "block-2",
@@ -103,23 +42,11 @@
       "category": "blocks",
       "description": "Text block with centered content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-2/block-2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-2/block-2.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-2/block-2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-2/block-2.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/blocks/block-2/block-2.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/blocks#block-2"
-    },
-    {
-      "slug": "block-3",
-      "displayName": "Block 3",
-      "category": "blocks",
-      "description": "Text block with two equal columns and left aligned content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-3/block-3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-3/block-3.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/blocks/block-3/block-3.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/blocks#block-3"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/block-2/block-2.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#block-2"
     },
     {
       "slug": "block-4",
@@ -127,11 +54,11 @@
       "category": "blocks",
       "description": "Text block with two equal columns and centered content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-4/block-4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-4/block-4.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-4/block-4.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-4/block-4.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/blocks/block-4/block-4.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/blocks#block-4"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/block-4/block-4.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#block-4"
     },
     {
       "slug": "block-5",
@@ -139,11 +66,11 @@
       "category": "blocks",
       "description": "Text block with two equal columns and split content",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-5/block-5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-5/block-5.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-5/block-5.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-5/block-5.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/blocks/block-5/block-5.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/blocks#block-5"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/block-5/block-5.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#block-5"
     },
     {
       "slug": "block-6",
@@ -151,11 +78,11 @@
       "category": "blocks",
       "description": "Text block with image and call to action.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-5/block-5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/blocks/block-5/block-5.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-5/block-5.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-5/block-5.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/blocks/block-5/block-5.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/blocks#block-5"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/block-5/block-5.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#block-5"
     },
     {
       "slug": "block-7",
@@ -175,71 +102,11 @@
       "category": "cards",
       "description": "Cards with three equal columns and left aligned content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-1/cards-1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-1/cards-1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/cards/cards-1/cards-1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/cards/cards-1/cards-1.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/cards/cards-1/cards-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/cards#cards-1"
-    },
-    {
-      "slug": "cards-2",
-      "displayName": "Cards 2",
-      "category": "cards",
-      "description": "Cards with three equal columns and centered content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-2/cards-2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-2/cards-2.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/cards/cards-2/cards-2.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/cards#cards-2"
-    },
-    {
-      "slug": "cards-3",
-      "displayName": "Cards 3",
-      "category": "cards",
-      "description": "Cards with three equal columns, left aligned content and a background colour.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-3/cards-3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-3/cards-3.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/cards/cards-3/cards-3.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/cards#cards-3"
-    },
-    {
-      "slug": "cards-4",
-      "displayName": "Cards 4",
-      "category": "cards",
-      "description": "Cards with three equal columns, centered content and a background colour.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-4/cards-4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-4/cards-4.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/cards/cards-4/cards-4.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/cards#cards-4"
-    },
-    {
-      "slug": "cards-5",
-      "displayName": "Cards 5",
-      "category": "cards",
-      "description": "Cards with three equal columns, left aligned content and an image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-5/cards-5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/cards/cards-5/cards-5.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/cards/cards-5/cards-5.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/cards#cards-5"
-    },
-    {
-      "slug": "cover-1",
-      "displayName": "Cover 1",
-      "category": "covers",
-      "description": "Full viewport cover with text content and a supporting image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/covers/cover-1/cover-1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/covers/cover-1/cover-1.png"
-      },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/covers/cover-1/cover-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/covers#cover-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/cards/cards-1/cards-1.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/cards#cards-1"
     },
     {
       "slug": "hero-cover",
@@ -259,11 +126,11 @@
       "category": "forms",
       "description": "Donate form with introduction to benefits of donation.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/forms/form-1/form-1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/forms/form-1/form-1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/forms/donate-form/donate-form.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/forms/donate-form/donate-form.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/forms/form-1/form-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/forms#form-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/forms/donate-form.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/forms#donate-form"
     },
     {
       "slug": "contact-form",
@@ -271,11 +138,11 @@
       "category": "forms",
       "description": "Contact form with supplementary contact details.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/forms/form-1/form-1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/forms/form-1/form-1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/forms/contact-form/contact-form.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/forms/contact-form/contact-form.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/forms/form-1/form-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/forms#form-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/forms/contact-form/contact-form.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/forms#contact-form"
     },
     {
       "slug": "article-1",
@@ -283,11 +150,11 @@
       "category": "articles",
       "description": "Article section with hero image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/articles/article-1/article-1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-corporate-tailwind/public/images/templates/articles/article-1/article-1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/articles/article-1/article-1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/articles/article-1/article-1.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/articles/article-1/article-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#article-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/articles/article-1/article-1.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#article-1"
     },
     {
       "slug": "newsletter-banner-1",
@@ -299,7 +166,7 @@
         "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/banners/newsletter-banner-1/newsletter-banner-1.png"
       },
       "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/banners/newsletter-banner-1/newsletter-banner-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/banners#newsletter-banner-1"
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/banners#newsletter-banner-1"
     },
     {
       "slug": "newsletter-form-1",
@@ -310,8 +177,8 @@
         "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/forms/newsletter-form-1/newsletter-form-1.png",
         "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/forms/newsletter-form-1/newsletter-form-1.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/forms/newsletter-form-1/newsletter-form-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/forms#newsletter-form-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/forms/newsletter-form-1/newsletter-form-1.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/forms#newsletter-form-1"
     },
     {
       "slug": "blockquote-1",
@@ -319,11 +186,11 @@
       "category": "blockquotes",
       "description": "Blockquote section.",
       "images": {
-        "thumb": "",
-        "lrg": ""
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blockquotes/blockquote-1/blockquote-1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blockquotes/blockquote-1/blockquote-1.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/articles/profile-article-1/profile-article-1/article-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#profile-article-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blockquotes/blockquote-1/blockquote-1.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blockquotes#blockquote-1"
     },
     {
       "slug": "cta-card",
@@ -331,11 +198,11 @@
       "category": "cards",
       "description": "Section with call-to-action in a card.",
       "images": {
-        "thumb": "",
-        "lrg": ""
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/cards/cta-card/cta-card-subscribe.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/cards/cta-card/cta-card-subscribe.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/articles/profile-article-1/profile-article-1/article-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#profile-article-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/cards/cta-card.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/cards#cta-card"
     },
     {
       "slug": "subscribe-form",
@@ -343,11 +210,11 @@
       "category": "forms",
       "description": "Section for subscribing with two plans, description, and optional donation.",
       "images": {
-        "thumb": "",
-        "lrg": ""
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/forms/subscribe-form/subscribe-form.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/forms/subscribe-form/subscribe-form.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/articles/profile-article-1/profile-article-1/article-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#profile-article-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/forms/subscribe-form.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/forms#subscribe-form"
     },
     {
       "slug": "faq-block",
@@ -355,11 +222,11 @@
       "category": "blocks",
       "description": "Section for displaying frequently asked questions.",
       "images": {
-        "thumb": "",
-        "lrg": ""
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/faq-block.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-theme-events-tailwind/public/images/templates/blocks/block-1/faq-block.png"
       },
-      "repoUrl": "https://github.com/builtjs/builtjs-theme-corporate-tailwind/blob/main/components/templates/articles/profile-article-1/profile-article-1/article-1.js",
-      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#profile-article-1"
+      "repoUrl": "https://github.com/builtjs/builtjs-theme-events-tailwind/blob/main/components/templates/blocks/faq-block.js",
+      "demoUrl": "https://builtjs-theme-events-tailwind.vercel.app/templates/blocks#faq-block"
     }
   ]
 }
