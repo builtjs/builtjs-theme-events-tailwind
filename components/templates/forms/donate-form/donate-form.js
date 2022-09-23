@@ -134,9 +134,6 @@ export default function DonateForm({ content }) {
           <div className="w-full lg:w-1/2 relative">
             <div
               className="border shadow-lg rounded-lg bg-white p-5 md:p-10 lg:mt-48 xl:mt-64 mb-16"
-              data-aos="fade-up"
-              data-aos-duration="650"
-              data-aos-once="true"
             >
               <div className="flex items-center justify-between mb-10">
                 <h3>Make a donation</h3>

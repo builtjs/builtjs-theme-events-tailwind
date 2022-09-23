@@ -134,10 +134,6 @@ export default function NewsletterForm1({ content }) {
 
           <div
             className="order-first md:order-1 md:mx-auto mb-10 md:mb-0 md:w-1/2"
-            data-aos="fade-up"
-            data-aos-offset="250"
-            data-aos-duration="500"
-            data-aos-once="true"
           >
             <Image
               className="w-48 md:w-3/4 md:mx-auto"

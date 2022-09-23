@@ -131,9 +131,6 @@ export default function ContactForm({ content }) {
           <div className="w-full lg:w-3/5 lg:pl-20 relative">
             <div
               className="border shadow-lg rounded-lg bg-white p-5 md:p-10 lg:mt-48 xl:mt-64 mb-16"
-              data-aos="fade-up"
-              data-aos-duration="650"
-              data-aos-once="true"
             >
               <div className="flex items-center justify-between mb-10">
                 <h3>Contact Form</h3>

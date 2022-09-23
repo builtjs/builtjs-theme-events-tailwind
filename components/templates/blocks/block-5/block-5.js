@@ -22,10 +22,6 @@ export default function Block5({ content }) {
         <div className="max-w-screen-xl lg:px-4 mx-auto">
           <div
             className="bg-primary top-0 left-0 px-4 py-12 lg:p-16 w-full lg:w-3/5"
-            data-aos="fade-up"
-            data-aos-offset="250"
-            data-aos-duration="500"
-            data-aos-once="true"
           >
             <p className="pre-headline-white">{attributes.preheading}</p>
             <h2 className="text-white mb-10">{attributes.heading}</h2>

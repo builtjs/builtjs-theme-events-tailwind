@@ -32,9 +32,7 @@ export default function Block1({ content }) {
         </div>
         <div className="lg:w-1/2 relative">
            <div
-            className="aos-init aos-animate shadow-xl"
-            data-aos="fade-zoom-in"
-            data-aos-duration="1000"
+            className="shadow-xl"
           >
             <Image
               className="mx-auto filter-grayscale-1 hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"

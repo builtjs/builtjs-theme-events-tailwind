@@ -110,8 +110,6 @@ export default function SubscribeForm({ content }) {
         )}
         <div
           className="max-w-2xl mx-auto border shadow-lg rounded-lg bg-white"
-          data-aos="fade-up"
-          data-aos-duration="650"
         >
           <div className="p-5 md:p-10">
             <div className="flex items-center flex-col-reverse sm:flex-row justify-start sm:justify-between mb-10">

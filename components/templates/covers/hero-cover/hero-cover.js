@@ -47,8 +47,6 @@ export default function HeroCover({ content }) {
         <div className="media-item-hero-content md:absolute md:z-30 md:bottom-0 md:w-full lg:backdrop-blur lg:hover:backdrop-blur-lg border-t border-white transition-all ease-in-out duration-500">
           <div
             className="flex flex-col md:flex-row"
-            data-aos="fade-up"
-            data-aos-delay="500"
           >
             <div className="flex flex-grow flex-col xl:flex-row">
               <div className="flex-grow bg-primary-80 lg:bg-transparent border-b xl:border-b-0 xl:border-r border-primary-70 lg:border-white py-6 px-4 xl:py-8 lg:px-12">

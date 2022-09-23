@@ -14,9 +14,6 @@ export default function Block6({ content }) {
       <div className="flex items-start flex-col lg:flex-row relative">
         <div
           className="w-full lg:w-2/5 lg:mt-17"
-          data-aos="fade-up"
-          data-aos-offset="250"
-          data-aos-duration="500"
         >
           
           <div className="hidden lg:block cta-generic-img filter-grayscale-1 hover:filter-grayscale-0 w-full home-about-image object-cover">
