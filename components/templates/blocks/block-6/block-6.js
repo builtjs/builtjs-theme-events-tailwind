@@ -9,34 +9,29 @@ export default function Block6({ content }) {
   return (
     <section
       id="block-6"
-      className="cta-bg-image pt-32 mb-24 md:mb-32 xl:mb-48"
+      className="cta-bg-image pt-32 mb-24 md:mb-32 xl:mb-48 template"
     >
       <div className="flex items-start flex-col lg:flex-row relative">
         <div
           className="w-full lg:w-2/5 lg:mt-17"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-duration="500"
         >
-          {/* <div className="cta-generic-img"> */}
-          {/* <div> */}
-          {/* <Image
-          className="cta-generic-img home-about-image filter-grayscale-1 hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
-            // className="cta-generic-img filter-grayscale-1 home-about-image cta-generic-img home-about-image hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
-            src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-              attributes.image.data.attributes.url
-            }`}
-            layout="fill"
-            alt={attributes.heading}
-          /> */}
-          {/* </div>
           
-          </div> */}
-          
-          <img
-            className="cta-generic-img filter-grayscale-1 home-about-image cta-generic-img home-about-image hover:filter-grayscale-0 transition-filter transition-all duration-500 blur-out"
-            src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-              attributes.image.data.attributes.url
-            }`}
-            alt={attributes.heading}
-          />
+          <div className="hidden lg:block cta-generic-img filter-grayscale-1 hover:filter-grayscale-0 w-full home-about-image object-cover">
+          <Image
+              src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                attributes.image.data.attributes.url
+              }`}
+              alt={attributes.heading}
+              width={attributes.image.data.attributes.width}
+              height={attributes.image.data.attributes.height}
+              layout="responsive"
+              objectFit="cover"
+              priority="true"
+            />
+          </div>
         </div>
         <div className="px-4 py-12 lg:pt-10 lg:pb-32 xl:pt-32 xl:pb-24 lg:px-10 xl:ml-8 w-full lg:w-3/5">
           <p className="pre-headline-white">{attributes.preheading}</p>

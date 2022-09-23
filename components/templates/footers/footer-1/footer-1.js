@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import getConfig from "next/config";
 
 export default function Footer1({ content }) {
@@ -11,7 +12,6 @@ export default function Footer1({ content }) {
   };
   let primaryMenuItems = [];
   let secondaryMenuItems = [];
-  let socialLinks = [];
   if (collections) {
     if (collections[collectionNames.PRIMARY_MENU_ITEMS]) {
       primaryMenuItems = collections[collectionNames.PRIMARY_MENU_ITEMS].items;
@@ -27,17 +27,18 @@ export default function Footer1({ content }) {
       <div className="max-w-screen-xl px-4 pt-20 pb-10 mx-auto">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/5 mb-10 lg:mb-0">
-            <a href="/">
-              <Image
-                src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                  attributes.logoLight.data.attributes.url
-                }`}
-                width={attributes.logoLight.data.attributes.width}
-                height={attributes.logoLight.data.attributes.height}
-                alt={attributes.logoLight.data.attributes.alternativeText}
-              />
-              {/* <img className="w-16" src="/images/theme/logo-light.png" alt="" /> */}
-            </a>
+            <Link href="/">
+              <a>
+                <Image
+                  src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                    attributes.logoLight.data.attributes.url
+                  }`}
+                  width={attributes.logoLight.data.attributes.width}
+                  height={attributes.logoLight.data.attributes.height}
+                  alt={attributes.logoLight.data.attributes.alternativeText}
+                />
+              </a>
+            </Link>
             <p className="text-primary-70 font-bold tracking-wide text-xs my-5 lg:mr-5">
               {global.name}
             </p>
@@ -65,39 +66,6 @@ export default function Footer1({ content }) {
                       </li>
                     );
                   })}
-
-                {/* <li className="mb-2">
-                  <a
-                    className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="/events/page-1/"
-                  >
-                    Events
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="/subscribe/"
-                  >
-                    Subscribe
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a
-                    className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="/donate/"
-                  >
-                    Donate
-                  </a>
-                </li> */}
-                {/* <li className="mb-2">
-                  <a
-                    className="text-primary tracking-wider leading-none text-sm hover:text-primary-50 hover:underline"
-                    href="/contact/"
-                  >
-                    Sponsor
-                  </a>
-                </li> */}
               </ul>
             </div>
             <div className="w-1/2 md:w-1/4 lg:w-1/5 lg:flex-grow lg:ml-5">

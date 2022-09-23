@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import getConfig from "next/config";
 import { format } from "date-fns";
 import { LeftAlignedHeadline, CenterAlignedHeadline } from "@/elements";
@@ -43,13 +44,17 @@ export default function Cards1({ content }) {
                   <div className="px-5 lg:px-10 mb-6">
                     <Link href={`event-items/${item.attributes.slug}`}>
                       <a>
-                        <img
-                          className="w-full blurry-load filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full h-48 md:h-56 lg:h-64 xl:h-72 object-cover mb-8 shadow-2xl"
-                          src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                            item.attributes.featuredImage?.data?.attributes?.url
-                          }`}
-                          alt={item.attributes.title}
-                        />
+                        <div className="relative w-full blurry-load filter-grayscale-1 hover:filter-grayscale-0 transition-filter duration-500 w-full h-48 md:h-56 lg:h-64 xl:h-72 object-cover mb-8 shadow-2xl">
+                          <Image
+                            src={`${publicRuntimeConfig.BACKEND_URL || ""}${
+                              item.attributes.featuredImage?.data?.attributes
+                                ?.url
+                            }`}
+                            alt={item.attributes.title}
+                            objectFit="cover"
+                            layout="fill"
+                          />
+                        </div>
                       </a>
                     </Link>
 

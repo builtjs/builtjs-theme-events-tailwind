@@ -22,7 +22,7 @@ export default function FaqBlock({ content }) {
     items = collection.items;
   }
   return (
-    <section id="block-6" className="cta-multi relative pb-16 template">
+    <section id="faq-block" className="cta-multi relative pb-16 template">
       <div className="max-w-screen-xl px-4 mx-auto pt-32 pb-10">
         <h2 className="text-center mb-20">Frequently Asked Questions</h2>
         <div className="max-w-4xl mx-auto">
