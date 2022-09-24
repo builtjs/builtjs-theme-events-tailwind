@@ -9,7 +9,24 @@
           "displayName": "Header",
           "icon": "heading"
         },
-        "attributes": {}
+        "attributes": {
+          "logoLight": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "logoType": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          }
+        }
       }
     },
     "footer": {
@@ -21,7 +38,16 @@
           "displayName": "Footer",
           "icon": "heading"
         },
-        "attributes": {}
+        "attributes": {
+          "logoLight": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          }
+        }
       }
     },
     "home-seo": {
@@ -454,7 +480,15 @@
         "attributes": {
           "preheading": { "type": "string" },
           "heading": { "type": "string" },
-          "blurb": { "type": "text" }
+          "blurb": { "type": "text" },
+          "image": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          }
         }
       }
     },

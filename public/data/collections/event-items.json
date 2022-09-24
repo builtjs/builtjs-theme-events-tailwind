@@ -28,7 +28,8 @@
         "infoWebsite": "https://example.com",
         "bookingInfo": "<p>Booking information to be advised closer to the date.</p>",
         "ticketUrl": "https://example.com",
-        "status": "Active"
+        "quote": "The best jazz our city has to offer",
+        "source": "Joe Bloggs"
       }
     },
     {
@@ -59,7 +60,8 @@
         "infoWebsite": "https://example.com",
         "bookingInfo": "<p>Booking information to be advised closer to the date.</p>",
         "ticketUrl": "https://example.com",
-        "status": "Active"
+        "quote": "Rockerfella have returned to the recording studio with a bang",
+        "source": "Bob Brown"
       }
     }
   ]

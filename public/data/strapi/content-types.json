@@ -35,9 +35,7 @@
             "type": "text"
           },
           "featuredImage": {
-            "allowedTypes": [
-              "images"
-            ],
+            "allowedTypes": ["images"],
             "type": "media",
             "multiple": false,
             "required": false
@@ -45,25 +43,33 @@
           "date": {
             "type": "date",
             "required": true
-          },"startTime": {
+          },
+          "startTime": {
+            "type": "string"
+          },
+          "venue": {
+            "type": "string"
+          },
+          "townCity": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          },
+          "genre": {
+            "type": "string"
+          },
+          "infoWebsite": {
+            "type": "string"
+          },
+          "bookingInfo": {
             "type": "text"
-          },"venue": {
-            "type": "text"
-          },"townCity": {
-            "type": "text"
-          },"duration": {
-            "type": "text"
-          },"genre": {
-            "type": "text"
-          },"infoWebsite": {
-            "type": "text"
-          },"bookingInfo": {
-            "type": "text"
-          },"ticketUrl": {
-            "type": "text"
-          },"status": {
-            "type": "text"
-          }
+          },
+          "ticketUrl": {
+            "type": "string"
+          },
+          "quote": { "type": "text" },
+          "source": { "type": "string" }
         }
       }
     },
@@ -99,9 +105,7 @@
             "type": "text"
           },
           "image": {
-            "allowedTypes": [
-              "images"
-            ],
+            "allowedTypes": ["images"],
             "type": "media",
             "multiple": false,
             "required": false
