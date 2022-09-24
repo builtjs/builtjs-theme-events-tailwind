@@ -127,6 +127,9 @@
         "event-items": {
           "article": {
             "slug": "event-article"
+          },
+          "sort": {
+            "0": "date:asc"
           }
         }
       }
@@ -155,8 +158,7 @@
               "alternativeText": "Logo"
             }
           }
-        }
-        ,
+        },
         "twitterCardType": "summary",
         "twitterUsername": ""
       }
@@ -310,7 +312,7 @@
               "alternativeText": "Events"
             }
           }
-        },        
+        },
         "ctaText": "Browse our events",
         "ctaUrl": "/events"
       }
@@ -329,7 +331,11 @@
         "headlineAlignment": "center"
       },
       "collections": {
-        "event-items": {}
+        "event-items": {
+          "sort": {
+            "0": "date:asc"
+          }
+        }
       }
     },
     {
@@ -349,6 +355,9 @@
         "event-items": {
           "article": {
             "slug": "event-article"
+          },          
+          "sort": {
+            "0": "date:asc"
           }
         }
       }
@@ -558,8 +567,7 @@
               "alternativeText": "Logo"
             }
           }
-        }
-        ,
+        },
         "twitterCardType": "summary",
         "twitterUsername": ""
       }
