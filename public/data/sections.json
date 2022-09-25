@@ -355,7 +355,8 @@
         "event-items": {
           "article": {
             "slug": "event-article"
-          },          
+          },  
+          "limit": 2,     
           "sort": {
             "0": "date:asc"
           }
