@@ -1,12 +1,7 @@
 import Image from "next/image";
 import getConfig from "next/config";
+import ReactMarkdown from "react-markdown";
 import { CTAButton } from "@/elements";
-
-const getHTML = (content) => {
-  return {
-    __html: content,
-  };
-};
 
 export default function Block2({ content }) {
   if (!content) return <></>;
@@ -31,7 +26,10 @@ export default function Block2({ content }) {
           />
         </div>
         <div className="lg:w-1/2 sm:mx-6 lg:ml-12 lg:mb-0 mt-12 lg:mt-0">
-          <div className="text-primary-70 leading-7 mb-12" dangerouslySetInnerHTML={getHTML(attributes.body)}></div>
+        <ReactMarkdown
+            className="text-primary-70 leading-7 mb-12 line-break"
+            children={attributes.body.replace(/\n/gi, "&nbsp; \n")}
+          />
           <CTAButton attributes={attributes} />
         </div>
       </div>

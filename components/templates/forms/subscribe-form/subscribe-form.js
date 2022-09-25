@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import getConfig from "next/config";
+import ReactMarkdown from "react-markdown";
 import { CenterAlignedHeadline } from "@/elements";
 
 export default function SubscribeForm({ content }) {
@@ -73,9 +74,10 @@ export default function SubscribeForm({ content }) {
     <section id="subscribe-form" className="relative template">
       <section className="max-w-screen-xl px-4 mx-auto py-24">
         <CenterAlignedHeadline attributes={attributes} topSpacing={150} />
-        <p className="max-w-xl mx-auto text-primary-50 text-center leading-7 mb-20">
-          {attributes.body}
-        </p>
+        <ReactMarkdown
+          className="max-w-xl mx-auto text-primary-50 text-center leading-7 mb-20 line-break"
+          children={attributes.body.replace(/\n/gi, "&nbsp; \n")}
+        />
         {!isLoading && (
           <div
             className="type-buttons flex items-center justify-center mb-20"

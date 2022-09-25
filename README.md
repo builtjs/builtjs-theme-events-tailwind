@@ -31,7 +31,7 @@ npm run dev
 #### Event
 Attributes:
 - title: Text
-- cTABlurb: RichText
+- description: RichText
 - featuredImage": File,
 - date: Date,
 - startTime: Text

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import getConfig from "next/config";
+import ReactMarkdown from "react-markdown";
 import { CTAButton } from "@/elements";
 
 export default function Block6({ content }) {
@@ -37,9 +38,10 @@ export default function Block6({ content }) {
             <p className="text-white text-lg mb-6 lg:max-w-2xl sm:pr-4 leading-8">
               {attributes.blurb}
             </p>
-            <p className="text-primary-10 mb-20 lg:max-w-2xl sm:pr-4 leading-7">
-              {attributes.body}
-            </p>
+            <ReactMarkdown
+              className="text-primary-10 mb-20 lg:max-w-2xl sm:pr-4 leading-7 line-break"
+              children={attributes.body.replace(/\n/gi, "&nbsp; \n")}
+            />
             <div className="inline-flex items-center group">
               <CTAButton attributes={attributes} type="primaryBg" />
             </div>

@@ -1,10 +1,5 @@
 import Link from "next/link";
-
-const getHTML = (content) => {
-  return {
-    __html: content,
-  };
-};
+import ReactMarkdown from "react-markdown";
 
 export default function FaqBlock({ content }) {
   if (!content) return <></>;
@@ -33,9 +28,10 @@ export default function FaqBlock({ content }) {
                   <h5 className="font-sans text-lg font-semibold mb-2">
                     {item.attributes.question}
                   </h5>
-                  <div
-                    dangerouslySetInnerHTML={getHTML(item.attributes.answer)}
-                  ></div>
+                  <ReactMarkdown
+                    className="line-break"
+                    children={item.attributes.answer.replace(/\n/gi, "&nbsp; \n")}
+                  />
                 </div>
               ))}
           </div>

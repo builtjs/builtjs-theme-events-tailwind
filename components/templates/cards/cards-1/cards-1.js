@@ -66,7 +66,7 @@ export default function Cards1({ content }) {
                       </a>
                     </Link>
                     <div className="text-white mb-6 md:mb-12 lg:leading-8">
-                      {item.attributes.cTABlurb}
+                      {item.attributes.description}
                     </div>
                     <div className="flex items-center flex-col lg:flex-row">
                       <Link href={`event-items/${item.attributes.slug}`}>
