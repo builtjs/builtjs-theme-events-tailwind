@@ -1,6 +1,7 @@
 import Link from "next/link";
 import getConfig from "next/config";
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
 import CTAButtonSimple from "../../../elements/cta-button-simple";
 
 export default function Block4({ content }) {
@@ -21,9 +22,10 @@ export default function Block4({ content }) {
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-2/5">
             <div className="sm:ml-6 lg:ml-12">
-              <p className="text-primary-50 mb-12 lg:max-w-2xl sm:pr-4 lg:pr-8 leading-7 ">
-                {attributes.body}
-              </p>
+              <ReactMarkdown
+                className="text-primary-50 mb-12 lg:max-w-2xl sm:pr-4 lg:pr-8 leading-7 line-break"
+                children={attributes.body.replace(/\n/gi, "&nbsp; \n")}
+              />
               <CTAButtonSimple attributes={attributes} />
             </div>
           </div>

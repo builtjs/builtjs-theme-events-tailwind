@@ -115,3 +115,7 @@
     var(--secondary-opposite-s), var(--secondary-opposite-l);
   --secondary-opposite: hsl(var(--secondary-opposite-hsl));
 }
+
+.line-break {
+  white-space: pre-wrap;
+}

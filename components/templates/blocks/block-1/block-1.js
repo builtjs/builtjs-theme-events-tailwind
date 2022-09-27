@@ -1,5 +1,6 @@
 import Image from "next/image";
 import getConfig from "next/config";
+import ReactMarkdown from "react-markdown";
 import {CTAButton} from "@/elements";
 import {LeftAlignedHeadline} from "@/elements";
 
@@ -7,11 +8,6 @@ export default function Block1({ content }) {
   if (!content) return <></>;
   const { publicRuntimeConfig } = getConfig();
   let { attributes } = content;
-  const getHTML = (content) => {
-    return {
-      __html: content,
-    };
-  };
 
   return (
     <section
@@ -27,7 +23,10 @@ export default function Block1({ content }) {
               {attributes.leadingSentence}
             </strong>
           </p>}
-          <div className="text-primary-70 leading-7 pb-12" dangerouslySetInnerHTML={getHTML(attributes.body)}></div>
+          <ReactMarkdown
+              className="text-primary-70 leading-7 pb-12 line-break"
+              children={attributes.body.replace(/\n/gi, "&nbsp; \n")}
+            />
           {attributes.ctaText && <CTAButton attributes={attributes} />}
         </div>
         <div className="lg:w-1/2 relative">

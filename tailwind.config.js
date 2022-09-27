@@ -76,7 +76,6 @@ module.exports = {
   variants: { margin: ["responsive", "group-hover"], filter: ["hover"] },
   plugins: [
     require("tailwindcss-filters"),
-    // require('@tailwindcss/custom-forms'),
     require("tailwindcss-spinner")(),
   ],
 };
