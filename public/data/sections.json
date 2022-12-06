@@ -3,6 +3,7 @@
     {
       "slug": "header",
       "category": "layout",
+      "type": "layout",
       "displayName": "Header",
       "description": "The header contains the company logo, main site navigation and often a call-to-action button.",
       "templates": ["header-1"],
@@ -46,6 +47,7 @@
     {
       "slug": "footer",
       "category": "layout",
+      "type": "layout",
       "displayName": "Footer",
       "description": "The footer contains secondary site navigation.",
       "templates": ["footer-1"],

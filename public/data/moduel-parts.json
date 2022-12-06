@@ -1,5 +1,5 @@
 {
-  "pageSections": [
+  "moduleParts": [
     {
       "slug": "events-base",
       "description": "Events page base sections",
