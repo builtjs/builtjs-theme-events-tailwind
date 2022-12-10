@@ -14,7 +14,7 @@ export default function FaqBlock({ content }) {
   let collection = collections[collectionName];
   let items;
   if (collection) {
-    items = collection.items;
+    items = collection.data;
   }
   return (
     <section id="faq-block" className="cta-multi relative pb-16 template">

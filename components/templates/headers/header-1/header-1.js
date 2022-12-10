@@ -18,11 +18,11 @@ export default function Header1({ content }) {
   let secondaryMenuItems;
   if (collections) {
     if (collections[collectionNames.PRIMARY_MENU_ITEMS]) {
-      primaryMenuItems = collections[collectionNames.PRIMARY_MENU_ITEMS].items;
+      primaryMenuItems = collections[collectionNames.PRIMARY_MENU_ITEMS].data;
     }
     if (collections[collectionNames.SECONDARY_MENU_ITEMS]) {
       secondaryMenuItems =
-        collections[collectionNames.SECONDARY_MENU_ITEMS].items;
+        collections[collectionNames.SECONDARY_MENU_ITEMS].data;
     }
   }
 

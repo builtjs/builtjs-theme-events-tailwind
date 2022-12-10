@@ -18,7 +18,7 @@ export default function Cards1({ content }) {
   let collection = collections[collectionName];
   let items;
   if (collection) {
-    items = collection.items;
+    items = collection.data;
   }
 
   return (

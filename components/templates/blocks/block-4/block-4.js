@@ -12,7 +12,7 @@ export default function Block4({ content }) {
   let collection = collections[collectionName];
   let items;
   if (collection) {
-    items = collection.items;
+    items = collection.data;
   }
   return (
     <section id="block-4" className="py-32 template">

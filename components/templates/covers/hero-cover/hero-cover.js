@@ -14,8 +14,8 @@ export default function HeroCover({ content }) {
   let collectionName = Object.keys(collections)[0];
   let collection = collections[collectionName];
   let item;
-  if (collection && collection.items.length) {
-    item = collection.items[0];
+  if (collection && collection.data.length) {
+    item = collection.data[0];
   }
   if (!item) return <></>;
   return (
