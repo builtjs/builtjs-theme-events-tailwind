@@ -5,7 +5,7 @@
       "displayName": "Events",
       "description": "Provides information about events",
       "required": true,
-      "pageSections": [
+      "moduleParts": [
         {
           "slug": "home-base"
         },
@@ -24,7 +24,7 @@
       "slug": "contact",
       "displayName": "Contact",
       "description": "Encourages and facilitates making contact",
-      "pageSections": [
+      "moduleParts": [
         {
           "slug": "contact-base"
         },
@@ -37,7 +37,7 @@
       "slug": "get-informed",
       "displayName": "Get Informed",
       "description": "Encourages sign up to a newsletter",
-      "pageSections": [
+      "moduleParts": [
         {
           "slug": "home-get-informed"
         },
@@ -65,7 +65,7 @@
       "slug": "about",
       "displayName": "About",
       "description": "Provides information related to the organisation",
-      "pageSections": [
+      "moduleParts": [
         {
           "slug": "about-base"
         },
@@ -81,7 +81,7 @@
       "slug": "support",
       "displayName": "Support",
       "description": "Encourages to donate, subscribe and sponsor",
-      "pageSections": [
+      "moduleParts": [
         {
           "slug": "donate-base"
         },
@@ -103,7 +103,7 @@
       "slug": "volunteer",
       "displayName": "Volunteer",
       "description": "Encourages becoming a volunteer",
-      "pageSections": [
+      "moduleParts": [
         {
           "slug": "volunteer-base"
         },
