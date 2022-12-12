@@ -18,7 +18,16 @@
         {
           "slug": "about-events"
         }
-      ]
+      ],
+      "deps": {
+        "frontend": {
+          "dependencies": {
+            "date-fns": "^2.29.2",
+            "googleapis": "^107.0.0",
+            "react-markdown": "^8.0.3"
+          }
+        }
+      }
     },
     {
       "slug": "contact",
@@ -31,7 +40,14 @@
         {
           "slug": "services-contact"
         }
-      ]
+      ],
+      "deps": {
+        "frontend": {
+          "dependencies": {
+            "@sendgrid/mail": "^7.7.0"
+          }
+        }
+      }
     },
     {
       "slug": "get-informed",
