@@ -1,9 +1,0 @@
-{
-  "elements": [
-    { "slug": "cta-button-simple" },
-    { "slug": "cta-button" },
-    { "slug": "mode-toggle-btn" },
-    { "slug": "center-aligned-headline", "path": "/headlines" },
-    { "slug": "left-aligned-headline", "path": "/headlines" }
-  ]
-}
