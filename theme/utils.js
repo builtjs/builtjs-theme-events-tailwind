@@ -5,6 +5,9 @@ export async function getComponentMap(sections) {
     const map = {};
     for (let i = 0; i < sections.length; i++) {
       const template = sections[i].template.doc;
+      if(!sections[i].template){
+        continue;
+      }
       map["section" + i] = import(
         `../components/templates/${template.category}/${template.slug}/${template.slug}.js`
       );
