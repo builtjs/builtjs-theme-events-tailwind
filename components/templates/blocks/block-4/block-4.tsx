@@ -36,7 +36,7 @@ export default function Block4({ content }: any) {
                   <div className="w-1/2 md:w-1/3" key={i}>
                     <Link href={item.attributes.url}>
                       <Image
-                        className="w-full lg:hidden"
+                        className="w-full"
                         src={`${publicRuntimeConfig.BACKEND_URL || ""}${
                           item.attributes.image.data.attributes.url
                         }`}
